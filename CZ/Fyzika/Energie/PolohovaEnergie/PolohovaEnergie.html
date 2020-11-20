@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<title>Polohová energie</title>
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/PolohovaEnergie.js"></script>
+	<script src="JavaScript/UI.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+			<!--Logo-->
+			<p>Calcit</p>
+			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
+			
+	<!--Navigace-->
+			<nav>
+				<ul>
+					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
+					<li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li>
+					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
+					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
+					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
+				</ul>
+			</nav>
+		</header>
+	<!--Main Content-->
+		<section>
+			<h2>Polohová energie</h2>
+
+			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+
+			<h3>Vysvětlivky</h3>
+			<p>
+				<i>E<sub>p</sub></i> = polohová energie<br>
+				<i>m</i> = hmotnost<br>
+				<i>v</i> = rychlost<br>
+			</p>
+
+			<h3>Vzorečky</h3>
+			<p>Polohová energie <i>E<sub>p</sub></i> = 1 / 2 * m * v<sup>2</sup></p>
+
+			<div id="napoveda"><p>?</p></div>
+
+			<h3>Kalkulace</h3>
+				v = 
+				<input id="cislo1" type="number" placeholder="Rychlost [m / s]"><br>
+				m = 
+				<input id="cislo2" type="number" placeholder="Hmotnost">
+				<select id="Jednotka" name="Jednotka">
+					<option value="Základní">Základní</option>
+				</select><br>
+				<input id="spocitat" type="button" value="Spočítat">
+				<input id="smazat" type="button" value="Smazat historii počítání">
+			<div id="Vysledek"></div>
+
+			<h2>Další z kategorie Energie</h2>
+				<ul>
+					<li><a href="../KinetickaEnergie/KinetickaEnergie.html" title="Kinetická energie a odvozené vzorečky">Kinetická energie</a></li>
+				</ul>
+		</section>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

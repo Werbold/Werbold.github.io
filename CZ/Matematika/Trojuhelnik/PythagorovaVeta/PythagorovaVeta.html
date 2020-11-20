@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<title>Trojúhelník - Pythagorova Věta</title>
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/PythagorovaVeta.js"></script>
+	<script src="JavaScript/UI.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+			<!--Logo-->
+			<p>Calcit</p>
+			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
+			
+	<!--Navigace-->
+			<nav>
+				<ul>
+					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
+					<li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li>
+					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
+					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
+					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
+				</ul>
+			</nav>
+		</header>
+	<!--Main Content-->
+		<section>
+			<h2><a href="../../RovinneUtvary/Trojuhelnik/Trojuhelnik.html" title="Obvod a obsah trojúhelníku">Trojúhelník</a> - Pythagorova věta</h2>
+
+			<h3>Znění pythagorovy věty</h3>
+			<p>Součet obsahů čtverců nad odvěsnami, je roven ovsahu čtverce nad přeponou.</p>
+
+			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+
+			<h3>Vysvětlivky</h3>
+			<p>
+				<i>a; b; c</i> = označení strany<br>
+				<i>Přepona</i> = strana ležící naproti pravému úhlu<br>
+				<i>Odvěsna</i> = strana tvořící pravý úhel
+			</p>
+
+			<h3>Vzorečky</h3>
+			<p>a<sup>2</sup> = c<sup>2</sup> - b<sup>2</sup></p>
+			<p>b<sup>2</sup> = c<sup>2</sup> - a<sup>2</sup></p>
+			<p>c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup></p>
+
+			<div id="napoveda"><p>?</p></div>
+
+			<h3>Kalkulace</h3>
+				a = 
+				<input id="cislo1" type="number" placeholder="Délka strany a"><br>
+				b = 
+				<input id="cislo2" type="number" placeholder="Délka strany b"><br>
+				c = 
+				<input id="cislo3" type="number" placeholder="Délka strany c">
+				<select id="Jednotka" name="Jednotka">
+					<option value="km">km</option>
+					<option value="m">m</option>
+					<option value="dm">dm</option>
+					<option value="cm">cm</option>
+					<option value="mm">mm</option>
+				</select><br>
+				<input id="spocitat" type="button" value="Spočítat">
+				<input id="smazat" type="button" value="Smazat historii počítání">
+			<div id="Vysledek"></div>
+
+			<h2>Další z kategorie Trojúhelník</h2>
+				<ul>
+					<li><a href="../GoniometrickeFCE/GoniometrickeFCE.html" title="Obvod a obsah čtverce">Goniometrické funkce</a></li>
+				</ul>
+		</section>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

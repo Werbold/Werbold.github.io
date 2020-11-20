@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<title>Kinetická energie</title>
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/KinetickaEnergie.js"></script>
+	<script src="JavaScript/UI.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+			<!--Logo-->
+			<p>Calcit</p>
+			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
+			
+	<!--Navigace-->
+			<nav>
+				<ul>
+					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
+					<li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li>
+					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
+					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
+					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
+				</ul>
+			</nav>
+		</header>
+	<!--Main Content-->
+		<section>
+			<h2>Kinetická energie</h2>
+
+			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+
+			<h3>Vysvětlivky</h3>
+			<p>
+				<i>E<sub>k</sub></i> = Kinetická energie<br>
+				<i>m</i> = hmotnost<br>
+				<i>g</i> = konstanta = 10 N / kg<br>
+				<i>h</i> = hloubka<br>
+			</p>
+
+			<h3>Vzorečky</h3>
+			<p>Kinetická energie <i>E<sub>k</sub></i> = m * g * h</p>
+
+			<div id="napoveda"><p>?</p></div>
+
+			<h3>Kalkulace</h3>
+				m = 
+				<input id="cislo1" type="number" placeholder="Hmotnost"><br>
+				h = 
+				<input id="cislo2" type="number" placeholder="Hloubka">
+				<select id="Jednotka" name="Jednotka">
+					<option value="kilo">kilo</option>
+					<option value="Základní">Základní</option>
+					<option value="mili">mili</option>
+				</select><br>
+				<input id="spocitat" type="button" value="Spočítat">
+				<input id="smazat" type="button" value="Smazat historii počítání">
+			<div id="Vysledek"></div>
+
+			<h2>Další z kategorie Energie</h2>
+				<ul>
+					<li><a href="../PolohovaEnergie/PolohovaEnergie.html" title="Polohová energie">Polohová energie</a></li>
+				</ul>
+		</section>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

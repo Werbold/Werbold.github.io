@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<title>Obdélník - Obvod a Obsah</title>
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/Obdelnik.js"></script>
+	<script src="JavaScript/UI.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+			<!--Logo-->
+			<p>Calcit</p>
+			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
+			
+	<!--Navigace-->
+			<nav>
+				<ul>
+					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
+					<li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li>
+					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
+					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
+					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
+				</ul>
+			</nav>
+		</header>
+	<!--Main Content-->
+		<section>
+			<h2>Obvod a obsah obdélníku</h2>
+
+			<h3>Vlastnosti obdélníku</h3>
+			<ol>
+				<li>Všechny vnitřní úhly obdélníku svýrají pravý úhel (90°).</li>
+				<li>Protilehlé strany jsou vždy stejně dlouhé a navzájem rovnoběžné.</li>
+				<li>Úhlopříčky jsou stejně dlouhé.</li>
+			</ol>
+
+			<p><img src="Images/Obdelnik.png" alt="Popis obdélníku"></p>
+
+			<h3>Vysvětlivky</h3>
+			<p>
+				<i>a; b</i> = označení strany<br>
+				Úhlopříčka je úsečka vedoucí napříč obrazcem.
+			</p>
+
+			<h3>Vzorečky</h3>
+			<p>Obvod <i>O</i> = 2 * a + 2 * b</p>
+			<p>Obsah <i>S</i> = a * b</p>
+
+			<div id="napoveda"><p>?</p></div>
+
+			<h3>Kalkulace</h3>
+				a = 
+				<input id="cislo1" type="number" placeholder="Délka strany a"><br>
+				b = 
+				<input id="cislo2" type="number" placeholder="Délka strany b">
+				<select id="Jednotka" name="Jednotka">
+					<option value="km">km</option>
+					<option value="m">m</option>
+					<option value="dm">dm</option>
+					<option value="cm">cm</option>
+					<option value="mm">mm</option>
+				</select><br>
+				<input id="spocitat" type="button" value="Spočítat">
+				<input id="smazat" type="button" value="Smazat historii počítání">
+			<div id="Vysledek"></div>
+
+			<h2>Další z kategorie Obvody a obsahy rovinných útvarů</h2>
+				<ul>
+					<li><a href="../Ctverec/Ctverec.html" title="Obvod a obsah čtverce">Obvod a obsah čtverce</a></li>
+					<li><a href="../Kosoctverec/Kosoctverec.html" title="Obvod a obsah kosočtverce">Obvod a obsah kosočtverce</a></li>
+					<li><a href="../Kruh/Kruh.html" title="Obvod a obsah kruhu">Obvod a obsah kruhu</a></li>
+					<li><a href="../Lichobeznik/Lichobeznik.html" title="Obvod a obsah lichoběžníku">Obvod a obsah lichoběžníku</a></li>
+					<li><a href="../Rovnobeznik/Rovnobeznik.html" title="Obvod a obsah rovnoběžníku">Obvod a obsah rovnoběžníku</a></li>
+					<li><a href="../Trojuhelnik/Trojuhelnik.html" title="Obvod a obsah trojúhelníku">Obvod a obsah trojúhelníku</a></li>
+				</ul>
+		</section>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>
