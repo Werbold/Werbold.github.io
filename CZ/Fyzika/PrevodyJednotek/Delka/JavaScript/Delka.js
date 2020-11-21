@@ -58,12 +58,12 @@ $(document).ready(function() {
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "m" && jednotka2 == "mm") {
-				vysledek = cislo1 * 10000;
+				vysledek = cislo1 * 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mm" && jednotka2 == "m") {
-				vysledek = cislo1 / 10000;
+				vysledek = cislo1 / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
