@@ -203,7 +203,7 @@ h2, h3, h4, h5, h6{
 }
 #count{
 	margin-bottom: 10px;
-	border-bottom: 2px solid blue;
+	border-bottom: 1px solid #2f2f73;
 }
 
 @media (max-width: 340px){
