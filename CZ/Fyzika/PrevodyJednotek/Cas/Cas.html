@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="utf-8">
+	<title>Převody jednotek času</title>
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/Cas.js"></script>
+	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+			<!--Logo-->
+			<p>Calcit</p>
+			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
+			
+	<!--Navigace-->
+			<nav>
+				<ul>
+					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
+					<!-- <li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li> -->
+					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
+					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
+					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
+				</ul>
+			</nav>
+		</header>
+	<!--Main Content-->
+		<section>
+			<h2>Převody jednotek času</h2>
+			<ul>
+				<li>1 h [hodina] = 60 min [minuta]</li>
+				<li>1 min = 60 s [sekunda]</li>
+				<li>1 s = 1000 ms [milisekunda]</li>
+			</ul>
+
+			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+
+			<div id="napoveda"><p>?</p></div>
+
+			<h3>Kalkulace</h3>
+				<input id="cislo1" type="number" placeholder="První hodnota">
+				<select id="Jednotka1" name="Jednotka">
+					<option value="h">h</option>
+					<option value="min">min</option>
+					<option value="s">s</option>
+					<option value="ms">ms</option>
+				</select>
+				na 
+				<select id="Jednotka2" name="Jednotka">
+					<option value="h">h</option>
+					<option value="min">min</option>
+					<option value="s">s</option>
+					<option value="ms">ms</option>
+				</select><br>
+				<input id="spocitat" type="button" value="Spočítat">
+				<input id="smazat" type="button" value="Smazat historii počítání">
+			<div id="Vysledek"></div>
+
+			<h2>Další z kategorie Převody jednotek</h2>
+			<ul>
+				<li><a href="../DatovyObjem/DatovyObjem.html" title="Převody datových jednotek">Převody jednotek datového objemu</a></li>
+				<li><a href="../Delka/Delka.html" title="Převody jednotek délky">Převody jednotek délky</a></li>
+				<li><a href="../Hmotnost/Hmotnost.html" title="Převody jednotek hmotnosti">Převody jednotek hmotnosti</a></li>
+				<li><a href="../Objem/Objem.html" title="Převody jednotek objemu">Převody jednotek objemu</a></li>
+				<li><a href="../Obsah/Obsah.html" title="Převody jednotek obsahu">Převody jednotek obsahu</a></li>
+				<li><a href="../Rychlost/Rychlost.html" title="Převody jednotek rychlosti">Převody jednotek rychlosti</a></li>
+			</ul>
+		</section>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

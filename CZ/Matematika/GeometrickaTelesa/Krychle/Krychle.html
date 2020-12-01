@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<meta charset="utf-8">
+	<title>Krychle - Povrch a Objem</title>
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/Krychle.js"></script>
+	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+			<!--Logo-->
+			<p>Calcit</p>
+			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
+		
+	<!--Navigace-->
+			<nav>
+				<ul>
+					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
+					<!-- <li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li> -->
+					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
+					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
+					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
+				</ul>
+			</nav>
+		</header>
+	<!--Main Content-->
+		<section>
+			<h2>Povrch a objem krychle</h2>
+			
+			<h3>Vlastnosti krychle</h3>
+			<ol>
+				<li>Je tvořena šesti stejnými <a href="../../RovinneUtvary/Ctverec/Ctverec.html">čtverci.</a></li>
+				<li>Stěnové úhlopříčky jsou ve všech stěnách stejně dlouhé.</li>
+				<li>Tělesové úhlopříčky jsou všechny stejně dlouhé.</li>
+			</ol>
+
+			<p><!--<img src="Images/Ctverec.png" width="50%">--></p>
+			
+			<h3>Vysvětlivky</h3>
+			<p>
+				<i>a</i> = označení strany podstavy<br>
+				<i>u<sub>s</sub></i> = stěnová úhlopříčka<br>
+				<i>u<sub>t</sub></i> = tělesová úhlopříčka<br>
+				<i>V</i> = objem<br>
+				<i>S</i> = povrch<br>
+			</p>
+
+			<h3>Vzorečky</h3>
+			<p>Obsah <i>S</i> = 6 * a * a = a<sup>2</sup></p>
+			<p>Objem <i>V</i> = a * a * a = a<sup>3</sup></p>
+
+			<div id="napoveda"><p>?</p></div>
+			
+			<h3>Kalkulace</h3>
+				a = 
+				<input id="cislo1" type="number" placeholder="Délka strany">
+				<select id="Jednotka" name="Jednotka">
+					<option value="km">km</option>
+					<option value="m">m</option>
+					<option value="dm">dm</option>
+					<option value="cm">cm</option>
+					<option value="mm">mm</option>
+				</select><br>
+				<input id="spocitat" type="button" value="Spočítat">
+				<input id="smazat" type="button" value="Smazat historii počítání">
+			<div id="Vysledek"></div>
+
+			<h2>Další z kategorie Obvody a obsahy rovinných útvarů</h2>
+				<ul>
+					<li><a href="../Jehlan/Jehlan.html" title="Povrch a objem jehlanu">Povrch a objem pravidelného jehlanu</a></li>
+					<li><a href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></li>
+					<li><a href="../Kvadr/Kvadr.html" title="Povrch a objem kvádru">Povrch a objem kvádru</a></li>
+					<li><a href="../Valec/Valec.html" title="Povrch a objem válce">Povrch a objem válce</a></li>
+				</ul>
+		</section>
+		
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>
