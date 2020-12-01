@@ -6,6 +6,10 @@ body{
 	background: rgb(174,219,224);
 	background: linear-gradient(90deg, rgba(174,219,224,1) 0%, rgba(13,154,217,1) 35%, rgba(13,154,217,1) 65%, rgba(174,219,224,1) 100%);
 }
+::selection{
+	color: white;
+	background: #171775;
+}
 article{
 	width: 95%;
 	position: relative;
