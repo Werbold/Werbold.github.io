@@ -35,5 +35,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat obsah.<br>Pokud jej chcete spočítat, zadejte prosím kladnou, nenulovou hodnotu výšky.</p>")
+	$('#Vysledek').after("<p id='count'>Litujeme, ale ze zadání nelze spočítat obsah.<br>Pokud jej chcete spočítat, zadejte prosím kladnou, nenulovou hodnotu výšky.</p>")
 }
