@@ -202,7 +202,8 @@ h2, h3, h4, h5, h6{
 	box-shadow: 5px 3px 17px 4px #64648f;
 }
 #count{
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid blue;
 }
 
 @media (max-width: 340px){
