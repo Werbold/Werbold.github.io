@@ -1,0 +1,207 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	color: #3d3838;
+	background: rgb(174,219,224);
+	background: linear-gradient(90deg, rgba(174,219,224,1) 0%, rgba(13,154,217,1) 35%, rgba(13,154,217,1) 65%, rgba(174,219,224,1) 100%);
+}
+article{
+	width: 95%;
+	position: relative;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-bottom: 20px;
+}
+#hlavicka{
+	height: 200px;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#content{
+	width: 100%;
+	margin-top: 200px; 
+}
+#image{
+	text-align: center;
+	width: 100%;
+}
+#cislo1{
+	margin-left: 14px;
+	width: 175px;
+	height: 30px;
+}
+#cislo2{
+	width: 175px;
+	height: 30px;
+	margin-left: 5px;
+}
+.vedle{
+	display: flex;
+}
+#Jednotka{
+	height: 72px;
+	width: 72px;
+	font-size: 26px;
+	color: #3d3838;
+}
+#Jednotka:hover{
+	cursor: pointer;
+}
+p{
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+#buttons{
+	margin-left: 40px;
+}
+#spocitat{
+	height: 25px;
+	padding: 5px 12px;
+	background-color: white;
+	margin-right: 14px;
+	border: 0px;
+	border-radius: 3px;
+	color: #3d3838;
+}
+#smazat{
+	height: 25px;
+	padding: 5px 12px;
+	background-color: white;
+	border: 0px;
+	border-radius: 3px;
+	color: #3d3838;
+}
+#smazat:hover, #spocitat:hover{
+	transition: 0.4s;
+	cursor: pointer;
+	background-color: #aedbe0;
+}
+img {
+	max-width: 95%;
+	height: auto;
+}
+#vlastnosti{
+	margin-left: 5px;
+}
+#line ul{
+	list-style-type: none;
+}
+#line ul li{
+	margin-bottom: 25px;
+	display: inline-block;
+}
+#line ul li a{
+	margin: 0 auto 25px auto;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: white;
+	color: #3d3838;
+}
+#line ul li a:hover{
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #aedbe0;
+	color: #3d3838;
+	transition: 0.4s;
+}
+#Odkaz1{
+	padding: 10px 20px;
+}
+#Odkaz2{
+	padding: 10px 20px;
+}
+#Odkaz3{
+	padding: 10px 20px;
+}
+#Odkaz4{
+	padding: 10px 20px;
+}
+#Odkaz5{
+	padding: 10px 20px;
+}
+#Odkaz6{
+	padding: 10px 20px;
+}
+nav ul{
+	list-style-type: none;
+	margin-left: 0;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+}
+nav ul li a{
+	display: inline-block;
+	background-color: white;
+	padding: 10px 13px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #3d3838;
+}
+nav ul li :hover{
+	display: inline-block;
+	background-color: #aedbe0;
+	color: #3d3838;
+	transition: 0.4s;
+}
+#password{
+	margin: 20px 0 0 20px;
+}
+#definition{
+	font-size: 18px; 
+}
+#Calcit{
+	font-size: 22px;
+	font-weight: bold;
+}
+#logo{
+	float: right;
+	width: 30%;
+	height: auto;
+}
+#left{
+	width: 98%;
+}
+h1{
+	font-size: 27px;
+	font-weight: 900;
+}
+h2, h3, h4, h5, h6{
+	font-size: 25px;
+	font-weight: 600;
+}
+#napoveda{
+	padding: 15px;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	border-radius: 50%;
+	background-color: #0f2266;
+	color: #aedbe0;
+	text-align: center;
+}
+#napoveda:hover{
+	transition: 0.4s;
+	background-color: #0d9ad9;
+	color: #0f2266;
+}
+#napovedaContainer{
+	width: 30px;
+	height: 30px;
+}
+#napoveda:hover{
+	cursor: pointer;
+}
+#ilustracion{
+	box-shadow: 5px 3px 17px 4px #64648f;
+}
+
+@media (min-width: 600px){
+
+}
