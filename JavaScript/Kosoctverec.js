@@ -11,7 +11,7 @@ $(document).ready(function() {
 			vysledekO = 4 * cislo1;
 			vysledekS = cislo1 * cislo2;
 
-			$('#Vysledek').after("<p>Strana: " + cislo1 + " " + jednotka + "<br>"
+			$('#Vysledek').after("<p id='count'>Strana: " + cislo1 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo2 + " " + jednotka + "<br>"
 				+ "Obvod: " + vysledekO + " " + jednotka + "<br>"
 				+ "Obsah: " + vysledekS + " " + jednotka + "<sup>2</sup></p>");
