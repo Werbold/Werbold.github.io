@@ -1,0 +1,141 @@
+
+
+@media (min-width: 600px){
+	#hlavicka{
+		width: 100%;
+		height: 200px;
+		float: left;
+		background-color: purple;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#padding{
+		padding: 20px;
+		padding-bottom: 0px;
+	}
+	#content{
+		width: 100%;
+		background-color: blue;
+		margin-top: 200px; 
+	}
+	#leftPart{
+		float: left;
+		width: 50%;
+		background-color: white;
+	}
+	#rightPart{
+		float: right;
+		height: 285.25px;
+		width: 50%;
+		background-color: green;
+	}
+	article{
+		width: 100%;
+		padding: 20px;
+	    float: left;
+	    min-height: 800px;
+	    background-color: red;
+	    position: relative;
+	}
+	body{
+		padding: 0;
+		width: 1280px;
+		margin: 0 auto;
+	}
+	a{
+		text-decoration: none;
+		color: wheat;
+	}
+	#footer ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	#footer ul li{
+		padding-bottom: 10px;
+		position: relative;
+		margin-bottom: 15px;
+		width: 640px;
+	}
+	#footer ul li a{
+		border-radius: 3px;
+		background-color: white;
+		color: black;
+	}
+	#Odkaz1{
+		padding: 10px 20px;
+		padding-right: 473.83px;
+	}
+	#Odkaz2{
+		padding: 10px 20px;
+		padding-right: 482.69px;
+	}
+	#Odkaz3{
+		padding: 10px 20px;
+		padding-right: 437.37px;
+	}
+	#Odkaz4{
+		padding: 10px 20px;
+		padding-right: 456.02px;
+	}
+	#Odkaz5{
+		padding: 10px 20px;
+		padding-right: 432.03px;
+	}
+	#Odkaz6{
+		padding: 10px 20px;
+		padding-right: 441.8px;
+	}
+	#resize{
+		letter-spacing: 3px;
+	}
+	#vedle{
+		display: flex;
+	}
+	#cislo1{
+		margin-left: 2px;
+	}
+	#kalkulace{
+		position: relative;
+		width: 640px;
+		height: 232px;
+	}
+	select#Jednotka{
+		position: absolute;
+		left: 215px;
+		top: 48;
+		height: 42px;
+		width: 42px;
+		color: green;
+		text-align: center;
+	}
+	nav ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	nav ul li{
+		display: inline-block;
+		float: left;
+		position: relative;
+		margin-right: 20px;
+	}
+	nav ul li a{
+		display: inline-block;
+		background-color: white;
+		color: black;
+		padding: 10px 20px;
+		border-radius: 3px;
+	}
+	nav ul li :hover{
+		display: inline-block;
+		background-color: black;
+		color: white;
+		padding: 10px 20px;
+	}
+	#image{
+		text-align: center;
+		width: 100%;
+	}
+}
