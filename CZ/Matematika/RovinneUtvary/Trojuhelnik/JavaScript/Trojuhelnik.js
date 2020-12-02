@@ -13,7 +13,7 @@ $(document).ready(function() {
 			vysledekO = cislo1 + cislo2 + cislo3;
 			vysledekS = cislo1 * cislo4 / 2;
 
-			$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>"
+			$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>"
 				+ "Strana b: " + cislo2 + " " + jednotka + "<br>"
 				+ "Strana c: " + cislo3 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo4 + " " + jednotka + "<br>"
@@ -25,7 +25,7 @@ $(document).ready(function() {
 				error();
 				vysledekO = cislo1 + cislo2 + cislo3;
 
-				$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>"
 					+ "Strana b: " + cislo2 + " " + jednotka + "<br>"
 					+ "Strana c: " + cislo3 + " " + jednotka + "<br>"
 					+ "Obvod: " + vysledekO + " " + jednotka + "</p>");
@@ -34,7 +34,7 @@ $(document).ready(function() {
 				error();
 				vysledekS = cislo1 * cislo4 / 2;
 
-				$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>"
 					+ "Výška: " + cislo4 + " " + jednotka + "<br>"
 					+ "Obsah: " + vysledekS + " " + jednotka + "<sup>2</sup></p>");
 			}
@@ -52,5 +52,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat jednu, nebo více hodnot.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale ze zadání nelze spočítat jednu, nebo více hodnot.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
 }

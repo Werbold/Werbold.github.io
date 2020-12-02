@@ -13,7 +13,7 @@ $(document).ready(function() {
 			vysledekO = cislo1 * 4;
 			vysledekS = cislo1 * cislo1;
 
-			$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>" 
+			$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>" 
 				+ "Obvod: " + vysledekO + " " + jednotka + "<br>"
 				+ "Obsah: " + vysledekS + " " + jednotka + "<sup>2</sup></p>");
 		}
@@ -29,5 +29,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

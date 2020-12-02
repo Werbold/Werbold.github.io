@@ -1,0 +1,35 @@
+#cislo1{
+	margin-left: 28px;
+	width: 175px;
+	height: 30px;
+}
+#cislo2{
+	margin-left: 18px;
+	width: 175px;
+	height: 30px;
+}
+#cislo3{
+	margin-left: 14px;
+	width: 175px;
+	height: 30px;
+}
+#cislo4{
+	margin-left: 26px;
+	width: 175px;
+	height: 30px;
+}
+#buttons{
+	margin-left: 49px;
+}
+#Jednotka{
+	height: 144px;
+	width: 72px;
+	font-size: 26px;
+	color: #3d3838;
+}
+
+@media (min-width: 950px){
+	#footer{
+		margin-top: 660px;
+	}
+}

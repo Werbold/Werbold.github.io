@@ -17,6 +17,10 @@ article{
 	padding-left: 15px;
 	padding-bottom: 20px;
 }
+a.info{
+	color: #0e0e80;
+	text-decoration: none;
+}
 #hlavicka{
 	height: 200px;
 	width: 100%;
@@ -39,9 +43,9 @@ article{
 	height: 30px;
 }
 #cislo2{
+	margin-left: 7px;
 	width: 175px;
 	height: 30px;
-	margin-left: 7px;
 }
 .vedle{
 	display: flex;
@@ -64,6 +68,7 @@ p{
 	margin-left: 37px;
 }
 #spocitat{
+	margin-bottom: 20px;
 	height: 25px;
 	padding: 5px 12px;
 	background-color: white;
@@ -197,7 +202,7 @@ h2, h3, h4, h5, h6{
 }
 #napoveda:hover{
 	transition: 0.4s;
-	background-color: #0d9ad9;
+	background-color: #4848fa;
 	color: #0f2266;
 }
 #napovedaContainer{

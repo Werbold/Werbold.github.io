@@ -1,95 +1,122 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
-	<meta charset="utf-8">
 	<title>Válec - Povrch a Objem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Valec.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="JavaScript/Valec.js"></script>
 	<script src="JavaScript/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
 <body>
 	<article>
 		<header>
-			<!--Logo-->
-			<p>Calcit</p>
-			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
-		
-	<!--Navigace-->
-			<nav>
-				<ul>
-					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
-					<!-- <li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li> -->
-					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
-					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
-					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
-				</ul>
-			</nav>
 		</header>
 	<!--Main Content-->
 		<section>
-			<h2>Povrch a objem válce</h2>
-			
-			<h3>Vlastnosti válce</h3>
-			<ol>
-				<li>Podstavou válce je <a href="../../RovinneUtvary/Kruh/Kruh.html" title="Kruh - Obvod a Obsah">kruh</a>.</li>
-				<li>Tvoří jej dvě vůči sobě rovnoběžné podstavy a plášť.</li>
-				<li>Plášť je na podstavu kolmá.</li>
-			</ol>
+			<div id="content">
+				<div id="main">
+					<h1>Povrch a objem válce</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vlastnosti válce</h2>
+							<ol id="vlastnosti">
+								<li>Podstavou válce je <a class="info" href="../../RovinneUtvary/Kruh/Kruh.html" title="Kruh - Obvod a Obsah">kruh</a>.</li>
+								<li>Tvoří jej dvě vůči sobě rovnoběžné podstavy a plášť.</li>
+								<li>Plášť je na podstavu kolmá.</li>
+							</ol>
+						</div>
 
-			<p><!--<img src="Images/Ctverec.png" width="50%">--></p>
-			
-			<h3>Vysvětlivky</h3>
-			<p>
-				<i>r</i> = poloměr<br>
-				<i>d</i> = průměr<br>
-				<i>v</i> = výška<br>
-				<i>S'; S''</i> = střed podstavy<br>
-				<i>V</i> = objem<br>
-				<i>S</i> = povrch<br>
-				<i>S<sub>p</sub></i> = obsah podstavy<br>
-				<i>S<sub>pl</sub></i> = obsah pláště
-			</p>
+						<div id="rightPartContent">
+							<p id="image"><!--<img id="ilustracion" src="Images/Ctverec.png" alt="Popis válce"--></p>
+						</div>
+					</div>
+				</div>
 
-			<h3>Vzorečky</h3>
-			<p>Obsah <i>S</i> =  2 * S<sub>p</sub> + S<sub>pl</sub><br>
-				Obsah <i>S</i> = 2 * πr(r + v)</p>
-			<p>Objem <i>V</i> = πr<sup>2</sup>v</p>
-			<p>Obsah pláště <i>S<sub>pl</sub></i> = 2 * πrv</p>
-			<p>Obsah podstavy <i>S<sub>p</sub></i> = πr<sup>2</sup></p>
+				<div id="leftPart">
+					<h2>Vzorečky</h2>
+					<p>Obsah <i>S</i> =  2 * S<sub>p</sub> + S<sub>pl</sub><br>
+						Obsah <i>S</i> = 2 * πr(r + v)</p>
+					<p>Objem <i>V</i> = πr<sup>2</sup>v</p>
+					<p>Obsah pláště <i>S<sub>pl</sub></i> = 2 * πrv</p>
+					<p>Obsah podstavy <i>S<sub>p</sub></i> = πr<sup>2</sup></p>
+					
+					<h2>Vysvětlivky</h2>
+					<p>
+						<i>r</i> = poloměr<br>
+						<i>d</i> = průměr<br>
+						<i>v</i> = výška<br>
+						<i>S'; S''</i> = střed podstavy<br>
+						<i>V</i> = objem<br>
+						<i>S</i> = povrch<br>
+						<i>S<sub>p</sub></i> = obsah podstavy<br>
+						<i>S<sub>pl</sub></i> = obsah pláště
+					</p>
+				</div>
 
-			<div id="napoveda"><p>?</p></div>
-			
-			<h3>Kalkulace</h3>
-				r = 
-				<input id="cislo1" type="number" placeholder="Poloměr"><br>
-				S<sub>p</sub> = 
-				<input id="cislo2" type="number" placeholder="Obsah podstavy"><br>
-				S<sub>pl</sub> = 
-				<input id="cislo3" type="number" placeholder="Obsah pláště"><br>
-				v = 
-				<input id="cislo4" type="number" placeholder="Výška">
-				<select id="Jednotka" name="Jednotka">
-					<option value="km">km</option>
-					<option value="m">m</option>
-					<option value="dm">dm</option>
-					<option value="cm">cm</option>
-					<option value="mm">mm</option>
-				</select><br>
-				<input id="spocitat" type="button" value="Spočítat">
-				<input id="smazat" type="button" value="Smazat historii počítání">
-			<div id="Vysledek"></div>
+				<div id="rightPart">
+					<div id="napovedaContainer"><p id="napoveda">?</p></div>
+					<div id="kalkulace">
+						<h2>Kalkulace</h2>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label>r = </label>
+									<input id="cislo1" type="number" placeholder="Poloměr">
+								</div>
+								<div class="vedle">
+									<label>S<sub>p</sub> = </label> 
+									<input id="cislo2" type="number" placeholder="Obsah podstavy">
+								</div>
+								<div class="vedle">
+									<label>S<sub>pl</sub> = </label>
+									<input id="cislo3" type="number" placeholder="Obsah pláště">
+								</div>
+								<div class="vedle">
+									<label>v = </label>
+									<input id="cislo4" type="number" placeholder="Výška">
+								</div>
+							</div>
+							<div id="rideSide">
+								<select id="Jednotka" name="Jednotka">
+									<option value="km">km</option>
+									<option value="m">m</option>
+									<option value="dm">dm</option>
+									<option value="cm">cm</option>
+									<option value="mm">mm</option>
+								</select>
+							</div>
+						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
+						<div id="Vysledek"></div>
+					</div>
+				</div>
 
-			<h2>Další z kategorie Objemy a povrchy geometrických útavrů</h2>
-				<ul>
-					<li><a href="../Jehlan/Jehlan.html" title="Povrch a objem jehlanu">Povrch a objem pravidelného jehlanu</a></li>
-					<li><a href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></li>
-					<li><a href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></li>
-					<li><a href="../Kvadr/Kvadr.html" title="Povrch a objem kvádru">Povrch a objem kvádru</a></li>
-				</ul>
-
+				<div id="footer">
+					<h2>Další z kategorie Objemy a povrchy geometrických útavrů</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../Jehlan/Jehlan.html" title="Povrch a objem jehlanu">Povrch a objem pravidelného jehlanu</a></li>
+							<li><a id="Odkaz2" href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></li>
+							<li><a id="Odkaz3" href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></li>
+							<li><a id="Odkaz4" href="../Kvadr/Kvadr.html" title="Povrch a objem kvádru">Povrch a objem kvádru</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
 		<footer>
 		</footer>
 	</article>

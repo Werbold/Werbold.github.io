@@ -14,7 +14,7 @@ $(document).ready(function() {
 			vysledekS = 2 * (cislo1 * cislo2 + cislo1 * cislo3 + cislo2 * cislo3);
 			vysledekV = cislo1 * cislo2 * cislo3;
 
-			$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>"
+			$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>"
 				+ "Strana b: " + cislo2 + " " + jednotka + "<br>"
 				+ "Strana c: " + cislo3 + " " + jednotka + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "<br>"
@@ -36,5 +36,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat žádnou hodnotu.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale ze zadání nelze spočítat žádnou hodnotu.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
 }

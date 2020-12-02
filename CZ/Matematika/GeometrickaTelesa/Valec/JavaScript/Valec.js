@@ -16,7 +16,7 @@ $(document).ready(function() {
 				vysledekS = 2 * cislo2 + cislo3;
 				vysledekV = Math.PI * Math.pow(cislo1,2);
 
-				$('#Vysledek').after("<p>Poloměr: " + cislo1 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>Poloměr: " + cislo1 + " " + jednotka + "<br>"
 				+ "Obsah podstavy: " + cislo2 + " " + jednotkaS + "<br>"
 				+ "Obsah pláště: " + cislo3 + " " + jednotkaS + "<br>"
 				+ "Výška: " + cislo4 + " " + jednotka + "<br>"
@@ -27,7 +27,7 @@ $(document).ready(function() {
 				vysledekS = 2 * Math.PI * cislo1 * (cislo1 + cislo4);
 				vysledekV = Math.PI * Math.pow(cislo1,2);
 
-				$('#Vysledek').after("<p>Poloměr: " + cislo1 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>Poloměr: " + cislo1 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo4 + " " + jednotka + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "<br>"
 				+ "Objem: " + vysledekV + " " + jednotkaV + "</p>");
@@ -36,7 +36,7 @@ $(document).ready(function() {
 				error();
 				vysledekS = 2 * cislo2 + cislo3;
 
-				$('#Vysledek').after("<p>Obsah podstavy: " + cislo2 + " " + jednotkaS + "<br>"
+				$('#Vysledek').after("<p class='count'>Obsah podstavy: " + cislo2 + " " + jednotkaS + "<br>"
 				+ "Obsah pláště: " + cislo3 + " " + jednotkaS + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "</p>");
 			}
@@ -53,5 +53,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat jednu, nebo více hodnot.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale ze zadání nelze spočítat jednu, nebo více hodnot.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
 }

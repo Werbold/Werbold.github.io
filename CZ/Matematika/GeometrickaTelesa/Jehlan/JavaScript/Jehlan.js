@@ -17,7 +17,7 @@ $(document).ready(function() {
 				vysledekS = cislo2 * cislo2 + cislo4;
 				vysledekV = 1 / 3 * cislo2 * cislo2 * cislo5;
 
-				$('#Vysledek').after("<p>Strana a: " + cislo2 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>Strana a: " + cislo2 + " " + jednotka + "<br>"
 				+ "Obsah pláště: " + cislo4 + " " + jednotkaS + "<br>"
 				+ "Výška: " + cislo5 + " " + jednotka + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "<br>"
@@ -27,7 +27,7 @@ $(document).ready(function() {
 				vysledekS = cislo3 + cislo4;
 				vysledekV = 1 / 3 * cislo3 * cislo5;
 
-				$('#Vysledek').after("<p>Obsah podstavy: " + cislo3 + " " + jednotkaS + "<br>"
+				$('#Vysledek').after("<p class='count'>Obsah podstavy: " + cislo3 + " " + jednotkaS + "<br>"
 				+ "Obsah pláště: " + cislo4 + " " + jednotkaS + "<br>"
 				+ "Výška: " + cislo5 + " " + jednotka + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "<br>"
@@ -40,7 +40,7 @@ $(document).ready(function() {
 				error();
 				vysledekS = cislo2 * cislo2 + cislo4;
 
-				$('#Vysledek').after("<p>strana a: " + cislo2 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>strana a: " + cislo2 + " " + jednotka + "<br>"
 				+ "Obsah pláště: " + cislo4 + " " + jednotkaS + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "</p>");
 			}
@@ -48,7 +48,7 @@ $(document).ready(function() {
 				error();
 				vysledekS = cislo3 + cislo4;
 
-				$('#Vysledek').after("<p>Obsah podstavy: " + cislo3 + " " + jednotkaS + "<br>"
+				$('#Vysledek').after("<p class='count'>Obsah podstavy: " + cislo3 + " " + jednotkaS + "<br>"
 				+ "Obsah pláště: " + cislo4 + " " + jednotkaS + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "</p>");
 			}
@@ -56,7 +56,7 @@ $(document).ready(function() {
 				error();
 				vysledekV = 1 / 3 * cislo2 * cislo2 * cislo5;
 
-				$('#Vysledek').after("<p>Strana a: " + cislo2 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>Strana a: " + cislo2 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo5 + " " + jednotka + "<br>"
 				+ "Objem: " + vysledekV + " " + jednotkaV + "</p>");
 			}
@@ -64,7 +64,7 @@ $(document).ready(function() {
 				error();
 				vysledekV = 1 / 3 * cislo3 * cislo4;
 
-				$('#Vysledek').after("<p>Strana a: " + cislo2 + " " + jednotka + "<br>"
+				$('#Vysledek').after("<p class='count'>Strana a: " + cislo2 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo5 + " " + jednotka + "<br>"
 				+ "Objem: " + vysledekV + " " + jednotkaV + "</p>");
 			}
@@ -82,5 +82,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat jednu, nebo více hodnot.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale ze zadání nelze spočítat jednu, nebo více hodnot.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
 }

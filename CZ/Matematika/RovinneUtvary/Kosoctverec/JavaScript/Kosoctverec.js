@@ -11,7 +11,7 @@ $(document).ready(function() {
 			vysledekO = 4 * cislo1;
 			vysledekS = cislo1 * cislo2;
 
-			$('#Vysledek').after("<p>Strana: " + cislo1 + " " + jednotka + "<br>"
+			$('#Vysledek').after("<p class='count'>Strana: " + cislo1 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo2 + " " + jednotka + "<br>"
 				+ "Obvod: " + vysledekO + " " + jednotka + "<br>"
 				+ "Obsah: " + vysledekS + " " + jednotka + "<sup>2</sup></p>");
@@ -20,7 +20,7 @@ $(document).ready(function() {
 			error();
 			vysledekO = 4 * cislo1;
 
-			$('#Vysledek').after("<p>Strana: " + cislo1 + " " + jednotka + "<br>"
+			$('#Vysledek').after("<p class='count'>Strana: " + cislo1 + " " + jednotka + "<br>"
 				+ "Obvod: " + vysledekO + " " + jednotka + "</p>");
 		}
 	});
@@ -35,5 +35,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat obsah.<br>Pokud jej chcete spočítat, zadejte prosím kladnou, nenulovou hodnotu výšky.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale ze zadání nelze spočítat obsah.<br>Pokud jej chcete spočítat, zadejte prosím kladnou, nenulovou hodnotu výšky.</p>")
 }

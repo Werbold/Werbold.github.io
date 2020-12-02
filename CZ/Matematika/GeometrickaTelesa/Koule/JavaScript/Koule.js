@@ -12,7 +12,7 @@ $(document).ready(function() {
 			vysledekS = 4 * Math.PI * Math.pow(2,2);
 			vysledekV = 4 / 3 * Math.PI * Math.pow(2,3);
 
-			$('#Vysledek').after("<p>Poloměr: " + cislo1 + " " + jednotka + "<br>"
+			$('#Vysledek').after("<p class='count'>Poloměr: " + cislo1 + " " + jednotka + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "<br>"
 				+ "Objem: " + vysledekV + " " + jednotkaV + "</p>");
 		}
@@ -32,5 +32,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat žádnou hodnotu.<br>Pokud je chcete dopočítat, zadejte prosím kladnou, nenulovou hodnotu.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale ze zadání nelze spočítat žádnou hodnotu.<br>Pokud je chcete dopočítat, zadejte prosím kladnou, nenulovou hodnotu.</p>")
 }
