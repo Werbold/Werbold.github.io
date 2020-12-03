@@ -25,7 +25,7 @@
 	color: #3d3838;
 }
 
-@media (max-width: 320px){
+@media (min-width: 320px){
 	#buttons{
 		margin-left: 35px;
 	}

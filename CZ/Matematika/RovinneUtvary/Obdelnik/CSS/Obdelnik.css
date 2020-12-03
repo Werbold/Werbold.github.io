@@ -4,7 +4,7 @@
 	height: 30px;
 }
 
-@media (max-width: 320px){
+@media (min-width: 320px){
 	#buttons{
 		margin-left: 35px;
 	}

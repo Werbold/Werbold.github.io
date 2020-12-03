@@ -13,21 +13,21 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo2) {
 				vysledekC = Math.sqrt(Math.pow(cislo1,2) + Math.pow(cislo2,2));
 
-				$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>" 
+				$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>" 
 				+ "Strana b: " + cislo2 + " " + jednotka + "<br>"
 				+ "Strana c: " + vysledekC + " " + jednotka + "</p>");
 			}
 			else if (cislo1 > 0 && cislo3 > cislo1) {
 				vysledekB = Math.sqrt(Math.pow(cislo3,2) - Math.pow(cislo1,2));
 
-				$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>" 
+				$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>" 
 				+ "Strana c: " + cislo3 + " " + jednotka + "<br>"
 				+ "Strana b: " + vysledekB + " " + jednotka + "</p>");
 			}
 			else if (cislo2 > 0 && cislo3 > cislo2) {
 				vysledekA = Math.sqrt(Math.pow(cislo3,2) - Math.pow(cislo2,2));
 
-				$('#Vysledek').after("<p>Strana b: " + cislo2 + " " + jednotka + "<br>" 
+				$('#Vysledek').after("<p class='count'>Strana b: " + cislo2 + " " + jednotka + "<br>" 
 				+ "Strana c: " + cislo3 + " " + jednotka + "<br>"
 				+ "Strana a: " + vysledekA + " " + jednotka + "</p>");
 			}
@@ -47,5 +47,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale pythagorovu větu nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale pythagorovu větu nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }
