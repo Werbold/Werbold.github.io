@@ -34,13 +34,12 @@
 	}
 }
 
-@media (max-width: 330px){
+@media (max-width: 360px){
 	#line ul{
 		margin: 0;
 		padding: 0
 	}
-	#Odkaz1{
-		font-size: 10px; 
+	#line ul li a{
 		color: red;
 	}
 	#cislo4{
