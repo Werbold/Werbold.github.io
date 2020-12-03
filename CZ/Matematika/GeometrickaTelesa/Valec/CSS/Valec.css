@@ -1,26 +1,3 @@
-#cislo1{
-	margin-left: 29px;
-	width: 175px;
-	height: 30px;
-}
-#cislo2{
-	margin-left: 18px;
-	width: 175px;
-	height: 30px;
-}
-#cislo3{
-	margin-left: 13px;
-	width: 175px;
-	height: 30px;
-}
-#cislo4{
-	margin-left: 28px;
-	width: 175px;
-	height: 30px;
-}
-#buttons{
-	margin-left: 54px;
-}
 #Jednotka{
 	height: 144px;
 	width: 72px;
@@ -31,24 +8,5 @@
 @media (min-width: 950px){
 	#footer{
 		margin-top: 660px;
-	}
-}
-
-@media (min-width: 220px){
-	#Odkaz1{
-		color: red;
-	}
-	#cislo4{
-		margin-left: 25px;
-		width: 175px;
-		height: 30px;
-	}
-	#cislo3{
-		margin-left: 14px;
-		width: 175px;
-		height: 30px;
-	}
-	#buttons{
-		margin-left: 47px;
 	}
 }

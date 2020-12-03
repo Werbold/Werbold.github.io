@@ -4,27 +4,3 @@
 	font-size: 26px;
 	color: #3d3838;
 }
-#cislo1{
-	margin-left: 14px;
-	width: 175px;
-	height: 30px;
-}
-#cislo2{
-	margin-left: 13px;
-	width: 175px;
-	height: 30px;
-}
-#cislo3{
-	margin-left: 14px;
-	width: 175px;
-	height: 30px;
-}
-#buttons{
-	margin-left: 35px;
-}
-
-@media (min-width: 320px){
-	#buttons{
-		margin-left: 35px;
-	}
-}

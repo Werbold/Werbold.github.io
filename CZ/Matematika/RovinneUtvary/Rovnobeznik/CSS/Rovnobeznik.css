@@ -1,32 +1,6 @@
-#cislo1{
-	margin-left: 15px;
-	width: 175px;
-	height: 30px;
-}
-#cislo2{
-	margin-left: 14px;
-	width: 175px;
-	height: 30px;
-}
-#cislo3{
-	margin-left: 7px;
-	width: 175px;
-	height: 30px;
-}
 #Jednotka{
 	height: 108px;
 	width: 72px;
 	font-size: 26px;
 	color: #3d3838;
-}
-
-@media (min-width: 320px){
-	#buttons{
-		margin-left: 35px;
-	}
-	#cislo3{
-		margin-left: 9px;
-		width: 175px;
-		height: 30px;
-	}
 }
