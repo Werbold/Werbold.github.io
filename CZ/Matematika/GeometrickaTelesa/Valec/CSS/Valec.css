@@ -34,7 +34,7 @@
 	}
 }
 
-@media (min-width: 300px){
+@media (max-width: 325px){
 	#line ul{
 		margin: 0;
 		padding: 0
