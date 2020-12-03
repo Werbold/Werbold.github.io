@@ -24,10 +24,6 @@
 }
 
 @media (min-width: 340px){
-	#line ul{
-		margin: 0;
-		padding: 0
-	}
 	#buttons{
 		margin-left: 35px;
 	}

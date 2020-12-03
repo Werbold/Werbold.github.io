@@ -55,10 +55,6 @@
 }
 
 @media (min-width: 320px){
-	#line ul{
-		margin: 0;
-		padding: 0
-	}
 	#cislo4{
 		margin-left: 6px;
 		width: 175px;

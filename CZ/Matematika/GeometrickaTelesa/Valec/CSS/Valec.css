@@ -34,12 +34,8 @@
 	}
 }
 
-@media (max-width: 370px){
-	#line ul{
-		margin: 0;
-		padding: 0
-	}
-	#line ul li a{
+@media (min-width: 220px){
+	#Odkaz1{
 		color: red;
 	}
 	#cislo4{

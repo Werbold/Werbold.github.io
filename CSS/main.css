@@ -244,6 +244,9 @@ h2, h3, h4, h5, h6{
 	body{
 		font-size: 15px;
 	}
+	.jehlan{
+		color: red;
+	}
 }
 
 @media (min-width: 600px){
