@@ -4,3 +4,9 @@
 	font-size: 26px;
 	color: #3d3838;
 }
+
+@media (max-width: 320px){
+	#buttons{
+		margin-left: 35px;
+	}
+}

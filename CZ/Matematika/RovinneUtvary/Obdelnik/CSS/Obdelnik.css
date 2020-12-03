@@ -1,5 +1,11 @@
 #cislo2{
-	margin-left: 14px;
+	margin-left: 13px;
 	width: 175px;
 	height: 30px;
+}
+
+@media (max-width: 320px){
+	#buttons{
+		margin-left: 35px;
+	}
 }

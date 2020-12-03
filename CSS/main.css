@@ -11,7 +11,7 @@ body{
 	background: #171775;
 }
 article{
-	width: 98%;
+	width: 95%;
 	position: relative;
 	padding-top: 20px;
 	padding-left: 15px;
@@ -23,7 +23,7 @@ a.info{
 }
 #hlavicka{
 	height: 200px;
-	width: 100%;
+	width: 95%;
 	float: left;
 	position: absolute;
 	top: 0;
@@ -43,6 +43,25 @@ a.info{
 	height: 30px;
 }
 #cislo2{
+	margin-left: 7px;
+	width: 175px;
+	height: 30px;
+}
+#cislo3{
+	margin-left: 14px;
+	width: 175px;
+	height: 30px;
+}
+#cislo4{
+	margin-left: 7px;
+	width: 175px;
+	height: 30px;
+}#cislo5{
+	margin-left: 14px;
+	width: 175px;
+	height: 30px;
+}
+#cislo6{
 	margin-left: 7px;
 	width: 175px;
 	height: 30px;

@@ -47,8 +47,24 @@
 	border-radius: 3px;
 	color: #3d3838;
 }
+
 @media (min-width: 950px){
 	#footer{
 		margin-top: 600px;
+	}
+}
+
+@media (max-width: 320px){
+	#line ul{
+		margin: 0;
+		padding: 0
+	}
+	#cislo4{
+		margin-left: 6px;
+		width: 175px;
+		height: 30px;
+	}
+	#buttons{
+		margin-left: 38px;
 	}
 }

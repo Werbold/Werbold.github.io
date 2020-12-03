@@ -1,5 +1,5 @@
 #cislo1{
-	margin-left: 14px;
+	margin-left: 15px;
 	width: 175px;
 	height: 30px;
 }
@@ -18,4 +18,15 @@
 	width: 72px;
 	font-size: 26px;
 	color: #3d3838;
+}
+
+@media (max-width: 320px){
+	#buttons{
+		margin-left: 35px;
+	}
+	#cislo3{
+		margin-left: 9px;
+		width: 175px;
+		height: 30px;
+	}
 }

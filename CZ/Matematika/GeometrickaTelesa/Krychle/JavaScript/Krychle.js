@@ -12,7 +12,7 @@ $(document).ready(function() {
 			vysledekS = Math.pow(cislo1,2);
 			vysledekV = Math.pow(cislo1,3);
 
-			$('#Vysledek').after("<p>Strana a: " + cislo1 + " " + jednotka + "<br>"
+			$('#Vysledek').after("<p class='count'>Strana a: " + cislo1 + " " + jednotka + "<br>"
 				+ "Povrch: " + vysledekS + " " + jednotkaS + "<br>"
 				+ "Objem: " + vysledekV + " " + jednotkaV + "</p>");
 		}
@@ -32,5 +32,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale ze zadání nelze spočítat žádnou hodnotu.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale ze zadání nelze spočítat žádnou hodnotu.<br>Pokud je chcete dopočítat, zadejte prosím kladné, nenulové hodnoty.</p>")
 }

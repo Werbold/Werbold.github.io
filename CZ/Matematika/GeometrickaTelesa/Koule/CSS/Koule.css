@@ -7,3 +7,13 @@
 #buttons{
 	margin-left: 35px;
 }
+
+@media (max-width: 340px){
+	#line ul{
+		margin: 0;
+		padding: 0
+	}
+	#buttons{
+		margin-left: 32px;
+	}
+}

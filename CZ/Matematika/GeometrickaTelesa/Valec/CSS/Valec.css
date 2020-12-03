@@ -33,3 +33,23 @@
 		margin-top: 660px;
 	}
 }
+
+@media (max-width: 320px){
+	#line ul{
+		margin: 0;
+		padding: 0
+	}
+	#cislo4{
+		margin-left: 25px;
+		width: 175px;
+		height: 30px;
+	}
+	#cislo3{
+		margin-left: 15px;
+		width: 175px;
+		height: 30px;
+	}
+	#buttons{
+		margin-left: 47px;
+	}
+}
