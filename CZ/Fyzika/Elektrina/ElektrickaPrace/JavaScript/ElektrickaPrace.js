@@ -30,7 +30,7 @@ $(document).ready(function() {
 				$('#Vysledek').after("<p class='count'>I = " + cislo2 + " " + jednotkaI + "<br>"
 					+ "U = " + cislo3 + " " + jednotkaU + "<br>" 
 					+ "t = " + cislo4 + " " + jednotkaT + "<br>"
-					+ "W<sub>e</sub>: " + vysledekWe + " " + jednotkaWe + "</p>");
+					+ "W<sub>e</sub> = " + vysledekWe + " " + jednotkaWe + "</p>");
 			}
 			else if (cislo1 > 0 && cislo2 > 0 && cislo4 > 0) {
 				vysledekU = cislo1 / cislo2 * cislo4;
