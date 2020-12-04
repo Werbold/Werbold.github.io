@@ -17,21 +17,21 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0) {
 				vysledekS = 1 / 2 * cislo2 * Math.pow(cislo3,2);
 
-				$('#Vysledek').after("<p>Zrychlení: " + cislo2 + " " + jednotkaA + "<br>"
+				$('#Vysledek').after("<p class='count'>Zrychlení: " + cislo2 + " " + jednotkaA + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
 				+ "Dráha: " + vysledekS + " " + jednotkaS + "</p>");
 			}
 			if (cislo1 > 0 && cislo3 > 0) {
 				vysledekA = 2 * cislo1 / Math.pow(cislo3,2);
 
-				$('#Vysledek').after("<p>Dráha: " + cislo1 + " " + jednotkaS + "<br>"
+				$('#Vysledek').after("<p class='count'>Dráha: " + cislo1 + " " + jednotkaS + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
 				+ "Zrychlení: " + vysledekA + " " + jednotkaA + "</p>");
 			}
 			if (cislo1 > 0 && cislo2 > 0) {
 				vysledekT = Math.sqrt(2 * cislo1 / cislo2); 
 
-				$('#Vysledek').after("<p>Dráha: " + cislo1 + " " + jednotkaS + "<br>"
+				$('#Vysledek').after("<p class='count'>Dráha: " + cislo1 + " " + jednotkaS + "<br>"
 				+ "Zrychlení: " + cislo2 + " " + jednotkaA + "<br>" 
 				+ "Čas: " + vysledekT + " " + jednotkaT + "</p>");				
 			}
@@ -51,7 +51,7 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze přesně spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze přesně spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }
 
 

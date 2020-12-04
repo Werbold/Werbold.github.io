@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<meta charset="utf-8">
 	<title>Dráha založená na zrychlení</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
+	<link rel="stylesheet" type="text/css" href="CSS/DrahaZalozenaNaZrychleni.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="JavaScript/DrahaZalozenaNaZrychleni.js"></script>
 	<script src="JavaScript/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
 <body>
 	<article>
 		<header>
-			<!--Logo-->
-			<p>Calcit</p>
-			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
-			
-	<!--Navigace-->
-			<nav>
-				<ul>
-					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
-					<!-- <li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li> -->
-					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
-					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
-					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
-				</ul>
-			</nav>
 		</header>
 	<!--Main Content-->
 		<section>
-			<h2>Dráha založená na zrychlení</h2>
+			<div id="content">
+				<div id="main">
+					<h1>Dráha založená na zrychlení</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vzorečky</h2>
+							<p>
+								Dráha <i>s</i> = 1 / 2 * a * t<sup>2</sup><br>
+								Zrychlení <i>a</i> = 2 * s / t<sup>2</sup><br>
+								Čas <i>t</i> = sqrt(2 * s / a)
+							</p>
+						</div>
+						<div id="rightPartContent">
+							<h2>Vysvětlivky</h2>
+							<p>
+								<i>s</i> = dráha<br>
+								<i>a</i> = zrychlení<br>
+								<i>t</i> = čas<br>
+								<i>sqrt()</i> = odmocnina
+								
+							</p>
 
-			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+							<p id="practice"><a id="practicePDF" target="_blank" download href="Practice/ElektrickaPrace.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+						</div>
+					</div>
+				</div>
 
-			<h3>Vysvětlivky</h3>
-			<p>
-				<i>s</i> = dráha<br>
-				<i>a</i> = zrychlení<br>
-				<i>t</i> = čas<br>
-				<i>sqrt()</i> = odmocnina
+				<div id="leftPart">
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label>s = </label>
+									<input id="cislo1" type="number" placeholder="Dráha">
+								</div>
+								<div class="vedle">
+									<label>a = </label>
+									<input id="cislo2" type="number" placeholder="Zrychlení">
+								</div>
+								<div class="vedle">
+									<label>t = </label>
+									<input id="cislo3" type="number" placeholder="Čas">
+								</div>
+							</div>
+							<div id="rideSide">
+								<select id="Jednotka" name="Jednotka">
+									<option value="Základní">Základní</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
+					</div>
+				</div>
 				
-			</p>
+				<div id="rightPart">
+					<div id="napovedaRight"></div>
+					<div id="Vysledek"></div>
+				</div>
 
-			<h3>Vzorečky</h3>
-			<p>Dráha <i>s</i> = 1 / 2 * a * t<sup>2</sup></p>
-			<p>Zrychlení <i>a</i> = 2 * s / t<sup>2</sup></p>
-			<p>Čas <i>t</i> = sqrt(2 * s / a)</p>
-			
-
-			<div id="napoveda"><p>?</p></div>
-
-			<h3>Kalkulace</h3>
-				s = 
-				<input id="cislo1" type="number" placeholder="Dráha"><br>
-				a = 
-				<input id="cislo2" type="number" placeholder="Zrychlení"><br>
-				t = 
-				<input id="cislo3" type="number" placeholder="Čas">
-				<select id="Jednotka" name="Jednotka">
-					<option value="Základní">Základní</option>
-				</select><br>
-				<input id="spocitat" type="button" value="Spočítat">
-				<input id="smazat" type="button" value="Smazat historii počítání">
-			<div id="Vysledek"></div>
-
-			<h2>Další z kategorie Kinematika</h2>
-				<ul>
-					<li><a href="../Rychlost/Rychlost.html" title="Rychlost a odvozené vzorečky">Rychlost a odvozené vzorečky</a></li>
-					<li><a href="../ZrychleniZalozeneNaRychlosti/ZrychleniZalozeneNaRychlosti.html" title="Zrychlení a odvozené vzorečky">Zrychlení založené na rychlosti a odvozené vzorečky</a></li>
-				</ul>
+				<div id="footer">
+					<h2>Další z kategorie Kinematika</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz2" href="../ZrychleniZalozeneNaRychlosti/ZrychleniZalozeneNaRychlosti.html" title="Zrychlení a odvozené vzorečky">Zrychlení založené na rychlosti</a></li>
+							<li><a id="Odkaz1" href="../Rychlost/Rychlost.html" title="Rychlost a odvozené vzorečky">Rychlost a odvozené vzorečky</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
 
 		<footer>
 		</footer>
