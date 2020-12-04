@@ -27,7 +27,7 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0 && cislo4 > 0) {
 				vysledekWe = cislo2 * cislo3 *cislo4;
 
-				$('#Vysledek').after("<p>I = " + cislo2 + " " + jednotkaI + "<br>"
+				$('#Vysledek').after("<p class='count'>I = " + cislo2 + " " + jednotkaI + "<br>"
 					+ "U = " + cislo3 + " " + jednotkaU + "<br>" 
 					+ "t = " + cislo4 + " " + jednotkaT + "<br>"
 					+ "W<sub>e</sub>: " + vysledekWe + " " + jednotkaWe + "</p>");
@@ -35,7 +35,7 @@ $(document).ready(function() {
 			else if (cislo1 > 0 && cislo2 > 0 && cislo4 > 0) {
 				vysledekU = cislo1 / cislo2 * cislo4;
 
-				$('#Vysledek').after("<p>I = " + cislo2 + " " + jednotkaI + "<br>"
+				$('#Vysledek').after("<p class='count'>I = " + cislo2 + " " + jednotkaI + "<br>"
 					+ "W<sub>e</sub> = " + cislo1 + " " + jednotkaWe + "<br>" 
 					+ "t = " + cislo4 + " " + jednotkaT + "<br>"
 					+ "U = " + vysledekU + " " + jednotkaU + "</p>");
@@ -43,7 +43,7 @@ $(document).ready(function() {
 			else if (cislo1 > 0 && cislo3 > 0 && cislo4 > 0) {
 				vysledekI = cislo1 / cislo3 * cislo4;
 
-				$('#Vysledek').after("<p>U = " + cislo3 + " " + jednotkaU + "<br>"
+				$('#Vysledek').after("<p class='count'>U = " + cislo3 + " " + jednotkaU + "<br>"
 					+ "W<sub>e</sub> = " + cislo1 + " " + jednotkaWe + "<br>" 
 					+ "t = " + cislo4 + " " + jednotkaT + "<br>"
 					+ "I = " + vysledekI + " " + jednotkaI + "</p>");
@@ -51,7 +51,7 @@ $(document).ready(function() {
 			else if (cislo1 > 0 && cislo2 > 0 && cislo3 > 0) {
 				vysledekT = cislo1 / cislo2 * cislo3;
 
-				$('#Vysledek').after("<p>U = " + cislo3 + " " + jednotkaU + "<br>"
+				$('#Vysledek').after("<p class='count'>U = " + cislo3 + " " + jednotkaU + "<br>"
 					+ "W<sub>e</sub> = " + cislo1 + " " + jednotkaWe + "<br>" 
 					+ "I = " + cislo2 + " " + jednotkaI + "<br>"
 					+ "t = " + vysledekT + " " + jednotkaT + "</p>");
@@ -72,5 +72,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale položku nelze spočítat.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale položku nelze spočítat.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

@@ -213,6 +213,12 @@ h2, h3, h4, h5, h6{
 	font-size: 25px;
 	font-weight: 600;
 }
+#mezeraProNapoveda{
+	margin-left: 50px;
+}
+#napovedaMove{
+	position: relative;
+}
 #napoveda{
 	padding: 15px;
 	height: 15px;
@@ -231,6 +237,8 @@ h2, h3, h4, h5, h6{
 #napovedaContainer{
 	width: 30px;
 	height: 30px;
+	position: absolute;
+	top: 15px; 
 }
 #napoveda:hover{
 	cursor: pointer;
@@ -241,6 +249,24 @@ h2, h3, h4, h5, h6{
 .count{
 	margin-bottom: 10px;
 	border-bottom: 1px solid #2f2f73;
+}
+#practice{
+	margin-top: 20px;
+}
+p#practice{
+	margin: 15px 0px;
+}
+#practicePDF{
+	border-radius: 3px;
+	padding: 5px 8px;
+	background-color: white;
+	color: #3d3838;
+	text-decoration: none;
+}
+#practicePDF:hover{
+	color: #0c0c9c;
+	background-color: #aedbe0;
+	transition: 0.4s;
 }
 
 @media (max-width: 340px){
