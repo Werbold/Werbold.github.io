@@ -12,3 +12,12 @@
 #footer{
 	margin-top: 580px;
 }
+
+@media (max-width: 340px){
+	#Jednotka{
+		width: 68px;
+	}
+	#spocitat{
+		margin-right: 9px;
+	}
+}
