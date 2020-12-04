@@ -28,7 +28,7 @@ $(document).ready(function() {
 			}
 			vysledekEk = cislo1 * cislo2 * 10;
 
-			$('#Vysledek').after("<p>m = " + cislo1 + " " + jednotkaM + "<br>"
+			$('#Vysledek').after("<p class='count'>m = " + cislo1 + " " + jednotkaM + "<br>"
 				+ "h = " + cislo2 + " " + jednotkaH + "<br>" 
 				+ "E<sub>k</sub> = " + vysledekEk + " " + jednotkaEk + "</p>");
 		}
@@ -47,5 +47,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale položku nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale položku nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

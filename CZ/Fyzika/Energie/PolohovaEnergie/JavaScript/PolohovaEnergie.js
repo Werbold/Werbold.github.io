@@ -13,7 +13,7 @@ $(document).ready(function() {
 		if (cislo1 > 0 && cislo2 > 0) {
 			vysledekEp = 1 / 2 * cislo1 * Math.pow(cislo2,2);
 
-			$('#Vysledek').after("<p>v = " + cislo1 + " " + jednotkaV + "<br>"
+			$('#Vysledek').after("<p class='count'>v = " + cislo1 + " " + jednotkaV + "<br>"
 				+ "m = " + cislo2 + " " + jednotkaM + "<br>" 
 				+ "E<sub>p</sub> = " + vysledekEp + " " + jednotkaEp + "</p>");
 		}
@@ -32,5 +32,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale položku nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale položku nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

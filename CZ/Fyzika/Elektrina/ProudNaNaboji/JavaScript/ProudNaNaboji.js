@@ -18,21 +18,21 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0) {
 				vysledekI = cislo2 / cislo3;
 
-				$('#Vysledek').after("<p>Q = " + cislo2 + " " + jednotkaQ + "<br>"
+				$('#Vysledek').after("<p class='count'>Q = " + cislo2 + " " + jednotkaQ + "<br>"
 					+ "t = " + cislo3 + " " + jednotkaT + "<br>" 
 					+ "I = " + vysledekI + " " + jednotkaI + "</p>");
 			}
 			else if (cislo1 > 0 && cislo3 > 0) {
 				vysledekQ = cislo1 * cislo3;
 
-				$('#Vysledek').after("<p>I = " + cislo1 + " " + jednotkaI + "<br>"
+				$('#Vysledek').after("<p class='count'>I = " + cislo1 + " " + jednotkaI + "<br>"
 					+ "t = " + cislo3 + " " + jednotkaT + "<br>" 
 					+ "Q = " + vysledekQ + " " + jednotkaQ + "</p>");
 			}
 			else if (cislo1 > 0 && cislo2 > 0) {
 				vysledekT = cislo2 / cislo1;
 
-				$('#Vysledek').after("<p>I = " + cislo1 + " " + jednotkaI + "<br>"
+				$('#Vysledek').after("<p class='count'>I = " + cislo1 + " " + jednotkaI + "<br>"
 					+ "Q = " + cislo2 + " " + jednotkaQ + "<br>" 
 					+ "t = " + vysledekT + " " + jednotkaT + "</p>");
 			}
@@ -52,5 +52,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze přesně spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze přesně spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

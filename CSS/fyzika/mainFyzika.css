@@ -8,9 +8,12 @@
 }
 #leftPart{
 	margin-top: 30px;
+	height: 250px;
 }
 #footer{
-	margin-top: 580px;
+	margin-top: 0px;
+}
+#leftPart{
 }
 
 @media (max-width: 340px){
@@ -20,4 +23,13 @@
 	#spocitat{
 		margin-right: 9px;
 	}
+}
+
+@media (min-width: 950px){
+	#footer{
+		margin-top: 450px;
+	}
+	#leftPart{
+		height: 250px;
+	}	
 }

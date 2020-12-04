@@ -1,67 +1,92 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<meta charset="utf-8">
 	<title>Polohová energie</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
+	<link rel="stylesheet" type="text/css" href="CSS/PolohovaEnergie.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="JavaScript/PolohovaEnergie.js"></script>
 	<script src="JavaScript/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
 <body>
 	<article>
 		<header>
-			<!--Logo-->
-			<p>Calcit</p>
-			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
-			
-	<!--Navigace-->
-			<nav>
-				<ul>
-					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
-					<!-- <li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li> -->
-					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
-					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
-					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
-				</ul>
-			</nav>
 		</header>
 	<!--Main Content-->
 		<section>
-			<h2>Polohová energie</h2>
+			<div id="content">
+				<div id="main">
+					<h1>Polohová energie</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vzorečky</h2>
+							<p>Polohová energie <i>E<sub>p</sub></i> = 1 / 2 * m * v<sup>2</sup></p>
+						</div>
+						<div id="rightPartContent">
+							<h2>Vysvětlivky</h2>
+							<p>
+								<i>E<sub>p</sub></i> = polohová energie<br>
+								<i>m</i> = hmotnost<br>
+								<i>v</i> = rychlost<br>
+							</p>
 
-			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+							<p id="practice"><a id="practicePDF" target="_blank" download href="Practice/ElektrickaPrace.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+						</div>
+					</div>
+				</div>
 
-			<h3>Vysvětlivky</h3>
-			<p>
-				<i>E<sub>p</sub></i> = polohová energie<br>
-				<i>m</i> = hmotnost<br>
-				<i>v</i> = rychlost<br>
-			</p>
+				<div id="leftPart">
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label>v = </label>
+									<input id="cislo1" type="number" placeholder="Rychlost [m / s]">
+								</div>
+								<div class="vedle">
+									<label>m = </label>
+									<input id="cislo2" type="number" placeholder="Hmotnost">
+								</div>
+							</div>
+							<div id="rideSide">
+								<select id="Jednotka" name="Jednotka">
+									<option value="Základní">Základní</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
+					</div>
+				</div>
 
-			<h3>Vzorečky</h3>
-			<p>Polohová energie <i>E<sub>p</sub></i> = 1 / 2 * m * v<sup>2</sup></p>
+				<div id="rightPart">
+					<div id="napovedaRight"></div>
+					<div id="Vysledek"></div>
+				</div>
 
-			<div id="napoveda"><p>?</p></div>
-
-			<h3>Kalkulace</h3>
-				v = 
-				<input id="cislo1" type="number" placeholder="Rychlost [m / s]"><br>
-				m = 
-				<input id="cislo2" type="number" placeholder="Hmotnost">
-				<select id="Jednotka" name="Jednotka">
-					<option value="Základní">Základní</option>
-				</select><br>
-				<input id="spocitat" type="button" value="Spočítat">
-				<input id="smazat" type="button" value="Smazat historii počítání">
-			<div id="Vysledek"></div>
-
-			<h2>Další z kategorie Energie</h2>
-				<ul>
-					<li><a href="../KinetickaEnergie/KinetickaEnergie.html" title="Kinetická energie a odvozené vzorečky">Kinetická energie</a></li>
-				</ul>
+				<div id="footer">
+					<h2>Další z kategorie Energie</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../KinetickaEnergie/KinetickaEnergie.html" title="Kinetická energie a odvozené vzorečky">Kinetická energie</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
 
 		<footer>
 		</footer>
