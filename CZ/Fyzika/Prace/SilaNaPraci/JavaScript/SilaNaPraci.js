@@ -34,21 +34,21 @@ $(document).ready(function() {
 				if (cislo2 > 0 && cislo3 > 0) {
 					vysledekF = cislo2 / cislo3;
 
-				$('#Vysledek').after("<p>Práce: " + cislo2 + " " + jednotkaW + "<br>"
+				$('#Vysledek').after("<p class='count'>Práce: " + cislo2 + " " + jednotkaW + "<br>"
 				+ "Dráha: " + cislo3 + " " + jednotkaS + "<br>" 
 				+ "Síla: " + vysledekF + " " + jednotkaF + "</p>");
 				}
 				if (cislo1 > 0 && cislo3 > 0) {
 					vysledekW = cislo1 * cislo3;
 
-					$('#Vysledek').after("<p>Síla: " + cislo1 + " " + jednotkaF + "<br>"
+					$('#Vysledek').after("<p class='count'>Síla: " + cislo1 + " " + jednotkaF + "<br>"
 					+ "Dráha: " + cislo3 + " " + jednotkaS + "<br>" 
 					+ "Práce: " + vysledekW + " " + jednotkaW + "</p>");
 				}
 				if (cislo1 > 0 && cislo2 > 0) {
 					vysledekS = cislo2 / cislo1;
 
-					$('#Vysledek').after("<p>Síla: " + cislo1 + " " + jednotkaF + "<br>"
+					$('#Vysledek').after("<p class='count'>Síla: " + cislo1 + " " + jednotkaF + "<br>"
 					+ "Práce: " + cislo2 + " " + jednotkaW + "<br>" 
 					+ "Dráha: " + vysledekS + " " + jednotkaS + "</p>");
 				}
@@ -71,5 +71,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze přesně spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze přesně spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

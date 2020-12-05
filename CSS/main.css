@@ -253,12 +253,15 @@ p#practice{
 	}
 }
 
+@media (max-width: 599px){
+	#napovedaContainer{
+		top: -10px;
+	}
+}
+
 @media (min-width: 600px){
 	#content{
 		margin-top: 210px;
-	}
-	#napovedaContainer{
-		top: 15px;
 	}
 	#logoContain{
 		position: relative;
@@ -294,6 +297,9 @@ p#practice{
 	}
 	#footer{
 		margin-top: 550px;
+	}
+	#napovedaContainer{
+		top: 15px;
 	}
 	#leftPart{
 		position: absolute;
