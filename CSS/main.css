@@ -14,7 +14,6 @@ section{
 }
 article{
 	background-color: #fcfcfc;
-	margin: 0 auto;
 	width: 95%;
 	position: relative;
 	padding-top: 20px;
@@ -138,6 +137,9 @@ option:hover{
 	color: white;
 	background-color: #9152de;
 }
+nav{
+	position: relative;
+}
 nav ul{
 	list-style-type: none;
 	margin-left: 0;
@@ -163,19 +165,22 @@ nav ul li :hover{
 	transition: 0.4s;
 }
 #password{
-	margin: 20px 0 0 20px;
+	margin: 45px 0 0 20px;
 }
 #definition{
 	font-size: 18px; 
 }
 #Calcit{
+
 	font-size: 22px;
 	font-weight: bold;
 }
 #logo{
+	position: absolute;
+	right: 0px;
+	top: -15px;
 	float: right;
-	width: 30%;
-	height: auto;
+	width: 170px;
 }
 #left{
 	width: 98%;
@@ -247,11 +252,12 @@ p#practice{
 }
 #footerText{
 	position: absolute;
+	padding-bottom: 20px;
 	bottom: -90px;
 	margin-left: -15px;
 	width: 100%;
 	color: #fcfcfc;
-	height: 130px;
+	height: 180px;
 	float: left;
 	background: url("Images/BcgHeader.png");
 }
