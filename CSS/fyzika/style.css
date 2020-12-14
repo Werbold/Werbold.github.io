@@ -27,6 +27,9 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 footer{
 	margin-top: 50px;
 }
+#footerText{
+	bottom: -130px;
+}
 
 @media (min-width: 1385px){
 	section{

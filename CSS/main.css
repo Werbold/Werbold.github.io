@@ -62,7 +62,7 @@ label{
 }
 #Jednotka{
 	height: 72px;
-	width: 72px;
+	width: 65px;
 	font-size: 26px;
 	color: #3d3838;
 }
@@ -253,7 +253,7 @@ p#practice{
 #footerText{
 	position: absolute;
 	padding-bottom: 20px;
-	bottom: -90px;
+	bottom: -130px;
 	margin-left: -15px;
 	width: 100%;
 	color: #fcfcfc;
@@ -285,12 +285,17 @@ p#practice{
 	#line ul{
 		margin-top: 25px;
 	}
+	#Jednotka{
+		width: 72px;
+	}
 	#content{
 		margin-top: 210px;
 	}
+	#footerText{
+		bottom: -90px;
+	}
 	#logoContain{
 		position: relative;
-		/*margin-left: 20px;*/
 	}
 	#logo{
 		width: 313px;
