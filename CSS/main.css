@@ -285,14 +285,18 @@ p#practice{
 	#line ul{
 		margin-top: 25px;
 	}
+	article{
+		height: 100%;
+	}
 	#Jednotka{
 		width: 72px;
 	}
 	#content{
+		padding-bottom: 85px;
 		margin-top: 210px;
 	}
 	#footerText{
-		bottom: -90px;
+		bottom: -110px;
 	}
 	#logoContain{
 		position: relative;

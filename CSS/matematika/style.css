@@ -36,6 +36,16 @@ footer{
 	width: 300px;
 }
 
+@media (min-width: 950px){
+	#footerText{
+		padding-bottom: 60px;
+		bottom: -170px;
+	}
+	#leftPart{
+		height: 250px;
+	}	
+}
+
 @media (min-width: 1385px){
 	#clear{
 		clear: both;
