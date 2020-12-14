@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<title>Ctverec - Obvod a Obsah</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Ctverec.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/RovinneUtvary.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/Ctverec.js"></script>
+	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Obvod a obsah čtverce</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vlastnosti čtverce</h2>
+							<ol id="vlastnosti">
+								<li>Všechny strany jsou stejně dlouhé, sousední svírají pravý úhel (90°).</li>
+								<li>Úhlopříčky jsou stejně dlouhé, na průsečíku se navzájem půlí a svírají pravý úhel.</li>
+							</ol>
+						</div>
+
+						<div id="rightPartContent">
+							<p id="image"><img id="ilustracion" src="Images/Ctverec.png" alt="Popis čtverce"></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obvod <i>O</i> = 4 * a</p>
+						<p>Obsah <i>S</i> = a * a = a<sup>2</sup></p>
+						
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>a</i> = označení strany<br>
+							<i>u</i> = úhlopříčka <br>
+							Úhlopříčka je úsečka vedoucí napříč obrazcem.
+						</p>
+					</div>
+
+					<div id="rightPart">
+						<div id="napovedaContainer"><p id="napoveda">?</p></div>
+						<div id="kalkulace">
+							<h2>Kalkulace</h2>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label>a = </label>
+										<input id="cislo1" type="number" placeholder="Délka strany">
+									</div>
+								</div>
+								<div id="rideSide">
+									<select id="Jednotka" name="Jednotka">
+										<option value="km">km</option>
+										<option value="m">m</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
+								</div>
+							</div>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
+							</div>
+							<div id="Vysledek"></div>
+						</div>
+					</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Obvody a obsahy rovinných útvarů</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../Kosoctverec/Kosoctverec.html" title="Obvod a obsah kosočtverce">Obvod a obsah kosočtverce</a></li>
+							<li><a id="Odkaz2" href="../Kruh/Kruh.html" title="Obvod a obsah kruhu">Obvod a obsah kruhu</a></li>
+							<li><a id="Odkaz3" href="../Lichobeznik/Lichobeznik.html" title="Obvod a obsah lichoběžníku">Obvod a obsah lichoběžníku</a></li>
+							<li><a id="Odkaz4" href="../Obdelnik/Obdelnik.html" title="Obvod a obsah obdélníku">Obvod a obsah obdélníku</a></li>
+							<li><a id="Odkaz5" href="../Rovnobeznik/Rovnobeznik.html" title="Obvod a obsah rovnoběžníku">Obvod a obsah rovnoběžníku</a></li>
+							<li><a id="Odkaz6" href="../Trojuhelnik/Trojuhelnik.html" title="Obvod a obsah trojúhelníku">Obvod a obsah trojúhelníku</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

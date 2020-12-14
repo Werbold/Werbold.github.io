@@ -1,0 +1,12 @@
+#Jednotka{
+	height: 144px;
+	width: 72px;
+	font-size: 26px;
+	color: #3d3838;
+}
+
+@media (min-width: 950px){
+	#footer{
+		margin-top: 660px;
+	}
+}

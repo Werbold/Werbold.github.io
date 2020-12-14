@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Výkon na teplotě</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
+	<link rel="stylesheet" type="text/css" href="CSS/VykonNaTeplote.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Prace.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/VykonNaTeplote.js"></script>
+	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Výkon na teplotě</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vzorečky</h2>
+							<p>
+								Výkon <i>P</i> = Q / +e<br>
+								Protony <i>+e</i> = Q / P
+							</p>
+
+							<h2>Vysvětlivky</h2>
+							<p>
+								<i>P</i> = Výkon<br>
+								<i>Q</i> = Konstanta = 1,602 * 10<sup>-19</sup><br>
+								<i>+e</i> = Protony
+							</p>
+							
+							<p id="practice"><a id="practicePDF" target="_blank" download href="Practice/ElektrickaPrace.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="rightPartContent">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h3 id="mezeraProNapoveda">Kalkulace</h3>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label>P = </label>
+									<input id="cislo1" type="number" placeholder="Výkon">
+								</div>
+								<div class="vedle">
+									<label>+e = </label>
+									<input id="cislo2" type="number" placeholder="Protony">
+								</div>
+							</div>
+							<div id="rideSide">
+								<select id="Jednotka" name="Jednotka">
+									<option value="Kilo">Kilo</option>
+									<option value="Základní">Základní</option>
+									<option value="Mili">Mili</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
+					</div>
+				</div>
+
+				<div id="rightPart">
+					<div id="Vysledek"></div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Práce</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../SilaNaPraci/SilaNaPraci.html" title="Síla založená na práci">Síla založená na práci</a></li>
+							<li><a id="Odkaz2" href="../VykonNaPraci/VykonNaPraci.html" title="Výkon založený na práci">Výkon založený na práci</a></li>
+							<li><a id="Odkaz4" href="../VykonNaUcinnosti/VykonNaUcinnosti.html" title="Výkon založený na účinnosti a odvozené vzorečky">Výkon založený na účinnosti</a></li>
+							<li><a id="Odkaz5" href="../PrikonNaPraci/PrikonNaPraci.html" title="Příkon založený na elektrické práci">Příkon založený na elektrické práci</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

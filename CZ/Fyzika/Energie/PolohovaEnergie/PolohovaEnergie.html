@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Polohová energie</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
+	<link rel="stylesheet" type="text/css" href="CSS/PolohovaEnergie.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Energie.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="JavaScript/PolohovaEnergie.js"></script>
+	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Polohová energie</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vzorečky</h2>
+							<p>Polohová energie <i>E<sub>p</sub></i> = m * g * h</p>
+							<h2>Vysvětlivky</h2>
+							<p>
+								<i>E<sub>p</sub></i> = Kinetická energie<br>
+								<i>m</i> = hmotnost<br>
+								<i>g</i> = konstanta = 10 N/kg<br>
+								<i>h</i> = hloubka
+							</p>
+
+							<p id="practice"><a id="practicePDF" target="_blank" download href="Practice/PolohovaEnergie.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="rightPartContent">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label>m = </label>
+									<input id="cislo1" type="number" placeholder="Hmotnost">
+								</div>
+								<div class="vedle">
+									<label>h = </label>
+									<input id="cislo2" type="number" placeholder="Hloubka">
+								</div>
+							</div>
+							<div id="rideSide">
+								<select id="Jednotka" name="Jednotka">
+									<option value="kilo">kilo</option>
+									<option value="Základní">Základní</option>
+									<option value="mili">mili</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
+					</div>
+				</div>
+				
+				<div id="rightPart">
+					<div id="Vysledek"></div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Energie</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../KinetickaEnergie/KinetickaEnergie.html" title="Kinetická energie">Kinetická energie</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

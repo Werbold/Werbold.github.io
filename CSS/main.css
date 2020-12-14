@@ -1,0 +1,372 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 17px;
+	color: #3d3838;
+	background-color: #eee;
+}
+::selection{
+	color: white;
+	background: #1e1b85;
+}
+section{
+	position: relative;
+}
+article{
+	background-color: #fcfcfc;
+	margin: 0 auto;
+	width: 95%;
+	position: relative;
+	padding-top: 20px;
+	padding-left: 15px;
+	border-right: 1px solid #3d3838;
+	border-left: 1px solid #3d3838;
+}
+a.info{
+	color: #0e0e80;
+	text-decoration: none;
+}
+#hlavicka{
+	height: 210px;
+	width: 100%;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #fcfcfc;
+	background: url("Images/BcgHeader.png");
+	/*background: #855691;*/
+	border-bottom-right-radius: 1px;
+	border-bottom-left-radius: 1px;
+}
+.center{
+	margin: 0 auto;
+}
+#content{
+	width: 100%;
+	margin-top: 240px; 
+}
+#image{
+	text-align: center;
+	width: 100%;
+}
+label{
+	width: 40px;
+}
+#cislo1, #cislo2, #cislo3, #cislo4, #cislo5, #cislo6{
+	margin-left: 14px;
+	width: 175px;
+	height: 30px;
+}
+.vedle{
+	display: flex;
+}
+#Jednotka{
+	height: 72px;
+	width: 72px;
+	font-size: 26px;
+	color: #3d3838;
+}
+#Jednotka:hover{
+	cursor: pointer;
+}
+p{
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+#buttons{
+	margin-top: 7px;
+	margin-left: 55px;
+}
+#spocitat{
+	margin-bottom: 20px;
+	height: 25px;
+	padding: 5px 12px;
+	background-color: #24004d;
+	margin-right: 12px;
+	border: 0px;
+	border-radius: 3px;
+	color: #fcfcfc;
+}
+#smazat{
+	height: 25px;
+	padding: 5px 12px;
+	background-color: #24004d;
+	border: 0px;
+	border-radius: 3px;
+	color: #fcfcfc;
+}
+#smazat:hover, #spocitat:hover{
+	transition: 0.4s;
+	cursor: pointer;
+	background-color: #9152de;
+}
+#ilustracion {
+	max-width: 75%;
+	height: auto;
+}
+#vlastnosti{
+	margin-left: 5px;
+}
+#line ul{
+	list-style-type: none;
+}
+#line ul li{
+	margin-bottom: 25px;
+	/*display: inline-block;*/
+}
+#line ul li a{
+	margin: 0 auto 25px auto;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #24004d;
+	color: #fcfcfc;
+}
+#line ul li a:hover{
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #9152de;
+	color: #fcfcfc;
+	transition: 0.4s;
+}
+#Odkaz1, #Odkaz2, #Odkaz3, #Odkaz4, #Odkaz5, #Odkaz6, #Odkaz7{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+option:hover{
+	color: white;
+	background-color: #9152de;
+}
+nav ul{
+	list-style-type: none;
+	margin-left: 0;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	float: left;
+	margin-left: 20px;
+}
+nav ul li a{
+	display: inline-block;
+	background-color: #24004d;
+	padding: 10px 13px;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #fcfcfc;
+}
+nav ul li :hover{
+	display: inline-block;
+	background-color: #9152de;
+	color: #fcfcfc;
+	transition: 0.4s;
+}
+#password{
+	margin: 20px 0 0 20px;
+}
+#definition{
+	font-size: 18px; 
+}
+#Calcit{
+	font-size: 22px;
+	font-weight: bold;
+}
+#logo{
+	float: right;
+	width: 30%;
+	height: auto;
+}
+#left{
+	width: 98%;
+}
+h1{
+	margin-bottom: 0px;
+	font-size: 27px;
+	font-weight: 900;
+}
+h2, h3, h4, h5, h6{
+	font-size: 25px;
+	font-weight: 600;
+}
+#mezeraProNapoveda{
+	margin-left: 50px;
+}
+#napovedaMove{
+	position: relative;
+}
+#napoveda{
+	padding: 15px;
+	height: 15px;
+	width: 15px;
+	line-height: 15px;
+	border-radius: 6px;
+	color: #fcfcfc;
+	text-align: center;
+	background: url("../Images/Napoveda.png");
+}
+#napovedaContainer{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -7.5px; 
+}
+#napoveda:hover{
+	cursor: pointer;
+}
+#ilustracion{
+	box-shadow: 10px 3px 15px 2px #64648f;
+}
+.count{
+	margin-bottom: 10px;
+	border-bottom: 1px solid #2f2f73;
+}
+#practice{
+	margin-top: 20px;
+}
+p#practice{
+	margin: 15px 0px;
+}
+#practicePDF{
+	border-radius: 3px;
+	padding: 5px 8px;
+	background-color: #24004d;
+	color: #fcfcfc;
+	text-decoration: none;
+}
+#practicePDF:hover{
+	color: #fcfcfc;
+	background-color: #9152de;
+	transition: 0.4s;
+}
+#designers{
+	margin: 0 auto;
+}
+#footer{
+	padding-bottom: 20px;
+}
+#footerText{
+	position: absolute;
+	bottom: -90px;
+	margin-left: -15px;
+	width: 100%;
+	color: #fcfcfc;
+	height: 110px;
+	float: left;
+	background: url("Images/BcgHeader.png");
+}
+.left, .center, .right{
+	margin-top: 7px;
+	margin-left: 10px;
+}
+
+@media (max-width: 340px){
+	body{
+		font-size: 15px;
+	}
+	.jehlan{
+		color: red;
+	}
+}
+
+@media (max-width: 599px){
+	#napovedaContainer{
+		top: -10px;
+	}
+}
+
+@media (min-width: 600px){
+	#line ul{
+		margin-top: 25px;
+	}
+	#content{
+		margin-top: 210px;
+	}
+	#logoContain{
+		position: relative;
+		/*margin-left: 20px;*/
+	}
+	#logo{
+		width: 313px;
+		position: absolute;
+		top: -40px;
+		left: -60px;
+	}
+	#left{
+		position: relative;
+	}
+	#password{
+		position: absolute;
+		top: 20px;
+		left: 140px;
+	}
+	#right{
+		position: relative;
+	}
+	nav{
+		position: absolute;
+		top: 130px;
+		left: 20px;
+	}
+	.left{
+		margin-top: 10px;
+		margin-left: 10px;
+		text-align: left;
+	}
+	.center{
+		margin-top: 10px;
+		text-align: center;
+	}
+	.right{
+		margin-right: 10px;
+		margin-top: 10px;
+		text-align: right;
+	}
+	div#footerText div {
+		width: 30%;
+		float: left;
+	}
+}
+
+@media (min-width: 950px){
+	#content{
+		position: relative;
+	}
+	#footer{
+		margin-top: 480px;
+		width: 49%;
+	}
+	#napovedaContainer{
+		top: 15px;
+	}
+	#leftPart{
+		position: absolute;
+		top: 180px;
+		left: 0px;
+		height: 330px;
+		width: 49%;
+		float: left;
+	}
+	#rightPart{
+		height: 200px;
+		width: 49%;
+		float: right;
+		margin-top: 10px;
+	}
+	#leftPartContent{
+		width: 49%;
+		float: left;
+		margin-right: 20px;
+	}
+	#rightPartContent{
+		width: 49%;
+		float: left;
+	}
+	#ilustracion{
+		margin: 0px;
+		padding: 0px;
+	}
+	#image{
+		text-align: left;
+	}
+}
