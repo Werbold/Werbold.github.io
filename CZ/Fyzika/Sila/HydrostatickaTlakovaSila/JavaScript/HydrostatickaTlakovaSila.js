@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 		var vysledekFh;
 
-		var jednotkaFh = "N"
+		var jednotkaFh = "Pa"
 		var jednotkaH = "m";
 		var jednotkaS = "m<sup>2</sup>";
 		var jednotkaRo = "kg/m<sup>3</sup>";

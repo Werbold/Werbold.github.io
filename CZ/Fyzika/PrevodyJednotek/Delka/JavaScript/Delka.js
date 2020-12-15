@@ -43,7 +43,7 @@ $(document).ready(function() {
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "cm" && jednotka2 == "m" || jednotka1 == "mm" && jednotka2 == "dm") {
-				vysledek = cislo1 * 100;
+				vysledek = cislo1 / 100;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}

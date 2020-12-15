@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<title>Síla založená na práci</title>
+	<title>Výkon na teplotě</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<!-- Css -->
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
-	<link rel="stylesheet" type="text/css" href="CSS/SilaNaPraci.css">
+	<link rel="stylesheet" type="text/css" href="CSS/VykonNaTeplote.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/Prace.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="JavaScript/SilaNaPraci.js"></script>
+	<script src="JavaScript/VykonNaTeplote.js"></script>
 	<script src="JavaScript/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
@@ -24,24 +24,23 @@
 		<section>
 			<div id="content">
 				<div id="main">
-					<h1>Síla založená na práci</h1>
+					<h1>Výpočet protonů</h1>
 					<div id="topContent">
 						<div id="leftPartContent">
 							<h2>Vzorečky</h2>
 							<p>
-								Síla <i>F</i> = W / s<br>
-								Práce <i>W</i> = F * s<br>
-								Dráha <i>s</i> = W / F
+								Protony <i>p</i> = Q / +e<br>
+								elektrony <i>+e</i> = Q / P
 							</p>
 
 							<h2>Vysvětlivky</h2>
 							<p>
-								<i>F</i> = Síla<br>
-								<i>W</i> = Práce<br>
-								<i>s</i> = Dráha
+								<i>-e</i> = Konstanta = 1,602 * 10<sup>-19</sup><br>
+								<i>Q</i> =  Náboj<br>
+								<i>+e</i> = Protony
 							</p>
 							
-							<p id="practice"><a id="practicePDF" target="_blank" download href="Practice/SilaNaPraci.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+							<p id="practice"><a id="practicePDF" target="_blank" download href="Practice/ElektrickaPrace.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
 						</div>
 					</div>
 				</div>
@@ -50,20 +49,16 @@
 					<div id="napovedaRight"></div>
 					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 					<div id="kalkulace">
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<h3 id="mezeraProNapoveda">Kalkulace</h3>
 						<div class="vedle">
 							<div id="leftSide">
 								<div class="vedle">
-									<label>F = </label>
-									<input id="cislo1" type="number" placeholder="Síla">
+									<label>P = </label>
+									<input id="cislo1" type="number" placeholder="Protony">
 								</div>
 								<div class="vedle">
-									<label>W = </label>
-									<input id="cislo2" type="number" placeholder="Práce">
-								</div>
-								<div class="vedle">
-									<label>s = </label>
-									<input id="cislo3" type="number" placeholder="Dráha">
+									<label>+e = </label>
+									<input id="cislo2" type="number" placeholder="elektrony">
 								</div>
 							</div>
 							<div id="rideSide">
@@ -89,8 +84,8 @@
 					<h2>Další z kategorie Práce</h2>
 					<div id="line">
 						<ul>
+							<li><a id="Odkaz1" href="../SilaNaPraci/SilaNaPraci.html" title="Síla založená na práci">Síla založená na práci</a></li>
 							<li><a id="Odkaz2" href="../VykonNaPraci/VykonNaPraci.html" title="Výkon založený na práci">Výkon založený na práci</a></li>
-							<!-- <li><a id="Odkaz3" href="../VypocetProtonu/VypocetProtonu.html" title="Výpočet protonů">Výpočet protonů</a></li> -->
 							<li><a id="Odkaz4" href="../VykonNaUcinnosti/VykonNaUcinnosti.html" title="Výkon založený na účinnosti a odvozené vzorečky">Výkon založený na účinnosti</a></li>
 							<li><a id="Odkaz5" href="../PrikonNaPraci/PrikonNaPraci.html" title="Příkon založený na elektrické práci">Příkon založený na elektrické práci</a></li>
 						</ul>

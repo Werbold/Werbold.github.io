@@ -17,7 +17,6 @@ article{
 	width: 95%;
 	position: relative;
 	padding-top: 20px;
-	padding-left: 15px;
 	border-right: 1px solid #3d3838;
 	border-left: 1px solid #3d3838;
 }
@@ -287,6 +286,8 @@ p#practice{
 	}
 	article{
 		height: 100%;
+		padding-left: 10px;
+		margin: 0 auto;
 	}
 	#Jednotka{
 		width: 72px;
@@ -297,6 +298,7 @@ p#practice{
 	}
 	#footerText{
 		bottom: -110px;
+		right: 1px;
 	}
 	#logoContain{
 		position: relative;
