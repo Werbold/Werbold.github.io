@@ -75,17 +75,17 @@ footer{
 	bottom: -130px;
 }
 
-@media (min-width: 1385px){
+@media (min-width: 600px){
 	section{
 		margin-top: 220px;
 	}
 	#fyzika{
-		margin-right: 90px;
-		float: left;
+		margin: 0px 70px;
+		float: right;
 	}
 	#matematika{
-		margin: 0px 90px;
-		float: right;
+		margin-left: 70px;
+		float: left;
 	}
 	#clear{
 		clear: both;
