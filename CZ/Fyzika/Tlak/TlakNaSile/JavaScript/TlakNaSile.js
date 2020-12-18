@@ -1,8 +1,8 @@
 $(document).ready(function() {	
 	$("#spocitat").click(function() {
-		var cislo1 = parseInt($("#cislo1").val());
-		var cislo2 = parseInt($("#cislo2").val());
-		var cislo3 = parseInt($("#cislo3").val());
+		var cislo1 = parseFloat($("#cislo1").val());
+		var cislo2 = parseFloat($("#cislo2").val());
+		var cislo3 = parseFloat($("#cislo3").val());
 		var jednotka = $("#Jednotka").val();
 
 		var vysledek;

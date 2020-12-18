@@ -1,10 +1,10 @@
 $(document).ready(function() {	
 	$("#spocitat").click(function() {
-		var cislo1 = parseInt($("#cislo1").val());
-		var cislo2 = parseInt($("#cislo2").val());
-		var cislo3 = parseInt($("#cislo3").val());
-		var cislo4 = parseInt($("#cislo4").val());
-		var cislo5 = parseInt($("#cislo5").val());
+		var cislo1 = parseFloat($("#cislo1").val());
+		var cislo2 = parseFloat($("#cislo2").val());
+		var cislo3 = parseFloat($("#cislo3").val());
+		var cislo4 = parseFloat($("#cislo4").val());
+		var cislo5 = parseFloat($("#cislo5").val());
 		var jednotka = $("#Jednotka").val();
 		var jednotkaS = jednotka + "<sup>2</sup>";
 		var jednotkaV = jednotka + "<sup>3</sup>";

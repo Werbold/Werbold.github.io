@@ -1,6 +1,6 @@
 $(document).ready(function() {	
 	$("#spocitat").click(function() {
-		var cislo1 = parseInt($("#cislo1").val());
+		var cislo1 = parseFloat($("#cislo1").val());
 		var jednotka = $("#Jednotka").val();
 
 		var vysledekO;

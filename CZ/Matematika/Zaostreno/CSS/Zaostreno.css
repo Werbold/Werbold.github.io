@@ -24,8 +24,10 @@ h2, h3, h4, h5, h6{
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	color: #0c0c9c;
 }
-footer{
-	margin-top: 50px;
+#footerText{
+	position: absolute;
+	bottom: -130px;
+	left: .25px;
 }
 .pozn{
 	font-weight: 800;

@@ -1,9 +1,12 @@
+html{
+	padding: 0 10px;
+	background-color: #eee;
+}
 body{
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	font-size: 17px;
 	color: #3d3838;
-	background-color: #eee;
 }
 ::selection{
 	color: white;
@@ -11,14 +14,14 @@ body{
 }
 section{
 	position: relative;
+	margin: 0 10px;
 }
 article{
 	background-color: #fcfcfc;
 	width: 95%;
 	position: relative;
 	padding-top: 20px;
-	border-right: 1px solid #3d3838;
-	border-left: 1px solid #3d3838;
+	padding-left: 10px;
 }
 a.info{
 	color: #0e0e80;
@@ -41,7 +44,8 @@ a.info{
 }
 #content{
 	width: 100%;
-	margin-top: 240px; 
+	margin-top: 240px;
+	float: left;
 }
 #image{
 	text-align: center;
@@ -111,7 +115,6 @@ p{
 }
 #line ul li{
 	margin-bottom: 25px;
-	/*display: inline-block;*/
 }
 #line ul li a{
 	margin: 0 auto 25px auto;
@@ -206,7 +209,7 @@ h2, h3, h4, h5, h6{
 	border-radius: 6px;
 	color: #fcfcfc;
 	text-align: center;
-	background: url("../Images/Napoveda.png");
+	background: url("../Images/Napoveda/Napoveda.png");
 }
 #napovedaContainer{
 	width: 30px;
@@ -247,13 +250,11 @@ p#practice{
 }
 #footer{
 	padding-bottom: 20px;
+	position: sticky;
+	top: 30%;
 }
 #footerText{
-	position: absolute;
 	padding-bottom: 20px;
-	bottom: -130px;
-	left: 0.25px;
-	/*margin-left: 0px;*/
 	width: 100%;
 	color: #fcfcfc;
 	height: 110px;
@@ -357,15 +358,12 @@ p#practice{
 		top: 15px;
 	}
 	#leftPart{
-		position: absolute;
-		top: 180px;
-		left: 0px;
 		height: 330px;
 		width: 49%;
 		float: left;
 	}
 	#rightPart{
-		height: 200px;
+		min-height: 200px;
 		width: 49%;
 		float: right;
 		margin-top: 10px;
@@ -377,7 +375,7 @@ p#practice{
 	}
 	#rightPartContent{
 		width: 49%;
-		float: left;
+		float: right;
 	}
 	#ilustracion{
 		margin: 0px;

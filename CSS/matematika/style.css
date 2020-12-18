@@ -24,30 +24,77 @@ h2, h3, h4, h5, h6{
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	color: #0c0c9c;
 }
-footer{
-	margin-top: 50px;
-}
-#footerText{
-	bottom: -130px;
-}
 .pozn{
 	font-weight: 800;
 	float: right;
 	width: 300px;
 }
-
-@media (min-width: 950px){
-	#footerText{
-		padding-bottom: 60px;
-		bottom: -170px;
-	}
-	#leftPart{
-		height: 250px;
-	}	
+#footerText{
+	position: absolute;
+	bottom: -130px;
+	left: .25px;
+}
+#multiBar{
+	height: 0px;
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+#multiBar a img{
+	visibility: hidden;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	width: 0px;
 }
 
-@media (min-width: 1385px){
-	#clear{
-		clear: both;
+@media (min-width: 950px){
+	#leftPart{
+		height: 250px;
+	}
+}
+
+@media (min-width: 1300px){
+
+	#multiBar{
+		height: auto;
+		width: auto;
+		position: relative;
+	}
+	#multiBar a img{
+		position: absolute;
+		visibility: visible;
+		height: 150px;
+		width: auto;
+		border-radius: 5px;
+		box-shadow: 10px 3px 15px 2px #64648f;
+	}
+	#ctverec{
+		top: -30px;
+		right: 5%;
+	}
+	#kosoctverec{
+		top: -15px;
+		right: 22%;
+	}
+	#kruh{
+		top: 200px;
+		right: 1%;
+	}
+	#lichobeznik{
+		top: 240px;
+		right: 18%;
+	}
+	#obdelnik{
+		top: 330px;
+		right: 39%;
+	}
+	#rovnobeznik{
+		top: -70px;
+		right: 43%
+	}
+	#trojuhelnik{
+		top: 125px;
+		right: 50%;
 	}
 }

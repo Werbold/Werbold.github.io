@@ -28,7 +28,9 @@ footer{
 	margin-top: 50px;
 }
 #footerText{
+	position: absolute;
 	bottom: -130px;
+	left: .25px;
 }
 
 @media (min-width: 1385px){
