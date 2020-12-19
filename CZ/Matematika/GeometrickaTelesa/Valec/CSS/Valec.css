@@ -1,9 +1,0 @@
-#Jednotka{
-	height: 144px;
-}
-
-@media (min-width: 950px){
-	#footer{
-		margin-top: 660px;
-	}
-}
