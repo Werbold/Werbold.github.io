@@ -7,13 +7,9 @@ section{
 ul{
 	list-style-type: none;
 }
-#favouriteMatematika{
-	margin-top: -10px;
-}
 #favouriteFyzika li{
 	margin-left: -30px;
 	margin-bottom: 25px;
-	display: inline-block;
 }
 #favouriteFyzika li a{
 	margin: 0 auto 25px auto;
@@ -33,7 +29,6 @@ ul{
 #favouriteMatematika li{
 	margin-left: -30px;
 	margin-bottom: 25px;
-	display: inline-block;
 }
 #favouriteMatematika li a{
 	margin: 0 auto 25px auto;
@@ -92,10 +87,12 @@ footer{
 	#favouriteMatematika li{
 		margin: 0px;
 		margin-bottom: 25px;
+		display: inline-block;
 	}
 	#favouriteFyzika li{
 		margin: 0px;
-		margin-bottom: 25px
+		margin-bottom: 25px;
+		display: inline-block;
 	}
 	#clear{
 		clear: both;
