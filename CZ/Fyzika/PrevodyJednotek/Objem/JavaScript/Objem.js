@@ -11,90 +11,90 @@ $(document).ready(function() {
 			if (jednotka1 == "hl" && jednotka2 == "l" || jednotka1 == "l" && jednotka2 == "cl" || jednotka1 == "dl" && jednotka2 == "ml") {
 				vysledek = cislo1 * 100;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "l" && jednotka2 == "hl" || jednotka1 == "cl" && jednotka2 == "l" || jednotka1 == "ml" && jednotka2 == "dl") {
 				vysledek = cislo1 / 100;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "l" && jednotka2 == "dl" || jednotka1 == "dl" && jednotka2 == "cl" || jednotka1 == "cl" && jednotka2 == "ml") {
 				vysledek = cislo1 * 10;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dl" && jednotka2 == "l" || jednotka1 == "cl" && jednotka2 == "dl" || jednotka1 == "ml" && jednotka2 == "cl") {
 				vysledek = cislo1 / 10;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "hl" && jednotka2 == "dl" || jednotka1 == "l" && jednotka2 == "ml") {
 				vysledek = cislo1 * 1000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dl" && jednotka2 == "hl" || jednotka1 == "ml" && jednotka2 == "l") {
 				vysledek = cislo1 / 1000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "hl" && jednotka2 == "cl") {
 				vysledek = cislo1 * 10000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "cl" && jednotka2 == "hl") {
 				vysledek = cislo1 / 10000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "hl" && jednotka2 == "ml") {
 				vysledek = cislo1 * 100000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "ml" && jednotka2 == "hl") {
 				vysledek = cislo1 / 100000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
@@ -102,54 +102,54 @@ $(document).ready(function() {
 			if (jednotka1 == "m3" && jednotka2 == "dm3" || jednotka1 == "dm3" && jednotka2 == "cm3" || jednotka1 == "cm3" && jednotka2 == "mm3") {
 				vysledek = cislo1 * 1000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dm3" && jednotka2 == "m3" || jednotka1 == "cm3" && jednotka2 == "dm3" || jednotka1 == "mm3" && jednotka2 == "cm3") {
 				vysledek = cislo1 / 1000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "m3" && jednotka2 == "cm3" || jednotka1 == "dm3" && jednotka2 == "mm3") {
 				vysledek = cislo1 * 1000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;	
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;	
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "cm3" && jednotka2 == "m3" || jednotka1 == "mm3" && jednotka2 == "dm3") {
 				vysledek = cislo1 / 1000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;	
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;	
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "m3" && jednotka2 == "mm3") {
 				vysledek = cislo1 * 1000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mm3" && jednotka2 == "m3") {
 				vysledek = cislo1 / 1000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
@@ -157,144 +157,144 @@ $(document).ready(function() {
 			if (jednotka1 == "m3" && jednotka2 == "hl" || jednotka1 == "l" && jednotka2 == "cm3" || jednotka1 == "dm3" && jednotka2 == "cl" || jednotka1 == "ml" && jednotka2 == "mm3") {
 				vysledek = cislo1 * 1000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "hl" && jednotka2 == "m3" || jednotka1 == "cm3" && jednotka2 == "l" || jednotka1 == "cl" && jednotka2 == "dm3" || jednotka1 == "mm3" && jednotka2 == "ml") {
 				vysledek = cislo1 / 1000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "hl" && jednotka2 == "dm3" || jednotka1 == "dm3" && jednotka2 == "hl" || jednotka1 == "ml" && jednotka2 == "cm3" || jednotka1 == "cm3" && jednotka2 == "ml") {
 				vysledek = cislo1;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "hl" && jednotka2 == "cm3" || jednotka1 == "m3" && jednotka2 == "l" || jednotka1 == "cl" && jednotka2 == "mm3" || jednotka1 == "dm3" && jednotka2 == "ml") {
 				vysledek = cislo1 * 10000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "cm3" && jednotka2 == "hl" || jednotka1 == "l" && jednotka2 == "m3" || jednotka1 == "mm3" && jednotka2 == "cl" || jednotka1 == "ml" && jednotka2 == "dm3") {
 				vysledek = cislo1 / 10000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "hl" && jednotka2 == "mm3") {
 				vysledek = cislo1 * 10000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mm3" && jednotka2 == "hl") {
 				vysledek = cislo1 / 10000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dm3" && jednotka2 == "l" || jednotka1 == "cl" && jednotka2 == "cm3") {
 				vysledek = cislo1 * 10;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "l" && jednotka2 == "dm3" || jednotka1 == "cm3" && jednotka2 == "cl") {
 				vysledek = cislo1 / 10;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "l" && jednotka2 == "mm3" || jednotka1 == "m3" && jednotka2 == "cl" || jednotka1 == "m3" && jednotka2 == "ml") {
 				vysledek = cislo1 * 1000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mm3" && jednotka2 == "l" || jednotka1 == "cl" && jednotka2 == "m3" || jednotka1 == "ml" && jednotka2 == "m3") {
 				vysledek = cislo1 / 1000000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "m3" && jednotka2 == "dl" || jednotka1 == "dl" && jednotka2 == "mm3") {
 				vysledek = cislo1 * 100000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dl" && jednotka2 == "m3" || jednotka1 == "mm3" && jednotka2 == "dl") {
 				vysledek = cislo1 / 100000;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dm3" && jednotka2 == "dl" || jednotka1 == "dl" && jednotka2 == "cm3") {
 				vysledek = cislo1 * 100;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dl" && jednotka2 == "dm3" || jednotka1 == "cm3" && jednotka2 == "dl") {
 				vysledek = cislo1 / 100;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 === jednotka2) {
 				vysledek = cislo1;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}

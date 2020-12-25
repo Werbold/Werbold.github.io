@@ -20,70 +20,90 @@
 	<meta name="author" content="Calcit" />
 	<!-- Css -->
 	<link rel="shortcut icon" href="Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
+	<link rel="stylesheet" type="text/css" href="CSS/GravitacniSila.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Sila.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="JavaScript/GravitacniSila.js"></script>
 	<script src="JavaScript/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
 <body>
 	<article>
 		<header>
-			<!--Logo-->
-			<p>Calcit</p>
-			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
-			
-	<!--Navigace-->
-			<nav>
-				<ul>
-					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
-					<!-- <li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li> -->
-					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
-					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
-					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
-				</ul>
 			</nav>
 		</header>
 	<!--Main Content-->
 		<section>
-			<h2>Síla založená na práci</h2>
+			<div id="content">
+				<div id="main">
+					<h1>Síla založená na práci</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vzorečky</h2>
+							<p>Síla <i>F</i> = m * g</p>
+							<p>Hmotnost <i>m</i> = F<sub>g</sub> / g</p>
+							
+							<h2>Vysvětlivky</h2>
+							<p>
+								<i>F<sub>g</sub></i> = Gravitační síla<br>
+								<i>m</i> = Hmotnost<br>
+								<i>g</i> = Konstanta = 10 N / kg
+							</p>
 
-			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+							<p id="practice"><a id="practicePDF" target="_blank" download href="Practice/GravitacniSila.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+						</div>
+					</div>
+				</div>
 
-			<h3>Vysvětlivky</h3>
-			<p>
-				<i>F<sub>g</sub></i> = Gravitační síla<br>
-				<i>m</i> = Hmotnost<br>
-				<i>g</i> = Konstanta = 10 N / kg
-			</p>
+				<div id="rightPartContent">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label>F<sub>g</sub> = </label>
+									<input id="cislo1" type="number" placeholder="Gravitační síla">
+								</div>
+								<div class="vedle">
+									<label>m = </label>
+									<input id="cislo2" type="number" placeholder="Hmotnost">
+								</div>
+							</div>
+							<div id="rideSide">
+								<select id="Jednotka" name="Jednotka">
+									<option value="Základní">Základní</option>
+									<option value="Kilo">Kilo</option>
+									<option value="Mili">Mili</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
+					</div>
+				</div>
 
-			<h3>Vzorečky</h3>
-			<p>Síla <i>F</i> = m * g</p>
-			<p>Hmotnost <i>m</i> = F<sub>g</sub> / g</p>
-
-			<div id="napoveda"><p>?</p></div>
-
-			<h3>Kalkulace</h3>
-				F<sub>g</sub> = 
-				<input id="cislo1" type="number" placeholder="Gravitační síla"><br>
-				m = 
-				<input id="cislo2" type="number" placeholder="Hmotnost">
-				<select id="Jednotka" name="Jednotka">
-					<option value="Základní">Základní</option>
-					<option value="Kilo">Kilo</option>
-					<option value="Mili">Mili</option>
-				</select><br>
-				<input id="spocitat" type="button" value="Spočítat">
-				<input id="smazat" type="button" value="Smazat historii počítání">
-			<div id="Vysledek"></div>
-
-			<h2>Další z kategorie Síla</h2>
-			<ul>
-				<li><a href="../HydrostatickaTlakovaSila/HydrostatickaTlakovaSila.html" title="Hydrostatická tlaková síla">Hydrostatická tlaková síla a odvozené vzorečky</a></li>
-				<li><a href="../HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla a odvozené vzorečky</a></li>
-				<li><a href="../Paka/Paka.html" title="Páka">Páka a odvozené vzorečky</a></li>
-			</ul>
+				<div id="footer">
+					<h2>Další z kategorie Síla</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz2" href="../HydrostatickaTlakovaSila/HydrostatickaTlakovaSila.html" title="Hydrostatická tlaková síla">Hydrostatická tlaková síla a odvozené vzorečky</a></li>
+							<li><a id="Odkaz3" href="../HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla a odvozené vzorečky</a></li>
+							<li><a id="Odkaz4" href="../Paka/Paka.html" title="Páka">Páka a odvozené vzorečky</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
 
 		<footer>
 		</footer>

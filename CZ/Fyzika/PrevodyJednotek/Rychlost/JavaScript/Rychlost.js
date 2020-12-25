@@ -19,9 +19,9 @@ $(document).ready(function() {
 				jednotka1 = "km/s";
 				jednotka2 = "km/h";
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
@@ -30,9 +30,9 @@ $(document).ready(function() {
 				jednotka1 = "km/h";
 				jednotka2 = "m/s";
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
@@ -41,9 +41,9 @@ $(document).ready(function() {
 				jednotka1 = "m/s";
 				jednotka2 = "km/h";
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
@@ -52,9 +52,9 @@ $(document).ready(function() {
 				jednotka1 = "km/h";
 				jednotka2 = "m/s";
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
@@ -63,9 +63,9 @@ $(document).ready(function() {
 				jednotka1 = "m/s";
 				jednotka2 = "km/h";
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
@@ -84,9 +84,9 @@ $(document).ready(function() {
 					jednotka2 = "m/s";
 				}
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}

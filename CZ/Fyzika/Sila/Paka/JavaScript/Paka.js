@@ -15,9 +15,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0 && cislo4 > 0) {
 				vysledek = cislo2 * cislo4 / cislo3;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>Síla 2: " + cislo2 + " " + jednotkaF + "<br>"
 				+ "Vzdálenost 1: " + cislo3 + " " + jednotkaA + "<br>"
@@ -27,9 +27,9 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo3 > 0 && cislo4 > 0) {
 				vysledek = cislo1 * cislo3 / cislo4;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>Síla 1: " + cislo1 + " " + jednotkaF + "<br>"
 				+ "Vzdálenost 1: " + cislo3 + " " + jednotkaA + "<br>"
@@ -39,9 +39,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo4 > 0 && cislo1 > 0) {
 				vysledek = cislo2 * cislo4 / cislo1;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>Síla 1: " + cislo1 + " " + jednotkaF + "<br>"
 				+ "Síla 2: " + cislo3 + " " + jednotkaF + "<br>"
@@ -51,9 +51,9 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo2 > 0 && cislo3 > 0) {
 				vysledek = cislo1 * cislo3 / cislo2;
 
-				vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+				vysledek = vysledek * 1000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000;
 
 				$('#Vysledek').after("<p>Síla 1: " + cislo1 + " " + jednotkaF + "<br>"
 				+ "Síla 2: " + cislo3 + " " + jednotkaF + "<br>"

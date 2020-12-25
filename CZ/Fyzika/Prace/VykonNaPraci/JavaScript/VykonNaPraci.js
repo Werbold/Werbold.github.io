@@ -17,9 +17,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0) {
 				vysledekP = cislo2 / cislo3;
 
-				vysledekP = vysledekO * 1000;
-				vysledekP = Math.round(vysledekO);
-				vysledekP = vysledekO / 1000;
+				vysledekP = vysledekP * 1000;
+				vysledekP = Math.round(vysledekP);
+				vysledekP = vysledekP / 1000;
 
 				$('#Vysledek').after("<p class='count'>Práce: " + cislo2 + " " + jednotkaW + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
@@ -28,9 +28,9 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo3 > 0) {
 				vysledekW = cislo1 * cislo3;
 
-				vysledekW = vysledekO * 1000;
-				vysledekW = Math.round(vysledekO);
-				vysledekW = vysledekO / 1000;
+				vysledekW = vysledekW * 1000;
+				vysledekW = Math.round(vysledekW);
+				vysledekW = vysledekW / 1000;
 
 				$('#Vysledek').after("<p class='count'>Výkon: " + cislo1 + " " + jednotkaP + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
@@ -39,9 +39,9 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo2 > 0) {
 				vysledekT = cislo2 / cislo1;
 
-				vysledekT = vysledekO * 1000;
-				vysledekT = Math.round(vysledekO);
-				vysledekT = vysledekO / 1000;
+				vysledekT = vysledekT * 1000;
+				vysledekT = Math.round(vysledekT);
+				vysledekT = vysledekT / 1000;
 
 				$('#Vysledek').after("<p class='count'>Výkon: " + cislo1 + " " + jednotkaP + "<br>"
 				+ "Práce: " + cislo2 + " " + jednotkaW + "<br>" 

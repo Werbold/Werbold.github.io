@@ -18,9 +18,9 @@ $(document).ready(function() {
 		else {
 			vysledekFh = cislo1 * cislo2 * cislo3 * 10;
 
-			vysledekFh = vysledekO * 1000;
-			vysledekFh = Math.round(vysledekO);
-			vysledekFh = vysledekO / 1000;
+			vysledekFh = vysledekFh * 1000;
+			vysledekFh = Math.round(vysledekFh);
+			vysledekFh = vysledekFh / 1000;
 
 			$('#Vysledek').after("<p>Hloubka: " + cislo1 + " " + jednotkaH + "<br>"
 				+ "Plocha: " + cislo2 + " " + jednotkaS + "<br>" 

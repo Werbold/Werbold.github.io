@@ -27,9 +27,9 @@ $(document).ready(function() {
 			if (cislo1 > 0) {
 				vysledekM = cislo1 / 10;
 
-				vysledekM = vysledekO * 1000;
-				vysledekM = Math.round(vysledekO);
-				vysledekM = vysledekO / 1000;
+				vysledekM = vysledekM * 1000;
+				vysledekM = Math.round(vysledekM);
+				vysledekM = vysledekM / 1000;
 
 				$('#Vysledek').after("<p>Gravitační síla: " + cislo1 + " " + jednotkaFg + "<br>"
 				+ "Hmotnost: " + vysledekM + " " + jednotkaM + "</p>");
@@ -37,9 +37,9 @@ $(document).ready(function() {
 			if (cislo2 > 0) {
 				vysledekFg = cislo2 * 10;
 
-				vysledekFg = vysledekO * 1000;
-				vysledekFg = Math.round(vysledekO);
-				vysledekFg = vysledekO / 1000;
+				vysledekFg = vysledekFg * 1000;
+				vysledekFg = Math.round(vysledekFg);
+				vysledekFg = vysledekFg / 1000;
 
 				$('#Vysledek').after("<p>Hmotnost: " + cislo2 + " " + jednotkaM + "<br>"
 				+ "Gravitační síla: " + vysledekFg + " " + jednotkaFg + "</p>");

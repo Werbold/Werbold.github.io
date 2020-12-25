@@ -28,9 +28,9 @@ $(document).ready(function() {
 			}
 			vysledekEk = cislo1 * cislo2 * 10;
 
-			vysledekEk = vysledekO * 1000;
-			vysledekEk = Math.round(vysledekO);
-			vysledekEk = vysledekO / 1000;
+			vysledekEk = vysledekEk * 1000;
+			vysledekEk = Math.round(vysledekEk);
+			vysledekEk = vysledekEk / 1000;
 
 			$('#Vysledek').after("<p class='count'>m = " + cislo1 + " " + jednotkaM + "<br>"
 				+ "h = " + cislo2 + " " + jednotkaH + "<br>" 

@@ -39,9 +39,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0) {
 				vysledekI = cislo2 / cislo3;
 
-				vysledekI = vysledekO * 1000;
-				vysledekI = Math.round(vysledekO);
-				vysledekI = vysledekO / 1000;
+				vysledekI = vysledekI * 1000;
+				vysledekI = Math.round(vysledekI);
+				vysledekI = vysledekI / 1000;
 
 				$('#Vysledek').after("<p class='count'>R = " + cislo3 + " " + jednotkaR + "<br>"
 					+ "U = " + cislo2 + " " + jednotkaU + "<br>" 
@@ -50,9 +50,9 @@ $(document).ready(function() {
 			else if (cislo1 > 0 && cislo3 > 0) {
 				vysledekU = cislo1 * cislo3;
 
-				vysledekU = vysledekO * 1000;
-				vysledekU = Math.round(vysledekO);
-				vysledekU = vysledekO / 1000;
+				vysledekU = vysledekU * 1000;
+				vysledekU = Math.round(vysledekU);
+				vysledekU = vysledekU / 1000;
 
 				$('#Vysledek').after("<p class='count'>R = " + cislo3 + " " + jednotkaR + "<br>"
 					+ "I = " + cislo1 + " " + jednotkaI + "<br>" 
@@ -61,9 +61,9 @@ $(document).ready(function() {
 			else if (cislo2 > 0 && cislo1 > 0) {
 				vysledekR = cislo2 / cislo1;
 
-				vysledekR = vysledekO * 1000;
-				vysledekR = Math.round(vysledekO);
-				vysledekR = vysledekO / 1000;
+				vysledekR = vysledekR * 1000;
+				vysledekR = Math.round(vysledekR);
+				vysledekR = vysledekR / 1000;
 
 				$('#Vysledek').after("<p class='count'>U = " + cislo2 + " " + jednotkaU + "<br>"
 					+ "I = " + cislo1 + " " + jednotkaI + "<br>" 

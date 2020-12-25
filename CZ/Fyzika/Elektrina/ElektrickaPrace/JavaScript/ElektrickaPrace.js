@@ -27,9 +27,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0 && cislo4 > 0) {
 				vysledekWe = cislo2 * cislo3 *cislo4;
 
-				vysledekWe = vysledekO * 1000;
-				vysledekWe = Math.round(vysledekO);
-				vysledekWe = vysledekO / 1000;
+				vysledekWe = vysledekWe * 1000;
+				vysledekWe = Math.round(vysledekWe);
+				vysledekWe = vysledekWe / 1000;
 
 				$('#Vysledek').after("<p class='count'>I = " + cislo2 + " " + jednotkaI + "<br>"
 					+ "U = " + cislo3 + " " + jednotkaU + "<br>" 
@@ -39,9 +39,9 @@ $(document).ready(function() {
 			else if (cislo1 > 0 && cislo2 > 0 && cislo4 > 0) {
 				vysledekU = cislo1 / cislo2 * cislo4;
 
-				vysledekU = vysledekO * 1000;
-				vysledekU = Math.round(vysledekO);
-				vysledekU = vysledekO / 1000;
+				vysledekU = vysledekU * 1000;
+				vysledekU = Math.round(vysledekU);
+				vysledekU = vysledekU / 1000;
 
 				$('#Vysledek').after("<p class='count'>I = " + cislo2 + " " + jednotkaI + "<br>"
 					+ "W<sub>e</sub> = " + cislo1 + " " + jednotkaWe + "<br>" 
@@ -51,9 +51,9 @@ $(document).ready(function() {
 			else if (cislo1 > 0 && cislo3 > 0 && cislo4 > 0) {
 				vysledekI = cislo1 / cislo3 * cislo4;
 
-				vysledekI = vysledekO * 1000;
-				vysledekI = Math.round(vysledekO);
-				vysledekI = vysledekO / 1000;
+				vysledekI = vysledekI * 1000;
+				vysledekI = Math.round(vysledekI);
+				vysledekI = vysledekI / 1000;
 
 				$('#Vysledek').after("<p class='count'>U = " + cislo3 + " " + jednotkaU + "<br>"
 					+ "W<sub>e</sub> = " + cislo1 + " " + jednotkaWe + "<br>" 
@@ -63,9 +63,9 @@ $(document).ready(function() {
 			else if (cislo1 > 0 && cislo2 > 0 && cislo3 > 0) {
 				vysledekT = cislo1 / cislo2 * cislo3;
 
-				vysledekT = vysledekO * 1000;
-				vysledekT = Math.round(vysledekO);
-				vysledekT = vysledekO / 1000;
+				vysledekT = vysledekT * 1000;
+				vysledekT = Math.round(vysledekT);
+				vysledekT = vysledekT / 1000;
 
 				$('#Vysledek').after("<p class='count'>U = " + cislo3 + " " + jednotkaU + "<br>"
 					+ "W<sub>e</sub> = " + cislo1 + " " + jednotkaWe + "<br>" 

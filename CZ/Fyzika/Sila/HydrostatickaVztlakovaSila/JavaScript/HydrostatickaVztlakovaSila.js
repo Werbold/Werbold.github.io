@@ -16,9 +16,9 @@ $(document).ready(function() {
 		else {
 			vysledekFvz = cislo1 * cislo2 * 10;
 
-			vysledekFvz = vysledekO * 1000;
-			vysledekFvz = Math.round(vysledekO);
-			vysledekFvz = vysledekO / 1000;
+			vysledekFvz = vysledekFvz * 1000;
+			vysledekFvz = Math.round(vysledekFvz);
+			vysledekFvz = vysledekFvz / 1000;
 
 			$('#Vysledek').after("<p>Hustota kapaliny: " + cislo1 + " " + jednotkaRok + "<br>"
 				+ "Objem: " + cislo2 + " " + jednotkaV + "<br>" 

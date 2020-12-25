@@ -17,9 +17,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0) {
 				vysledekA = cislo2 / cislo3;
 
-				vysledekA = vysledekO * 1000;
-				vysledekA = Math.round(vysledekO);
-				vysledekA = vysledekO / 1000;
+				vysledekA = vysledekA * 1000;
+				vysledekA = Math.round(vysledekA);
+				vysledekA = vysledekA / 1000;
 
 				$('#Vysledek').after("<p class='count'>Absolutní rychlost: " + cislo2 + " " + jednotkaV + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
@@ -28,9 +28,9 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo3 > 0) {
 				vysledekV = cislo1 * cislo3;
 
-				vysledekV = vysledekO * 1000;
-				vysledekV = Math.round(vysledekO);
-				vysledekV = vysledekO / 1000;
+				vysledekV = vysledekV * 1000;
+				vysledekV = Math.round(vysledekV);
+				vysledekV = vysledekV / 1000;
 
 				$('#Vysledek').after("<p class='count'>Zrychlení: " + cislo1 + " " + jednotkaA + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
@@ -39,9 +39,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo1 > 0) {
 				vysledekT = cislo2 / cislo1;
 
-				vysledekT = vysledekO * 1000;
-				vysledekT = Math.round(vysledekO);
-				vysledekT = vysledekO / 1000;
+				vysledekT = vysledekT * 1000;
+				vysledekT = Math.round(vysledekT);
+				vysledekT = vysledekT / 1000;
 
 				$('#Vysledek').after("<p class='count'>Zrychlení: " + cislo1 + " " + jednotkaA + "<br>"
 				+ "Absolutní rychlost: " + cislo2 + " " + jednotkaV + "<br>" 

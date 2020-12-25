@@ -13,9 +13,9 @@ $(document).ready(function() {
 		if (cislo1 > 0 && cislo2 > 0) {
 			vysledekEp = 1 / 2 * cislo1 * Math.pow(cislo2,2);
 
-			vysledekEp = vysledekO * 1000;
-			vysledekEp = Math.round(vysledekO);
-			vysledekEp = vysledekO / 1000;
+			vysledekEp = vysledekEp * 1000;
+			vysledekEp = Math.round(vysledekEp);
+			vysledekEp = vysledekEp / 1000;
 
 			$('#Vysledek').after("<p class='count'>v = " + cislo1 + " " + jednotkaV + "<br>"
 				+ "m = " + cislo2 + " " + jednotkaM + "<br>" 

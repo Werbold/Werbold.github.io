@@ -17,9 +17,9 @@ $(document).ready(function() {
 			if (cislo2 > 0 && cislo3 > 0) {
 				vysledekS = 1 / 2 * cislo2 * Math.pow(cislo3,2);
 
-				vysledekS = vysledekO * 1000;
-				vysledekS = Math.round(vysledekO);
-				vysledekS = vysledekO / 1000;
+				vysledekS = vysledekS * 1000;
+				vysledekS = Math.round(vysledekS);
+				vysledekS = vysledekS / 1000;
 
 				$('#Vysledek').after("<p class='count'>Zrychlení: " + cislo2 + " " + jednotkaA + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
@@ -28,9 +28,9 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo3 > 0) {
 				vysledekA = 2 * cislo1 / Math.pow(cislo3,2);
 
-				vysledekA = vysledekO * 1000;
-				vysledekA = Math.round(vysledekO);
-				vysledekA = vysledekO / 1000;
+				vysledekA = vysledekA * 1000;
+				vysledekA = Math.round(vysledekA);
+				vysledekA = vysledekA / 1000;
 
 				$('#Vysledek').after("<p class='count'>Dráha: " + cislo1 + " " + jednotkaS + "<br>"
 				+ "Čas: " + cislo3 + " " + jednotkaT + "<br>" 
@@ -39,9 +39,9 @@ $(document).ready(function() {
 			if (cislo1 > 0 && cislo2 > 0) {
 				vysledekT = Math.sqrt(2 * cislo1 / cislo2);
 
-				vysledekT = vysledekO * 1000;
-				vysledekT = Math.round(vysledekO);
-				vysledekT = vysledekO / 1000;
+				vysledekT = vysledekT * 1000;
+				vysledekT = Math.round(vysledekT);
+				vysledekT = vysledekT / 1000;
 
 				$('#Vysledek').after("<p class='count'>Dráha: " + cislo1 + " " + jednotkaS + "<br>"
 				+ "Zrychlení: " + cislo2 + " " + jednotkaA + "<br>" 

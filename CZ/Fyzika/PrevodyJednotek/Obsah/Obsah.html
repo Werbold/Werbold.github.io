@@ -21,74 +21,88 @@
 	<meta name="author" content="Calcit" />
 	<!-- Css -->
 	<link rel="shortcut icon" href="Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Obsah.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/PrevodyJednotek.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="JavaScript/Obsah.js"></script>
 	<script src="JavaScript/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
 <body>
 	<article>
 		<header>
-			<!--Logo-->
-			<p>Calcit</p>
-			<h1>Největší databáze vzorečků, kalkulaček a online kalkulátorů</h1>
-			
-	<!--Navigace-->
-			<nav>
-				<ul>
-					<li><a href="../../../../index.html" title="Domů">Domů</a></li>
-					<!-- <li><a href="../../../Chemie/Chemie.html" title="Chemie">Chemie</a></li> -->
-					<li><a href="../../../Fyzika/Fyzika.html" title="Fyzika">Fyzika</a></li>
-					<li><a href="../../../Matematika/Matematika.html" title="Matematika">Matematika</a></li>
-					<!--<li><a href="#" title="Pravděpodobnost">Pravděpodobnost</a></li>-->
-				</ul>
-			</nav>
 		</header>
 	<!--Main Content-->
 		<section>
-			<h2>Převody jednotek obsahu</h2>
-			<p></p>
+			<div id="content">
+				<h1>Převody jednotek obsahu</h1>
+				<div class="vedle">
+					<div id="leftPartOfPrevody">
+						<ul>
+							<li>1 km<sup>2</sup> [kilometr čtvereční] = 100 ha [hektar]</li>
+							<li>1 ha = 100 a [ar]</li>
+							<li>1 a = 100 m<sup>2</sup> [metr čtvereční]</li>
+							<li>1 m<sup>2</sup> = 100 dm<sup>2</sup></li>
+							<li>1 dm<sup>2</sup> = 100 cm<sup>2</sup></li>
+							<li>1 cm<sup>2</sup> = 100 mm<sup>2</sup></li>
+						</ul>
+					</div>
 
-			<!-- <p><img src="Images/Obdelnik.png" width="50%"></p> -->
+					<div id="rightPartOfPrevody">
+						<div id="napovedaRight"></div>
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div class="vedle">
+								<input id="cislo1" type="number" placeholder="První hodnota">
+								<select id="Jednotka1" name="Jednotka">
+									<option value="m2">m2</option>
+									<option value="km2">km2</option>
+									<option value="ha">ha</option>
+									<option value="a">a</option>
+									<option value="dm2">dm2</option>
+									<option value="cm2">cm2</option>
+									<option value="mm2">mm2</option>
+								</select>
+								<p id="on"> na </p>
+								<select id="Jednotka2" name="Jednotka">
+									<option value="m2">m2</option>
+									<option value="km2">km2</option>
+									<option value="ha">ha</option>
+									<option value="a">a</option>
+									<option value="dm2">dm2</option>
+									<option value="cm2">cm2</option>
+									<option value="mm2">mm2</option>
+								</select>
+						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
+						<div id="Vysledek"></div>
+					</div>
+				</div>
 
-			<div id="napoveda"><p>?</p></div>
-
-			<h3>Kalkulace</h3>
-				<input id="cislo1" type="number" placeholder="První hodnota">
-				<select id="Jednotka1" name="Jednotka">
-					<option value="m2">m2</option>
-					<option value="km2">km2</option>
-					<option value="ha">ha</option>
-					<option value="a">a</option>
-					<option value="dm2">dm2</option>
-					<option value="cm2">cm2</option>
-					<option value="mm2">mm2</option>
-				</select> na 
-				<select id="Jednotka2" name="Jednotka">
-					<option value="m2">m2</option>
-					<option value="km2">km2</option>
-					<option value="ha">ha</option>
-					<option value="a">a</option>
-					<option value="dm2">dm2</option>
-					<option value="cm2">cm2</option>
-					<option value="mm2">mm2</option>
-				</select><br>
-				<input id="spocitat" type="button" value="Spočítat">
-				<input id="smazat" type="button" value="Smazat historii počítání">
-			<div id="Vysledek"></div>
-
-			<h2>Další z kategorie Převody jednotek</h2>
-				<ul>
-				<li><a href="../Cas/Cas.html" title="Převody jednotek času">Převody jednotek času</a></li>
-				<li><a href="../DatovyObjem/DatovyObjem.html" title="Převody datových jednotek">Převody jednotek datového objemu</a></li>
-				<li><a href="../Delka/Delka.html" title="Převody jednotek délky">Převody jednotek délky</a></li>
-				<li><a href="../Hmotnost/Hmotnost.html" title="Převody jednotek hmotnosti">Převody jednotek hmotnosti</a></li>
-				<li><a href="../Objem/Objem.html" title="Převody jednotek objemu">Převody jednotek objemu</a></li>
-				<li><a href="../Obsah/Obsah.html" title="Převody jednotek obsahu">Převody jednotek obsahu</a></li>
-				<li><a href="../Rychlost/Rychlost.html" title="Převody jednotek rychlosti">Převody jednotek rychlosti</a></li>
-			</ul>
+				<div id="footer">
+					<h2>Další z kategorie Převody jednotek</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../Cas/Cas.html" title="Převody jednotek času">Převody jednotek času</a></li>
+							<li><a id="Odkaz2" href="../DatovyObjem/DatovyObjem.html" title="Převody datových jednotek">Převody jednotek datového objemu</a></li>
+							<li><a id="Odkaz3" href="../Delka/Delka.html" title="Převody jednotek délky">Převody jednotek délky</a></li>
+							<li><a id="Odkaz4" href="../Hmotnost/Hmotnost.html" title="Převody jednotek hmotnosti">Převody jednotek hmotnosti</a></li>
+							<li><a id="Odkaz5" href="../Objem/Objem.html" title="Převody jednotek objemu">Převody jednotek objemu</a></li>
+							<li><a id="Odkaz7" href="../Rychlost/Rychlost.html" title="Převody jednotek rychlosti">Převody jednotek rychlosti</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
 
 		<footer>
 		</footer>

@@ -19,9 +19,9 @@ $(document).ready(function() {
 		else {
 			vysledek = cislo1 * cislo2 * (cislo3 - cislo4);
 
-			vysledek = vysledekO * 1000;
-				vysledek = Math.round(vysledekO);
-				vysledek = vysledekO / 1000;
+			vysledek = vysledek * 1000;
+			vysledek = Math.round(vysledek);
+			vysledek = vysledek / 1000;
 
 			$('#Vysledek').after("<p>Měrná tepelná kapacita: " + cislo1 + " " + jednotkaC + "<br>"
 				+ "Hmotnost: " + cislo2 + " " + jednotkaM + "<br>" 
