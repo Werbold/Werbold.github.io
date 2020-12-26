@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6{
 	padding: 0px; 
 }
 h2, h3, h4, h5, h6{
-	font-weight: 400;
+	font-weight: 500;
 }
 .item{
 	margin-bottom: 6px
@@ -31,8 +31,8 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 }
 #footerText{
 	position: absolute;
-	bottom: -130px;
 	left: .25px;
+	bottom: -160px;
 }
 #multiBar{
 	height: 0px;
