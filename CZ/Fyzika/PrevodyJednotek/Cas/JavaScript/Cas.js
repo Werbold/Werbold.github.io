@@ -14,7 +14,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "min" && jednotka2 == "h" || jednotka1 == "s" && jednotka2 == "min") {
 				vysledek = cislo1 / 60;
@@ -23,7 +23,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "h" && jednotka2 == "s") {
 				vysledek = cislo1 * 120;
@@ -32,7 +32,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "s" && jednotka2 == "h") {
 				vysledek = cislo1 / 120;
@@ -41,7 +41,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "h" && jednotka2 == "ms") {
 				vysledek = cislo1 * 120000;
@@ -50,7 +50,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "ms" && jednotka2 == "h") {
 				vysledek = cislo1 / 120000;
@@ -59,7 +59,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "min" && jednotka2 == "ms") {
 				vysledek = cislo1 * 60000;
@@ -68,7 +68,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "ms" && jednotka2 == "min") {
 				vysledek = cislo1 / 60000;
@@ -77,7 +77,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "s" && jednotka2 == "ms") {
 				vysledek = cislo1 * 1000;
@@ -86,7 +86,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "ms" && jednotka2 == "s") {
 				vysledek = cislo1 / 1000;
@@ -95,7 +95,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 = jednotka2) {
 				vysledek = cislo1;
@@ -104,7 +104,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 		}
 		else{
@@ -122,5 +122,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze převádět.<br>Zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze převádět.<br>Zadejte prosím kladné nenulové hodnoty.</p>")
 }

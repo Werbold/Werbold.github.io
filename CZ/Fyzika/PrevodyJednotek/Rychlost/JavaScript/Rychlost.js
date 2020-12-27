@@ -12,7 +12,7 @@ $(document).ready(function() {
 				jednotka1 = "km/h";
 				jednotka2 = "km/s";	
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "kmZAs" && jednotka2 == "kmZAh") {
 				vysledek = cislo1 / 3600;
@@ -23,7 +23,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "kmZAh" && jednotka2 == "mZAs") {
 				vysledek = cislo1 * 3.6;
@@ -34,7 +34,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mZAs" && jednotka2 == "kmZAh") {
 				vysledek = cislo1 / 3.6;
@@ -45,7 +45,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "kmZAs" && jednotka2 == "mZAs") {
 				vysledek = cislo1 * 1000;
@@ -56,7 +56,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mZAs" && jednotka2 == "kmZAs") {
 				vysledek = cislo1 / 1000;
@@ -67,7 +67,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == jednotka2) {
 				vysledek = cislo1;
@@ -88,7 +88,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 		}
 		else{
@@ -106,5 +106,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

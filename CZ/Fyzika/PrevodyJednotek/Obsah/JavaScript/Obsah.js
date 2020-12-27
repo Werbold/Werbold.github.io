@@ -14,7 +14,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "ha" && jednotka2 == "km2" || jednotka1 == "a" && jednotka2 == "ha" || jednotka1 == "m2" && jednotka2 == "a" || jednotka1 == "dm2" && jednotka2 == "m2" || jednotka1 == "cm2" && jednotka2 == "dm2" || jednotka1 == "mm2" && jednotka2 == "cm2") {
 				vysledek = cislo1 / 100;
@@ -23,7 +23,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "km2" && jednotka2 == "a" || jednotka1 == "ha" && jednotka2 == "m2" || jednotka1 == "a" && jednotka2 == "dm2" || jednotka1 == "m2" && jednotka2 == "cm2" || jednotka1 == "dm2" && jednotka2 == "mm2") {
 				vysledek = cislo1 * 10000;
@@ -32,7 +32,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "a" && jednotka2 == "km2" || jednotka1 == "m2" && jednotka2 == "ha" || jednotka1 == "dm2" && jednotka2 == "a" || jednotka1 == "cm2" && jednotka2 == "m2" || jednotka1 == "mm2" && jednotka2 == "dm2") {
 				vysledek = cislo1 / 10000;
@@ -41,7 +41,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "km2" && jednotka2 == "m2" || jednotka1 == "ha" && jednotka2 == "dm2" || jednotka1 == "a" && jednotka2 == "cm2" || jednotka1 == "m2" && jednotka2 == "mm2") {
 				vysledek = cislo1 * 1000000;
@@ -50,7 +50,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;	
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "m2" && jednotka2 == "km2" || jednotka1 == "dm2" && jednotka2 == "ha" || jednotka1 == "cm2" && jednotka2 == "a" || jednotka1 == "mm2" && jednotka2 == "m2") {
 				vysledek = cislo1 / 1000000;
@@ -59,7 +59,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;	
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "km2" && jednotka2 == "dm2" || jednotka1 == "ha" && jednotka2 == "cm2" || jednotka1 == "a" && jednotka2 == "mm2") {
 				vysledek = cislo1 * 100000000;
@@ -68,7 +68,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dm2" && jednotka2 == "km2" || jednotka1 == "cm2" && jednotka2 == "ha" || jednotka1 == "mm2" && jednotka2 == "a") {
 				vysledek = cislo1 / 100000000;
@@ -77,7 +77,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "km2" && jednotka2 == "cm2" || jednotka1 == "ha" && jednotka2 == "mm2") {
 				vysledek = cislo1 * 10000000000;
@@ -86,7 +86,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "cm2" && jednotka2 == "km2" || jednotka1 == "mm2" && jednotka2 == "ha") {
 				vysledek = cislo1 / 10000000000;
@@ -95,7 +95,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "km2" && jednotka2 == "mm2") {
 				vysledek = cislo1 * 1000000000000;
@@ -104,7 +104,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mm2" && jednotka2 == "km2") {
 				vysledek = cislo1 / 1000000000000;
@@ -113,7 +113,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 === jednotka2) {
 				vysledek = cislo1;
@@ -122,7 +122,7 @@ $(document).ready(function() {
 				vysledek = Math.round(vysledek);
 				vysledek = vysledek / 1000;
 
-				$('#Vysledek').after("<p>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
+				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 		}
 		else{
@@ -140,5 +140,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladnou nenulovou hodnotu.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladnou nenulovou hodnotu.</p>")
 }
