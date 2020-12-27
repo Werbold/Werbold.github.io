@@ -39,63 +39,61 @@
 		<section>
 			<div id="content">
 				<h1>Převody jednotek objemu</h1>
-				<div class="vedle">
-					<div id="leftPartOfPrevody">
-						<p>Základní jednotkou je litr.</p>
-						<ul>
-							<li>1 hl [hektolitr] = 100 l [litr]</li>
-							<li>1 l = 10 dl [decilitr]</li>
-							<li>1 dl = 10 cl [centilitr]</li>
-							<li>1 cl = 10 ml [mililitr]</li>
-						</ul>
-						<ul>
-							<li>1 m<sup>3</sup> [metr krychlový] = 1000 dm<sup>3</sup> [decimetr krychlový]</li>
-							<li>1 dm<sup>3</sup> = 1000 cm<sup>3</sup> [centimetr krychlový]</li>
-							<li>1 cm<sup>3</sup> = 1000 mm<sup>3</sup> [milimetr krychlový]</li>
-						</ul>
-						<ul>
-							<li>1 cm<sup>3</sup> = 1 ml</li>
-							<li>1 dm<sup>3</sup> = 1 l</li>
-						</ul>
-					</div>
-					<div id="rightPartOfPrevody">
-						<div id="napovedaRight"></div>
-						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
-						<div class="vedle">
-							<input id="cislo1" type="number" placeholder="První hodnota">
-							<select id="Jednotka1" name="Jednotka">
-								<option value="l">l</option>
-								<option value="hl">hl</option>
-								<option value="dl">dl</option>
-								<option value="cl">cl</option>
-								<option value="ml">ml</option>
+				<div id="leftPartContent">
+					<p>Základní jednotkou je litr.</p>
+					<ul>
+						<li>1 hl [hektolitr] = 100 l [litr]</li>
+						<li>1 l = 10 dl [decilitr]</li>
+						<li>1 dl = 10 cl [centilitr]</li>
+						<li>1 cl = 10 ml [mililitr]</li>
+					</ul>
+					<ul>
+						<li>1 m<sup>3</sup> [metr krychlový] = 1000 dm<sup>3</sup> [decimetr krychlový]</li>
+						<li>1 dm<sup>3</sup> = 1000 cm<sup>3</sup> [centimetr krychlový]</li>
+						<li>1 cm<sup>3</sup> = 1000 mm<sup>3</sup> [milimetr krychlový]</li>
+					</ul>
+					<ul>
+						<li>1 cm<sup>3</sup> = 1 ml</li>
+						<li>1 dm<sup>3</sup> = 1 l</li>
+					</ul>
+				</div>
+				<div id="rightPartContent">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<h2 id="mezeraProNapoveda">Kalkulace</h2>
+					<div class="vedle">
+						<input id="cislo1" type="number" placeholder="První hodnota">
+						<select id="Jednotka1" name="Jednotka">
+							<option value="l">l</option>
+							<option value="hl">hl</option>
+							<option value="dl">dl</option>
+							<option value="cl">cl</option>
+							<option value="ml">ml</option>
 
-								<option value="m3">m3</option>
-								<option value="dm3">dm3</option>
-								<option value="cm3">cm3</option>
-								<option value="mm3">mm3</option>
-							</select>
-							<p id="on"> na </p>
-							<select id="Jednotka2" name="Jednotka">
-								<option value="l">l</option>
-								<option value="hl">hl</option>
-								<option value="dl">dl</option>
-								<option value="cl">cl</option>
-								<option value="ml">ml</option>
+							<option value="m3">m3</option>
+							<option value="dm3">dm3</option>
+							<option value="cm3">cm3</option>
+							<option value="mm3">mm3</option>
+						</select>
+						<p id="on"> na </p>
+						<select id="Jednotka2" name="Jednotka">
+							<option value="l">l</option>
+							<option value="hl">hl</option>
+							<option value="dl">dl</option>
+							<option value="cl">cl</option>
+							<option value="ml">ml</option>
 
-								<option value="m3">m3</option>
-								<option value="dm3">dm3</option>
-								<option value="cm3">cm3</option>
-								<option value="mm3">mm3</option>
-							</select>
-						</div>
-						<div id="buttons">
-							<input id="spocitat" type="button" value="Spočítat">
-							<input id="smazat" type="button" value="Smazat historii počítání">
-						</div>
-						<div id="Vysledek"></div>
+							<option value="m3">m3</option>
+							<option value="dm3">dm3</option>
+							<option value="cm3">cm3</option>
+							<option value="mm3">mm3</option>
+						</select>
 					</div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
+					</div>
+					<div id="Vysledek"></div>
 				</div>
 
 				<div id="footer">

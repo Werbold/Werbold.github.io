@@ -39,39 +39,37 @@
 		<section>
 			<div id="content">
 				<h1>Převody jednotek rychlosti</h1>
-				<div class="vedle">
-					<div id="leftPartOfPrevody">
-						<p>Základní jednotkou je metr za sekundu.</p>
-						<ul>
-							<li>1 m / s [metr za sekundu] = 3,6 km / h [kilometr za hodinu]</li>
-							<li>1 km / s [kilometr za sekundu] = 1000 m / s</li>
-							<li>1 km / h = 1000 m / h [metr za hodinu]</li>
-						</ul>
+				<div id="leftPartContent">
+					<p>Základní jednotkou je metr za sekundu.</p>
+					<ul>
+						<li>1 m / s [metr za sekundu] = 3,6 km / h [kilometr za hodinu]</li>
+						<li>1 km / s [kilometr za sekundu] = 1000 m / s</li>
+						<li>1 km / h = 1000 m / h [metr za hodinu]</li>
+					</ul>
+				</div>
+				<div id="rightPartContent">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<h2 id="mezeraProNapoveda">Kalkulace</h2>
+					<div class="vedle">
+						<input id="cislo1" type="number" placeholder="První hodnota">
+						<select id="Jednotka1" name="Jednotka">
+							<option value="mZAs">m/s</option>
+							<option value="kmZAh">km/h</option>
+							<option value="kmZAs">km/s</option>
+						</select>
+						<p id="on"> na </p>
+						<select id="Jednotka2" name="Jednotka">
+							<option value="mZAs">m/s</option>
+							<option value="kmZAh">km/h</option>
+							<option value="kmZAs">km/s</option>
+						</select>
 					</div>
-					<div id="rightPartOfPrevody">
-						<div id="napovedaRight"></div>
-						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
-						<div class="vedle">
-							<input id="cislo1" type="number" placeholder="První hodnota">
-							<select id="Jednotka1" name="Jednotka">
-								<option value="mZAs">m/s</option>
-								<option value="kmZAh">km/h</option>
-								<option value="kmZAs">km/s</option>
-							</select>
-							<p id="on"> na </p>
-							<select id="Jednotka2" name="Jednotka">
-								<option value="mZAs">m/s</option>
-								<option value="kmZAh">km/h</option>
-								<option value="kmZAs">km/s</option>
-							</select>
-						</div>
-						<div id="buttons">
-							<input id="spocitat" type="button" value="Spočítat">
-							<input id="smazat" type="button" value="Smazat historii počítání">
-						</div>
-						<div id="Vysledek"></div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
 					</div>
+					<div id="Vysledek"></div>
 				</div>
 
 				<div id="footer">

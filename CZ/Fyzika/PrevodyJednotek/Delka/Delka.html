@@ -39,44 +39,42 @@
 		<section>
 			<div id="content">
 				<h1>Převody jednotek </h1>
-				<div class="vedle">
-					<div id="leftPartOfPrevody">
-						<p>Základní jednotkou je metr.</p>
-						<ul>
-							<li>1 km [kilometr] = 1000 m [metr]</li>
-							<li>1 m = 10 dm [decimetr]</li>
-							<li>1 dm = 10 cm [centimetr]</li>
-							<li>1 cm = 10 mm [milimetr]</li>
-						</ul>
+				<div id="leftPartContent">
+					<p>Základní jednotkou je metr.</p>
+					<ul>
+						<li>1 km [kilometr] = 1000 m [metr]</li>
+						<li>1 m = 10 dm [decimetr]</li>
+						<li>1 dm = 10 cm [centimetr]</li>
+						<li>1 cm = 10 mm [milimetr]</li>
+					</ul>
+				</div>
+				<div id="rightPartContent">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<h2 id="mezeraProNapoveda">Kalkulace</h2>
+					<div class="vedle">
+						<input id="cislo1" type="number" placeholder="První hodnota">
+						<select id="Jednotka1" name="Jednotka">
+							<option value="m">m</option>
+							<option value="km">km</option>
+							<option value="dm">dm</option>
+							<option value="cm">cm</option>
+							<option value="mm">mm</option>
+						</select>
+						<p id="on"> na </p>
+						<select id="Jednotka2" name="Jednotka">
+							<option value="m">m</option>
+							<option value="km">km</option>
+							<option value="dm">dm</option>
+							<option value="cm">cm</option>
+							<option value="mm">mm</option>
+						</select>
 					</div>
-					<div id="rightPartOfPrevody">
-						<div id="napovedaRight"></div>
-						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
-						<div class="vedle">
-							<input id="cislo1" type="number" placeholder="První hodnota">
-							<select id="Jednotka1" name="Jednotka">
-								<option value="m">m</option>
-								<option value="km">km</option>
-								<option value="dm">dm</option>
-								<option value="cm">cm</option>
-								<option value="mm">mm</option>
-							</select>
-							<p id="on"> na </p>
-							<select id="Jednotka2" name="Jednotka">
-								<option value="m">m</option>
-								<option value="km">km</option>
-								<option value="dm">dm</option>
-								<option value="cm">cm</option>
-								<option value="mm">mm</option>
-							</select>
-						</div>
-						<div id="buttons">
-							<input id="spocitat" type="button" value="Spočítat">
-							<input id="smazat" type="button" value="Smazat historii počítání">
-						</div>
-						<div id="Vysledek"></div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
 					</div>
+					<div id="Vysledek"></div>
 				</div>
 
 				<div id="footer">
