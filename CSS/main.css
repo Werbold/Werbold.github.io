@@ -309,8 +309,8 @@ p#practice{
 		margin-top: 210px;
 	}
 	#footerText{
-		bottom: -110px;
-		right: 1px;
+		bottom: -130px;
+		right: .25px;
 	}
 	#logoContain{
 		position: relative;
@@ -373,7 +373,6 @@ p#practice{
 		width: 49%;
 	}
 	#rightPart{
-		min-height: 200px;
 		width: 49%;
 		float: right;
 		margin-top: 10px;

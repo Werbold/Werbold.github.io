@@ -13,11 +13,8 @@
 #footer{
 	margin-top: 0px;
 }
-#rightPart{
-	height: 100px;
-}
 #footerText{
-	height: 90px;
+	height: 80px;
 }
 
 @media (max-width: 340px){

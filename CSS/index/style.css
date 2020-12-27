@@ -76,13 +76,16 @@ footer{
 }
 #footerText{
 	position: absolute;
-	bottom: -130px;
+	bottom: -161px;
 	left: .25px;
 }
 
 @media (min-width: 600px){
 	section{
 		margin-top: 220px;
+	}
+	#footerText{
+		bottom: -130px;
 	}
 	#favouriteMatematika li{
 		margin: 0px;
