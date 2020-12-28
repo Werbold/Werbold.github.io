@@ -1,6 +1,7 @@
 section{
 	margin-top: 200px;
 	min-height: 568px;
+	padding-bottom: 0px;
 }
 ul{
 	list-style-type: none;

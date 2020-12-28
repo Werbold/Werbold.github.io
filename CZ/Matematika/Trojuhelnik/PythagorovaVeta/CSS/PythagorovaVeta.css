@@ -4,3 +4,9 @@
 #footer{
 	height: 0px;
 }
+
+@media (min-width: 1020px){
+	#rightPart{
+		margin-top: -250px;
+	}
+}
