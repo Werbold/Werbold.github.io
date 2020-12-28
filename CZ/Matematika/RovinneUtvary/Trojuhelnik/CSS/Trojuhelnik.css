@@ -11,3 +11,9 @@ ul#vlastnosti li ol li ul{
 ul#vlastnosti li ol li{
 	margin-bottom: 5px;
 }
+
+@media (min-width: 950px){
+	#rightPart{
+		margin-top: -350px;
+	}
+}
