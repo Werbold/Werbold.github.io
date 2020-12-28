@@ -104,13 +104,12 @@ footer{
 	}
 }
 
-@media (min-width: 1110px){
-	#fyzika{
-		float: left;
-		margin-left: 70px;
+@media (min-width: 1030px){
+	.vedle{
+		width: 1030px;
+		margin: 0 auto;
 	}
-	#matematika{
-		margin: 0px 0px;
-		float: right;
+	#fyzika{
+		margin-right: 40px;
 	}
 }
