@@ -37,6 +37,11 @@ footer{
 	section{
 		margin-top: 220px;
 	}
+	#footerText{
+		position: absolute;
+		left: .25px;
+		bottom: -100px;
+	}
 	#clear{
 		clear: both;
 	}

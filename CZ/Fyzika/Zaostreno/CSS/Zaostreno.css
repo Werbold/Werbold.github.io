@@ -37,11 +37,20 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	height: 0px;
 	width: 0px;
 }
+#footerText{
+	position: absolute;
+	bottom: -100px;
+	right: .25px;
+}
+
 @media (min-width: 600px){
 	#footerText{
 		position: absolute;
-		bottom: -161px;
+		bottom: -100px;
 		right: .25px;
+	}
+	section{
+		min-height: 649px;
 	}
 }
 
