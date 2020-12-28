@@ -3,6 +3,7 @@ section{
 }
 .info{
 	margin: 0px 20px;
+	max-width: 1000px;
 }
 ul{
 	list-style-type: none;
