@@ -12,9 +12,9 @@ $(document).ready(function() {
 			vysledekS = Math.pow(cislo1,2);
 			vysledekV = Math.pow(cislo1,3);
 
-			vysledekV = vysledekO * 1000;
-			vysledekV = Math.round(vysledekO);
-			vysledekV = vysledekO / 1000;
+			vysledekV = vysledekV * 1000;
+			vysledekV = Math.round(vysledekV);
+			vysledekV = vysledekV / 1000;
 			
 			vysledekS = vysledekS * 1000;
 			vysledekS = Math.round(vysledekS);

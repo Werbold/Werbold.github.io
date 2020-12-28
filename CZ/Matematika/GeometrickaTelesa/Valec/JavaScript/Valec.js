@@ -16,9 +16,9 @@ $(document).ready(function() {
 				vysledekS = 2 * cislo2 + cislo3;
 				vysledekV = Math.PI * Math.pow(cislo1,2);
 
-				vysledekV = vysledekO * 1000;
-				vysledekV = Math.round(vysledekO);
-				vysledekV = vysledekO / 1000;
+				vysledekV = vysledekV * 1000;
+				vysledekV = Math.round(vysledekV);
+				vysledekV = vysledekV / 1000;
 				
 				vysledekS = vysledekS * 1000;
 				vysledekS = Math.round(vysledekS);
@@ -35,9 +35,9 @@ $(document).ready(function() {
 				vysledekS = 2 * Math.PI * cislo1 * (cislo1 + cislo4);
 				vysledekV = Math.PI * Math.pow(cislo1,2);
 
-				vysledekV = vysledekO * 1000;
-				vysledekV = Math.round(vysledekO);
-				vysledekV = vysledekO / 1000;
+				vysledekV = vysledekV * 1000;
+				vysledekV = Math.round(vysledekV);
+				vysledekV = vysledekV / 1000;
 				
 				vysledekS = vysledekS * 1000;
 				vysledekS = Math.round(vysledekS);

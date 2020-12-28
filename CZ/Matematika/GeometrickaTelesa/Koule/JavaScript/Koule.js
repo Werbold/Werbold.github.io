@@ -12,9 +12,9 @@ $(document).ready(function() {
 			vysledekS = 4 * Math.PI * Math.pow(2,2);
 			vysledekV = 4 / 3 * Math.PI * Math.pow(2,3);
 
-			vysledekV = vysledekO * 1000;
-			vysledekV = Math.round(vysledekO);
-			vysledekV = vysledekO / 1000;
+			vysledekV = vysledekV * 1000;
+			vysledekV = Math.round(vysledekV);
+			vysledekV = vysledekV / 1000;
 			
 			vysledekS = vysledekS * 1000;
 			vysledekS = Math.round(vysledekS);

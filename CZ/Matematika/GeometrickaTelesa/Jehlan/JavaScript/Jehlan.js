@@ -17,9 +17,9 @@ $(document).ready(function() {
 				vysledekS = cislo2 * cislo2 + cislo4;
 				vysledekV = 1 / 3 * cislo2 * cislo2 * cislo5;
 
-				vysledekV = vysledekO * 1000;
-				vysledekV = Math.round(vysledekO);
-				vysledekV = vysledekO / 1000;
+				vysledekV = vysledekV * 1000;
+				vysledekV = Math.round(vysledekV);
+				vysledekV = vysledekV / 1000;
 				
 				vysledekS = vysledekS * 1000;
 				vysledekS = Math.round(vysledekS);
@@ -35,9 +35,9 @@ $(document).ready(function() {
 				vysledekS = cislo3 + cislo4;
 				vysledekV = 1 / 3 * cislo3 * cislo5;
 
-				vysledekV = vysledekO * 1000;
-				vysledekV = Math.round(vysledekO);
-				vysledekV = vysledekO / 1000;
+				vysledekV = vysledekV * 1000;
+				vysledekV = Math.round(vysledekV);
+				vysledekV = vysledekV / 1000;
 				
 				vysledekS = vysledekS * 1000;
 				vysledekS = Math.round(vysledekS);
@@ -80,9 +80,9 @@ $(document).ready(function() {
 				error();
 				vysledekV = 1 / 3 * cislo2 * cislo2 * cislo5;
 
-				vysledekV = vysledekO * 1000;
-				vysledekV = Math.round(vysledekO);
-				vysledekV = vysledekO / 1000;
+				vysledekV = vysledekV * 1000;
+				vysledekV = Math.round(vysledekV);
+				vysledekV = vysledekV / 1000;
 
 				$('#Vysledek').after("<p class='count'>Strana a: " + cislo2 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo5 + " " + jednotka + "<br>"
@@ -92,9 +92,9 @@ $(document).ready(function() {
 				error();
 				vysledekV = 1 / 3 * cislo3 * cislo4;
 
-				vysledekV = vysledekO * 1000;
-				vysledekV = Math.round(vysledekO);
-				vysledekV = vysledekO / 1000;
+				vysledekV = vysledekV * 1000;
+				vysledekV = Math.round(vysledekV);
+				vysledekV = vysledekV / 1000;
 
 				$('#Vysledek').after("<p class='count'>Strana a: " + cislo2 + " " + jednotka + "<br>"
 				+ "Výška: " + cislo5 + " " + jednotka + "<br>"

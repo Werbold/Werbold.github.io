@@ -33,14 +33,17 @@ footer{
 	bottom: -160px;
 }
 
-@media (min-width: 1385px){
-	section{
-		margin-top: 220px;
-	}
+@media (min-width: 600px){
 	#footerText{
 		position: absolute;
 		left: .25px;
 		bottom: -100px;
+	}
+}
+
+@media (min-width: 1385px){
+	section{
+		margin-top: 220px;
 	}
 	#clear{
 		clear: both;
