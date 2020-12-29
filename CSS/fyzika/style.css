@@ -47,7 +47,7 @@ footer{
 	}
 	#clear{
 		clear: both;
-	}
+	}/*
 	#stBar{
 		float: left;
 		margin: 0px 90px;
@@ -55,5 +55,5 @@ footer{
 	#ndBar{
 		margin-right: 50px;
 		float: right;
-	}
+	}*/
 }
