@@ -3,7 +3,7 @@ RewriteEngine On
 RewriteBase /
 
 RewriteCond %{ENV:HTTPS} !^.*on
-RewriteRule ^(.*)$ https://www.calcit.eu/$1 [R,L]
+RewriteRule ^(.*)$ https://www.calcit.eu/CZ/Fyzika/Elektrina/ProudNaElektrickemNapeti/ProudNaElektrickemNapeti.html/$1 [R,L]
 
 #Gzip
 <IfModule mod_deflate.c>
