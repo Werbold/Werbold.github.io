@@ -97,7 +97,7 @@ $(document).ready(function() {
 
 				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
-			if (jednotka1 = jednotka2) {
+			if (jednotka1 === jednotka2) {
 				vysledek = cislo1;
 
 				vysledek = vysledek * 1000;
