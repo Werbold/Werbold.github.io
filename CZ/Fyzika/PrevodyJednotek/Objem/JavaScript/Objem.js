@@ -218,7 +218,7 @@ $(document).ready(function() {
 				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "dm3" && jednotka2 == "l" || jednotka1 == "cl" && jednotka2 == "cm3") {
-				vysledek = cislo1 * 10;
+				vysledek = cislo1;
 
 				vysledek = vysledek * 1000;
 				vysledek = Math.round(vysledek);
@@ -227,7 +227,7 @@ $(document).ready(function() {
 				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "l" && jednotka2 == "dm3" || jednotka1 == "cm3" && jednotka2 == "cl") {
-				vysledek = cislo1 / 10;
+				vysledek = cislo1;
 
 				vysledek = vysledek * 1000;
 				vysledek = Math.round(vysledek);

@@ -26,7 +26,7 @@ $(document).ready(function() {
 				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "kmZAh" && jednotka2 == "mZAs") {
-				vysledek = cislo1 * 3.6;
+				vysledek = cislo1 / 3.6;
 				jednotka1 = "km/h";
 				jednotka2 = "m/s";
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
 				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "mZAs" && jednotka2 == "kmZAh") {
-				vysledek = cislo1 / 3.6;
+				vysledek = cislo1 * 3.6;
 				jednotka1 = "m/s";
 				jednotka2 = "km/h";
 
