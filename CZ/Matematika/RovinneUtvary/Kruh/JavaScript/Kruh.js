@@ -6,10 +6,7 @@ $(document).ready(function() {
 		var vysledekO;
 		var vysledekS;
 
-		if (cislo1 <= 0) {
-			error();
-		}
-		else{
+		if (cislo1 > 0){
 			vysledekO = Math.PI * cislo1 * cislo1 / 4;
 			vysledekS = Math.PI * cislo1;
 
@@ -24,6 +21,9 @@ $(document).ready(function() {
 			$('#Vysledek').after("<p class='count'>Průměr kruhu: " + cislo1 + " " + jednotka + "<br>"
 				+ "Obvod: " + vysledekO + " " + jednotka + "<br>"
 				+ "Obsah: " + vysledekS + " " + jednotka + "<sup>2</sup></p>");
+		}
+		else if (cislo1 <= 0) {
+			error();
 		}
 	});
 
