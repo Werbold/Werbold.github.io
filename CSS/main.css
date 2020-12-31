@@ -29,7 +29,7 @@ a.info{
 	text-decoration: none;
 }
 #hlavicka{
-	height: 150px;
+	height: 170px;
 	width: 100%;
 	float: left;
 	position: absolute;
@@ -168,7 +168,7 @@ nav ul li :hover{
 	transition: 0.4s;
 }
 #password{
-	margin: 30px 0 0 20px;
+	margin: 56px 0 0 20px;
 }
 #definition{
 	font-size: 18px; 
@@ -324,7 +324,7 @@ p#practice{
 	#logo{
 		width: 313px;
 		position: absolute;
-		top: -30px;
+		top: -12px;
 		left: -60px;
 	}
 	#left{

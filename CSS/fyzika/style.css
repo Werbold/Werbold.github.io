@@ -37,13 +37,19 @@ footer{
 	#footerText{
 		position: absolute;
 		left: .25px;
-		bottom: -194px;
+		bottom: -814px;
 	}
 	article{
 		max-width: 2000px;
 	}
 	#rightPartContent{
 		margin-top: -200px;
+	}
+}
+
+@media (min-width: 1130px){
+	#footerText{
+		bottom: -194px;
 	}
 }
 

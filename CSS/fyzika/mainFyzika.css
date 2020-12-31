@@ -23,9 +23,9 @@
 }
 
 @media (min-width: 600px){
-	/*article{
-		max-width: 780px;
-	}*/
+	#footerText{
+		bottom: 1000px;
+	}
 	#rightPartContent{
 		margin-top: 0px;
 	}
@@ -38,7 +38,7 @@
 	}	
 }
 
-@media (min-width: 1030px){
+@media (min-width: 1130px){
 	.midBar{
 		display: flex;
 		width: 1030px;
