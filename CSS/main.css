@@ -29,7 +29,7 @@ a.info{
 	text-decoration: none;
 }
 #hlavicka{
-	height: 210px;
+	height: 150px;
 	width: 100%;
 	float: left;
 	position: absolute;
@@ -168,7 +168,7 @@ nav ul li :hover{
 	transition: 0.4s;
 }
 #password{
-	margin: 45px 0 0 20px;
+	margin: 30px 0 0 20px;
 }
 #definition{
 	font-size: 18px; 
@@ -180,8 +180,8 @@ nav ul li :hover{
 }
 #logo{
 	position: absolute;
-	right: 0px;
-	top: -15px;
+	right: -55px;
+	top: -30px;
 	float: right;
 	width: 170px;
 }
@@ -301,9 +301,11 @@ p#practice{
 		margin-top: 25px;
 	}
 	article{
+		position: static;
 		height: 100%;
 		padding-left: 10px;
 		margin: 0 auto;
+		max-width: 1020px;
 	}
 	#Jednotka{
 		width: 72px;
@@ -313,8 +315,8 @@ p#practice{
 		margin-top: 210px;
 	}
 	#footerText{
-		bottom: -130px;
-		right: .25px;
+		bottom: -490px;
+		left: 0px;
 	}
 	#logoContain{
 		position: relative;
@@ -322,7 +324,7 @@ p#practice{
 	#logo{
 		width: 313px;
 		position: absolute;
-		top: -40px;
+		top: -30px;
 		left: -60px;
 	}
 	#left{
@@ -333,13 +335,10 @@ p#practice{
 		top: 20px;
 		left: 140px;
 	}
-	#right{
-		position: relative;
-	}
 	nav{
 		position: absolute;
-		top: 130px;
-		left: 20px;
+		top: 85px;
+		left: 150px;
 	}
 	.left{
 		margin-top: 10px;
@@ -389,9 +388,10 @@ p#practice{
 	#rightPartContent{
 		width: 49%;
 		float: right;
+		margin-top: -200px;
 	}
 	#ilustracion{
-		margin: 0px;
+		margin-top: -450px;
 		padding: 0px;
 	}
 	#image{

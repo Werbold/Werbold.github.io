@@ -37,7 +37,13 @@ footer{
 	#footerText{
 		position: absolute;
 		left: .25px;
-		bottom: -100px;
+		bottom: -194px;
+	}
+	article{
+		max-width: 2000px;
+	}
+	#rightPartContent{
+		margin-top: -200px;
 	}
 }
 

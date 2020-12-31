@@ -36,7 +36,7 @@ $(document).ready(function() {
 					vysledek = Math.round(vysledek);
 					vysledek = vysledek / 1000;
 
-					$('#Vysledek').after("<p>Síla: " + cislo2 + " " + jednotkaF + "<br>"
+					$('#Vysledek').after("<p class='count'>Síla: " + cislo2 + " " + jednotkaF + "<br>"
 					+ "Obsah: " + cislo3 + " " + jednotkaS + "<br>"
 					+ "Tlak: " + vysledek + " " + jednotkaP + "</p>");
 				}
@@ -47,7 +47,7 @@ $(document).ready(function() {
 					vysledek = Math.round(vysledek);
 					vysledek = vysledek / 1000;
 
-					$('#Vysledek').after("<p>Tlak: " + cislo1 + " " + jednotkaP + "<br>"
+					$('#Vysledek').after("<p class='count'>Tlak: " + cislo1 + " " + jednotkaP + "<br>"
 					+ "Obsah: " + cislo3 + " " + jednotkaS + "<br>"
 					+ "Síla: " + vysledek + " " + jednotkaF + "</p>");
 				}
@@ -58,7 +58,7 @@ $(document).ready(function() {
 					vysledek = Math.round(vysledek);
 					vysledek = vysledek / 1000;
 
-					$('#Vysledek').after("<p>Tlak: " + cislo1 + " " + jednotkaP + "<br>"
+					$('#Vysledek').after("<p class='count'>Tlak: " + cislo1 + " " + jednotkaP + "<br>"
 					+ "Síla: " + cislo2 + " " + jednotkaF + "<br>"
 					+ "Obsah: " + vysledek + " " + jednotkaS + "</p>");
 				}
@@ -79,5 +79,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze spočítat ani jednu položku.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

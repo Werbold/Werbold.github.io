@@ -1,15 +1,17 @@
 #Jednotka{
 	height: 144px;
 }
-#ilustracion{
-	max-width: 59%;
-	height: auto;
-}
 ul#vlastnosti li ol li ul{
 	list-style-type: disc;
 }
 ul#vlastnosti li ol li{
 	margin-bottom: 5px;
+}
+
+@media (min-width: 600px){
+	#footerText{
+		bottom: -900px;
+	}
 }
 
 @media (min-width: 950px){

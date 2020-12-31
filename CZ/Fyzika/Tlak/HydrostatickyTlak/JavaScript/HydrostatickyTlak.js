@@ -20,7 +20,7 @@ $(document).ready(function() {
 			vysledek = Math.round(vysledek);
 			vysledek = vysledek / 1000;
 
-			$('#Vysledek').after("<p>Hloubka: " + cislo1 + " " + jednotkaH + "<br>"
+			$('#Vysledek').after("<p class='count'>Hloubka: " + cislo1 + " " + jednotkaH + "<br>"
 				+ "Hustota: " + cislo2 + " " + jednotkaRo + "<br>" 
 				+ "Hydrostatický tlak: " + vysledek + " " + jednotkaPh + "</p>");
 		}
@@ -36,5 +36,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

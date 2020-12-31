@@ -14,9 +14,6 @@
 	padding-left: 100.245px;
 	padding-right: 100.245px;
 }
-#footerText{
-	position: static;
-}
 
 @media (max-width: 340px){
 	#Jednotka{

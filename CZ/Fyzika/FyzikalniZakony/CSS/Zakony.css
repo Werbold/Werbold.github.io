@@ -56,3 +56,9 @@
 		padding-left: 50.475px;
 	}
 }
+
+@media (min-width: 950px){
+	#rightPartContent{
+		margin-top: -50px;
+	}
+}
