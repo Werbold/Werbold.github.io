@@ -33,7 +33,6 @@
 	.midBar{
 		display: flex;
 		width: 1030px;
-		margin: 0 auto;
 	}
 	#stBar{
 		margin-right: 70px;

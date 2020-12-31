@@ -73,6 +73,7 @@ label{
 	cursor: pointer;
 }
 p{
+	font-family: 'Roboto Slab', serif;
 	margin: 0;
 	padding: 0;
 	line-height: 1.4em;
@@ -188,11 +189,13 @@ nav ul li :hover{
 	width: 98%;
 }
 h1{
+	font-family: 'Roboto Condensed', sans-serif;
 	margin-bottom: 0px;
 	font-size: 27px;
 	font-weight: 900;
 }
 h2, h3, h4, h5, h6{
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 25px;
 	font-weight: 600;
 }
