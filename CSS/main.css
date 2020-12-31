@@ -265,12 +265,16 @@ p#practice{
 	top: 30%;
 }
 #footerText{
+	text-align: center;
 	padding-bottom: 20px;
 	width: 100%;
 	color: #fcfcfc;
-	height: 80px;
+	height: 130px;
 	float: left;
 	background: url("Images/BcgHeader.png");
+}
+#and{
+	margin-left: 0px;
 }
 .left, .center, .right{
 	margin-top: 7px;
@@ -301,7 +305,6 @@ p#practice{
 		margin-top: 25px;
 	}
 	article{
-		position: static;
 		height: 100%;
 		padding-left: 10px;
 		margin: 0 auto;
@@ -314,8 +317,15 @@ p#practice{
 		padding-bottom: 85px;
 		margin-top: 210px;
 	}
+	#names{
+		margin-left: 50px;
+	}
+	#and{
+		padding-left: 58px;
+	}
 	#footerText{
-		bottom: -490px;
+		height: 80px;
+		bottom: -100px;
 		left: 0px;
 	}
 	#logoContain{
@@ -332,7 +342,7 @@ p#practice{
 	}
 	#password{
 		position: absolute;
-		top: 20px;
+		top: -5px;
 		left: 140px;
 	}
 	nav{

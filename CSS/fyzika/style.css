@@ -30,15 +30,10 @@ footer{
 #footerText{
 	position: absolute;
 	left: .25px;
-	bottom: -102px;
+	bottom: -150px;
 }
 
 @media (min-width: 600px){
-	#footerText{
-		position: absolute;
-		left: .25px;
-		bottom: -814px;
-	}
 	article{
 		max-width: 1050px;
 	}
@@ -49,7 +44,7 @@ footer{
 
 @media (min-width: 1130px){
 	#footerText{
-		bottom: -194px;
+		bottom: -100px;
 	}
 }
 

@@ -29,7 +29,8 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	color: #0c0c9c;
 }
 #footerText{
-	bottom: -130px;
+	position: absolute;
+	bottom: -100px;
 	left: .25px;
 }
 #multiBar{

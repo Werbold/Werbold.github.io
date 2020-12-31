@@ -9,9 +9,6 @@
 #footer{
 	margin-top: 0px;
 }
-#footerText{
-	height: 80px;
-}
 
 @media (max-width: 340px){
 	#Jednotka{
