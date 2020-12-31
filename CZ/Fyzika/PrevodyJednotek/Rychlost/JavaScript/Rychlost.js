@@ -8,14 +8,18 @@ $(document).ready(function() {
 
 		if (cislo1 > 0) {
 			if (jednotka1 == "kmZAh" && jednotka2 == "kmZAs") {
-				vysledek = cislo1 * 3600;
+				vysledek = cislo1 / 3600;
 				jednotka1 = "km/h";
-				jednotka2 = "km/s";	
+				jednotka2 = "km/s";
+
+				vysledek = vysledek * 1000000;
+				vysledek = Math.round(vysledek);
+				vysledek = vysledek / 1000000;
 
 				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
 			if (jednotka1 == "kmZAs" && jednotka2 == "kmZAh") {
-				vysledek = cislo1 / 3600;
+				vysledek = cislo1 * 3600;
 				jednotka1 = "km/s";
 				jednotka2 = "km/h";
 
@@ -69,7 +73,7 @@ $(document).ready(function() {
 
 				$('#Vysledek').after("<p class='count'>"+ cislo1 + " " + jednotka1 + " = " + vysledek + " " + jednotka2 + "</p>");
 			}
-			if (jednotka1 == jednotka2) {
+			if (jednotka1 === jednotka2) {
 				vysledek = cislo1;
 				if (jednotka1 == "kmZAh") {
 					jednotka1 = "km/h";
