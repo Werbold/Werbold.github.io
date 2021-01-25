@@ -1,0 +1,184 @@
+body{
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h5{
+	margin: 0;
+	padding: 20px 0;
+	color: #b82a2a;
+}
+h1{
+	font-size: 1.8em;
+}
+h3{
+	font-size: 1.4em;
+}
+li{
+	font-size: 20px;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul.android{
+	list-style-image: url("../Images/android.png");
+}
+ul.linux{
+	list-style-image: url("../Images/linux.png");
+}
+ul.apple{
+	list-style-image: url("../Images/apple.png");
+}
+section{
+	padding-left: 20px;
+}
+p{
+	margin: 0;
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+	color: #3d297d;
+	font-size: 25px;
+}
+a:hover{
+	color: #9152de;
+	text-decoration: underline;
+	transition: 0.5s;
+}
+.dark{
+	background-color: #2d2c29;
+	color: #959595;
+	min-height: 100%;
+}
+.light{
+	background-color: #ececec;
+	color: #2d2c29;
+	min-height: 100%;
+}
+.about p, header p{
+	font-size: 25px;
+	padding: 20px 0;
+}
+a.linkedin{
+	font-size: 20px;
+}
+.offers{
+	padding-bottom: 20px;
+}
+.contact p{
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.contact h2{
+	text-align: center;
+}
+.line{
+	height: 1px;
+	width: 100%;
+	border-top: 1px solid #2d2c29;
+}
+.item{
+	margin-right: 50px;
+}
+.alignCenter{
+	text-align: center;
+}
+.offer{
+	width: 70%;
+	margin: 0 auto;
+}
+.offers p{
+	padding-top: 20px;
+	text-align: center;
+}
+.definitionOfWork ul{
+	padding-bottom: 20px;
+}
+.definitionOfWork p{
+	padding-bottom: 20px;
+}
+.title{
+	text-align: center;
+}
+p.info{
+	text-align: center;
+	padding-top: 0px;
+}
+.infoBox{
+	padding-left: 20px;
+}
+.information{
+	display: flex;
+	width: 50%;
+	margin: 0 auto;
+}
+.city p{
+	padding-bottom: 20px;
+}
+.more a{
+	font-size: 15px;
+	color: white;
+}
+.more a:hover{
+	color: #9152de;
+	transition: 0.5s;
+}
+.clear{
+	clear: both;
+}
+footer p{
+	font-size: 15px;
+	padding: 0;
+	text-align: right;
+}
+footer{
+	padding: 20px;
+}
+
+@media (min-width: 1000px){
+	.next{
+		display: flex;
+	}
+	.box{
+		margin: 0 auto;
+		width: 32%;
+	}
+	.about p, header p{
+		text-align: center;
+		font-size: 30px;
+		padding: 20px 0;
+	}
+	.about a{
+		font-size: 30px;
+	}
+	.contact p{
+		margin: 0;
+		padding: 0;
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+	.center{
+		width: 50%;
+		margin: 0 auto;
+	}
+	.infoBox{
+		width: 55%;
+		padding: 20px;
+		margin: 0 auto;
+	}
+	.listCenter{
+		width: 55%;
+		margin: 0 auto;
+	}
+	.copyright{
+		float: right;
+	}
+	.stCopy{
+		margin-right: 3px;
+	}
+	a.linkedin{
+		font-size: 20px;
+	}
+}
