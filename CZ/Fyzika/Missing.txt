@@ -1,7 +1,0 @@
-Nastylovat
-1) Fy zákony
-2) Převody jednotek
-3) Síla
-4) Teplo
-5) Tlak
-6) Zaostreno
