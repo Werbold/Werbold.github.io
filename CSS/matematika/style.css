@@ -1,5 +1,8 @@
 section{
 	margin-top: 285px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 45%;
 }
 h1, h2, h3, h4, h5, h6{
 	margin: 0px 0px;
@@ -12,14 +15,11 @@ h1{
 	font-size: 36px;
 	text-align: center;
 	padding: 10px;
-	margin-bottom: 40px;
 }
 h3{
 	background-color: #1c5387;
 	text-align: center;
 	padding: 10px;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
 	font-weight: bold;
 }
 h3 a{
@@ -95,10 +95,6 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 		position: absolute;
 		right: 0;
 		bottom: -35px;
-	}
-	section{
-		margin-right: 20px;
-		margin-left: 20px;
 	}
 }
 

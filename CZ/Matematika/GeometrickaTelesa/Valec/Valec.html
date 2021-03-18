@@ -55,71 +55,71 @@
 							<p id="image"><!--<img id="ilustracion" src="Images/Ctverec.png" alt="Popis válce"--></p>
 						</div>
 					</div>
-				</div>
 
-				<div id="leftPart">
-					<h2>Vzorečky</h2>
-					<p>Obsah <i>S</i> =  2 * S<sub>p</sub> + S<sub>pl</sub></p>
-					<p>Obsah <i>S</i> = 2 * πr(r + v)</p>
-					<p>Objem <i>V</i> = πr<sup>2</sup>v</p>
-					<p>Obsah pláště <i>S<sub>pl</sub></i> = 2 * πrv</p>
-					<p>Obsah podstavy <i>S<sub>p</sub></i> = πr<sup>2</sup></p>
-					
-					<h2>Vysvětlivky</h2>
-					<p>
-						<i>r</i> = poloměr<br>
-						<i>d</i> = průměr<br>
-						<i>v</i> = výška<br>
-						<i>S'; S''</i> = střed podstavy<br>
-						<i>V</i> = objem<br>
-						<i>S</i> = povrch<br>
-						<i>S<sub>p</sub></i> = obsah podstavy<br>
-						<i>S<sub>pl</sub></i> = obsah pláště<br>
-						Výška je kolmice vztyčená ke zvolené straně.
-					</p>
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obsah <i>S</i> =  2 * S<sub>p</sub> + S<sub>pl</sub></p>
+						<p>Obsah <i>S</i> = 2 * πr(r + v)</p>
+						<p>Objem <i>V</i> = πr<sup>2</sup>v</p>
+						<p>Obsah pláště <i>S<sub>pl</sub></i> = 2 * πrv</p>
+						<p>Obsah podstavy <i>S<sub>p</sub></i> = πr<sup>2</sup></p>
+						
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>r</i> = poloměr<br>
+							<i>d</i> = průměr<br>
+							<i>v</i> = výška<br>
+							<i>S'; S''</i> = střed podstavy<br>
+							<i>V</i> = objem<br>
+							<i>S</i> = povrch<br>
+							<i>S<sub>p</sub></i> = obsah podstavy<br>
+							<i>S<sub>pl</sub></i> = obsah pláště<br>
+							Výška je kolmice vztyčená ke zvolené straně.
+						</p>
 
-					<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/GeometrickaTelesa/Valec.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
-				</div>
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/GeometrickaTelesa/Valec.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
 
-				<div id="rightPart">
-					<div id="napovedaRight"></div>
-					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
-					<div id="kalkulace">
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
-						<div class="vedle">
-							<div id="leftSide">
-								<div class="vedle">
-									<label>r = </label>
-									<input id="cislo1" type="number" placeholder="Poloměr">
+					<div id="rightPart">
+						<div id="napovedaRight"></div>
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<div id="kalkulace">
+							<h2 id="mezeraProNapoveda">Kalkulace</h2>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label>r = </label>
+										<input id="cislo1" type="number" placeholder="Poloměr">
+									</div>
+									<div class="vedle">
+										<label>S<sub>p</sub> = </label> 
+										<input id="cislo2" type="number" placeholder="Obsah podstavy">
+									</div>
+									<div class="vedle">
+										<label>S<sub>pl</sub> = </label>
+										<input id="cislo3" type="number" placeholder="Obsah pláště">
+									</div>
+									<div class="vedle">
+										<label>v = </label>
+										<input id="cislo4" type="number" placeholder="Výška">
+									</div>
 								</div>
-								<div class="vedle">
-									<label>S<sub>p</sub> = </label> 
-									<input id="cislo2" type="number" placeholder="Obsah podstavy">
-								</div>
-								<div class="vedle">
-									<label>S<sub>pl</sub> = </label>
-									<input id="cislo3" type="number" placeholder="Obsah pláště">
-								</div>
-								<div class="vedle">
-									<label>v = </label>
-									<input id="cislo4" type="number" placeholder="Výška">
+								<div id="rideSide">
+									<select id="Jednotka" name="Jednotka">
+										<option value="m">m</option>
+										<option value="km">km</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
 								</div>
 							</div>
-							<div id="rideSide">
-								<select id="Jednotka" name="Jednotka">
-									<option value="m">m</option>
-									<option value="km">km</option>
-									<option value="dm">dm</option>
-									<option value="cm">cm</option>
-									<option value="mm">mm</option>
-								</select>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
 							</div>
+							<div id="Vysledek"></div>
 						</div>
-						<div id="buttons">
-							<input id="spocitat" type="button" value="Spočítat">
-							<input id="smazat" type="button" value="Smazat historii počítání">
-						</div>
-						<div id="Vysledek"></div>
 					</div>
 				</div>
 

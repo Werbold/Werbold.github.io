@@ -2,7 +2,7 @@
 	min-height: 544px;
 }
 #law{
-	max-width: 60%;
+	max-width: 100%;
 }
 #rightPartContent p img{
 	margin-top: 100px;
@@ -10,7 +10,8 @@
 }
 #leftPartContent{
 	margin-right: 0px;
-	width: 400px;
+	width: 450px;
+	float: none;
 }
 #withoutWarning{
 	text-align: center;
@@ -61,5 +62,8 @@
 @media (min-width: 950px){
 	#rightPartContent{
 		margin-top: -50px;
+	}
+	#footer{
+		margin-top: 0;
 	}
 }

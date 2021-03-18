@@ -53,54 +53,54 @@
 							<p id="image"><!--<img id="ilustracion" src="Images/Ctverec.png" alt="Popis Koule"--></p>
 						</div>
 					</div>
-				</div>
 
-				<div id="leftPart">
-					<h2>Vzorečky</h2>
-					<p>Obsah <i>S</i> = 4 * πr<sup>2</sup></p>
-					<p>Objem <i>V</i> = 4 / 3 πr<sup>3</sup></p>
-					<p>průměr <i>d</i> = 2 * r</p>
-					
-					<h2>Vysvětlivky</h2>
-					<p>
-						<i>r</i> = poloměr<br>
-						<i>d</i> = průměr<br>
-						<i>S'</i> = střed koule<br>
-						<i>V</i> = objem<br>
-						<i>S</i> = povrch<br>
-					</p>
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obsah <i>S</i> = 4 * πr<sup>2</sup></p>
+						<p>Objem <i>V</i> = 4 / 3 πr<sup>3</sup></p>
+						<p>průměr <i>d</i> = 2 * r</p>
+						
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>r</i> = poloměr<br>
+							<i>d</i> = průměr<br>
+							<i>S'</i> = střed koule<br>
+							<i>V</i> = objem<br>
+							<i>S</i> = povrch<br>
+						</p>
 
-					<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/GeometrickaTelesa/Koule.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
-				</div>
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/GeometrickaTelesa/Koule.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
 
-				<div id="rightPart">
-					<div id="napovedaRight"></div>
-					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
-					<div id="kalkulace">
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
-						<div class="vedle">
-							<div id="leftSide">
-								<div class="vedle">
-									<label>r = </label>
-									<input id="cislo1" type="number" placeholder="Poloměr">
+					<div id="rightPart">
+						<div id="napovedaRight"></div>
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<div id="kalkulace">
+							<h2 id="mezeraProNapoveda">Kalkulace</h2>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label>r = </label>
+										<input id="cislo1" type="number" placeholder="Poloměr">
+									</div>
+								</div>
+								<div id="rideSide">
+									<select id="Jednotka" name="Jednotka">
+										<option value="km">km</option>
+										<option value="m">m</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
 								</div>
 							</div>
-							<div id="rideSide">
-								<select id="Jednotka" name="Jednotka">
-									<option value="km">km</option>
-									<option value="m">m</option>
-									<option value="dm">dm</option>
-									<option value="cm">cm</option>
-									<option value="mm">mm</option>
-								</select>
+						</div>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
 							</div>
-						</div>
+						<div id="Vysledek"></div>
 					</div>
-						<div id="buttons">
-							<input id="spocitat" type="button" value="Spočítat">
-							<input id="smazat" type="button" value="Smazat historii počítání">
-						</div>
-					<div id="Vysledek"></div>
 				</div>
 
 				<div id="footer">

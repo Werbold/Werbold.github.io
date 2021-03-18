@@ -23,8 +23,8 @@
 	<!-- Css -->
 	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Kruh.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/RovinneUtvary.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Kruh.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="../../../../Calculate/Matematika/RovinneUtvary/Kruh.js"></script>
@@ -55,51 +55,51 @@
 							<p id="image"><img id="ilustracion" src="../../../../Images/RovinneUtvary/Kruh/Kruh.png" alt="Popis kruhu"></p>
 						</div>
 					</div>
-				</div>
 
-				<div id="leftPart">
-					<h2>Vzorečky</h2>
-					<p>Obvod <i>o</i> = 2 * πr = πd</p>
-					<p>Obsah <i>S</i> = πr<sup>2</sup> = πd<sup>2</sup> / 4</p> 
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obvod <i>o</i> = 2 * πr = πd</p>
+						<p>Obsah <i>S</i> = πr<sup>2</sup> = πd<sup>2</sup> / 4</p> 
 
-					<h2>Vysvětlivky</h2>
-					<p>
-						<i>d</i> = průměr<br>
-						<i>r</i> = poloměr<br>
-						<i>S</i> = střed kruhu <br>
-						<i>π</i> = Pí / Ludolfovo číslo =̇  3,14
-					</p>
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>d</i> = průměr<br>
+							<i>r</i> = poloměr<br>
+							<i>S</i> = střed kruhu <br>
+							<i>π</i> = Pí / Ludolfovo číslo =̇  3,14
+						</p>
 
-					<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/RovinneUtvary/Kruh.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
-				</div>
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/RovinneUtvary/Kruh.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
 
-				<div id="rightPart">
-					<div id="napovedaRight"></div>
-					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
-					<div id="kalkulace">
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
-						<div class="vedle">
-							<div id="leftSide">
-								<div class="vedle">
-									<label>d = </label>
-									<input id="cislo1" type="number" placeholder="Průměr">
+					<div id="rightPart">
+						<div id="napovedaRight"></div>
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<div id="kalkulace">
+							<h2 id="mezeraProNapoveda">Kalkulace</h2>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label>d = </label>
+										<input id="cislo1" type="number" placeholder="Průměr">
+									</div>
+								</div>
+								<div id="rideSide">
+									<select id="Jednotka" name="Jednotka">
+										<option value="m">m</option>
+										<option value="km">km</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
 								</div>
 							</div>
-							<div id="rideSide">
-								<select id="Jednotka" name="Jednotka">
-									<option value="m">m</option>
-									<option value="km">km</option>
-									<option value="dm">dm</option>
-									<option value="cm">cm</option>
-									<option value="mm">mm</option>
-								</select>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
 							</div>
+							<div id="Vysledek"></div>
 						</div>
-						<div id="buttons">
-							<input id="spocitat" type="button" value="Spočítat">
-							<input id="smazat" type="button" value="Smazat historii počítání">
-						</div>
-						<div id="Vysledek"></div>
 					</div>
 				</div>
 

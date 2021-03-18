@@ -16,6 +16,18 @@ h1, h2, h3, h4, h5, h6{
 	margin: 15px 0px;
 	padding: 0px; 
 }
+h1{
+	margin-bottom: 0;
+}
+h1, h2{
+	padding: 15px;
+	background: #00264d;
+	color: white;
+}
+h2{
+	border-radius: 0;
+	background: #1c5387;
+}
 h2, h3, h4, h5, h6{
 	font-weight: 400;
 }
@@ -27,11 +39,6 @@ h2, h3, h4, h5, h6{
 }
 h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	color: #0c0c9c;
-}
-#footerText{
-	position: absolute;
-	bottom: -100px;
-	left: .25px;
 }
 #multiBar{
 	height: 0px;
@@ -45,6 +52,16 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	padding: 0px;
 	height: 0px;
 	width: 0px;
+}
+#leftPartContent{
+	background: #f6f6f6;
+	padding-bottom: 20px;
+}
+#leftPartContent ul{
+	padding-left: 20px;
+}
+#leftPartContent h2{
+	margin-top: 0;
 }
 
 @media (min-width: 1399px){
@@ -91,9 +108,20 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 	}
 }
 
+@media (min-width: 950px){
+	#leftPartContent {
+		width: 100%;
+		float: none; 
+		margin-right: 20px;
+	}
+	#footer{
+		margin-top: 0;
+	}
+}
+
 @media (min-width: 1385px){
 	section{
-		margin-top: 220px;
+		margin-top: 300px;
 	}
 	#clear{
 		clear: both;

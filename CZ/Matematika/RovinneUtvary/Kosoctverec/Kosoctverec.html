@@ -23,8 +23,8 @@
 	<!-- Css -->
 	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Kosoctverec.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/RovinneUtvary.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Kosoctverec.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="../../../../Calculate/Matematika/RovinneUtvary/Kosoctverec.js"></script>
@@ -55,56 +55,56 @@
 							<p id="image"><img id="ilustracion" src="../../../../Images/RovinneUtvary/Kosoctverec/Kosoctverec.png" alt="Popis kosočtverce"></p>
 						</div>
 					</div>
-				</div>
 				
-				<div id="leftPart">
-					<h2>Vzorečky</h2>
-					<p>Obvod <i>o</i> =  4 * a</p>
-					<p>Obsah <i>S</i> = a * v<sub>a</sub></p>
-					
-					<h2>Vysvětlivky</h2>
-					<p>
-						<i>a</i> = označení strany<br>
-						<i>v<sub>a</sub></i> = výška na stranu a<br>
-						<i>u</i> = úhlopříčka <br>
-						Výška je kolmice vztyčená ke zvolené straně.<br>
-						Úhlopříčka spojuje dva různé vrcholy, které spolu nesousedí.
-					</p>
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obvod <i>o</i> =  4 * a</p>
+						<p>Obsah <i>S</i> = a * v<sub>a</sub></p>
+						
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>a</i> = označení strany<br>
+							<i>v<sub>a</sub></i> = výška na stranu a<br>
+							<i>u</i> = úhlopříčka <br>
+							Výška je kolmice vztyčená ke zvolené straně.<br>
+							Úhlopříčka spojuje dva různé vrcholy, které spolu nesousedí.
+						</p>
 
-					<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/RovinneUtvary/Kosoctverec.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
-				</div>
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/RovinneUtvary/Kosoctverec.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
 
-				<div id="rightPart">
-					<div id="napovedaRight"></div>
-					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
-					<div id="kalkulace">
-						<h2 id="mezeraProNapoveda">Kalkulace</h2>
-						<div class="vedle">
-							<div id="leftSide">
-								<div class="vedle">
-									<label>a = </label>
-									<input id="cislo1" type="number" placeholder="Délka strany">
+					<div id="rightPart">
+						<div id="napovedaRight"></div>
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<div id="kalkulace">
+							<h2 id="mezeraProNapoveda">Kalkulace</h2>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label>a = </label>
+										<input id="cislo1" type="number" placeholder="Délka strany">
+									</div>
+									<div class="vedle">
+										<label>v<sub>a</sub> = </label>
+										<input id="cislo2" type="number" placeholder="Výška">
+									</div>
 								</div>
-								<div class="vedle">
-									<label>v<sub>a</sub> = </label>
-									<input id="cislo2" type="number" placeholder="Výška">
+								<div id="rideSide">
+									<select id="Jednotka" name="Jednotka">
+										<option value="m">m</option>
+										<option value="km">km</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
 								</div>
 							</div>
-							<div id="rideSide">
-								<select id="Jednotka" name="Jednotka">
-									<option value="m">m</option>
-									<option value="km">km</option>
-									<option value="dm">dm</option>
-									<option value="cm">cm</option>
-									<option value="mm">mm</option>
-								</select>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
 							</div>
+							<div id="Vysledek"></div>
 						</div>
-						<div id="buttons">
-							<input id="spocitat" type="button" value="Spočítat">
-							<input id="smazat" type="button" value="Smazat historii počítání">
-						</div>
-						<div id="Vysledek"></div>
 					</div>
 				</div>
 
