@@ -1,0 +1,153 @@
+section{
+	margin-top: 285px;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0px 0px;
+	padding: 0px; 
+}
+h4, h5, h6{
+	font-weight: 500;
+}
+h1{
+	font-size: 36px;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 40px;
+}
+h3{
+	background-color: #1c5387;
+	text-align: center;
+	padding: 10px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	font-weight: bold;
+}
+h3 a{
+	color: white;
+	font-size: 30px;
+}
+h3 a:hover{
+	text-decoration: underline;
+	color: white;
+}
+section ul{
+	list-style-type: none;
+	background-color: #f6f6f6;	
+	margin: 0px;
+	padding: 15px 0px;
+	padding-left: 35px;
+}
+.item{
+	margin-bottom: 0px
+}
+a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 25px;
+}
+.item a:hover{
+	color: #020054;
+	text-decoration: underline;
+}
+/*-------------------------------------------------------------*/
+/*section{
+	margin-top: 200px;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	color: #3d3838;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0px 0px;
+	padding: 0px; 
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight: 500;
+}
+.item{
+	margin-bottom: 6px
+}
+.item a:hover{
+	color: #0c0c9c;
+}
+h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
+	color: #0c0c9c;
+}*/
+#multiBar{
+	height: 0px;
+	width: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+#multiBar a img{
+	visibility: hidden;
+	margin: 0px;
+	padding: 0px;
+	height: 0px;
+	width: 0px;
+}
+
+@media (min-width: 600px){
+	#footerText{
+		position: absolute;
+		right: 0;
+		bottom: -35px;
+	}
+	section{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 950px){
+	#leftPart{
+		height: 250px;
+	}
+}
+
+@media (min-width: 1300px){
+	#multiBar{
+		height: auto;
+		width: auto;
+		position: relative;
+	}
+/*	#multiBar a img{
+		position: absolute;
+		visibility: visible;
+		height: 150px;
+		width: auto;
+		border-radius: 5px;
+		box-shadow: 10px 3px 15px 2px #64648f;
+	}*/
+/*	#ctverec{
+		top: -30px;
+		right: 5%;
+	}
+	#kosoctverec{
+		top: -15px;
+		right: 22%;
+	}
+	#kruh{
+		top: 200px;
+		right: 1%;
+	}
+	#lichobeznik{
+		top: 240px;
+		right: 18%;
+	}
+	#obdelnik{
+		top: 330px;
+		right: 39%;
+	}
+	#rovnobeznik{
+		top: -70px;
+		right: 43%
+	}
+	#trojuhelnik{
+		top: 125px;
+		right: 50%;
+	}
+}*/

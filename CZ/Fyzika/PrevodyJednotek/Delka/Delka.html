@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-GHF1D6VE6G');
+	</script>
+	
+	<title>Převody jednotek délky</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Převody jednotek délky." />
+	<meta name="author" content="Calcit" />
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Delka.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/PrevodyJednotek.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../Calculate/Fyzika/PrevodyJednotek/Delka.js"></script>
+	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<h1>Převody jednotek délky</h1>
+				<div id="leftPartContent">
+					<p>Základní jednotkou je metr.</p>
+					<ul>
+						<li>1 km [kilometr] = 1000 m [metr]</li>
+						<li>1 m = 10 dm [decimetr]</li>
+						<li>1 dm = 10 cm [centimetr]</li>
+						<li>1 cm = 10 mm [milimetr]</li>
+					</ul>
+
+					<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Fyzika/PrevodyJednotek/Delka.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+				</div>
+				<div id="rightPartContent">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<h2 id="mezeraProNapoveda">Kalkulace</h2>
+					<div class="vedle">
+						<input id="cislo1" type="number" placeholder="První hodnota">
+						<select id="Jednotka1" name="Jednotka">
+							<option value="m">m</option>
+							<option value="km">km</option>
+							<option value="dm">dm</option>
+							<option value="cm">cm</option>
+							<option value="mm">mm</option>
+						</select>
+						<p id="on"> na </p>
+						<select id="Jednotka2" name="Jednotka">
+							<option value="m">m</option>
+							<option value="km">km</option>
+							<option value="dm">dm</option>
+							<option value="cm">cm</option>
+							<option value="mm">mm</option>
+						</select>
+					</div>
+					<div id="buttons">
+						<input id="spocitat" type="button" value="Spočítat">
+						<input id="smazat" type="button" value="Smazat historii počítání">
+					</div>
+					<div id="Vysledek"></div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Převody jednotek</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../Cas/Cas.html" title="Převody jednotek času">Převody jednotek času</a></li>
+							<li><a id="Odkaz2" href="../DatovyObjem/DatovyObjem.html" title="Převody datových jednotek">Převody jednotek datového objemu</a></li>
+							<li><a id="Odkaz4" href="../Hmotnost/Hmotnost.html" title="Převody jednotek hmotnosti">Převody jednotek hmotnosti</a></li>
+							<li><a id="Odkaz5" href="../Objem/Objem.html" title="Převody jednotek objemu">Převody jednotek objemu</a></li>
+							<li><a id="Odkaz6" href="../Obsah/Obsah.html" title="Převody jednotek obsahu">Převody jednotek obsahu</a></li>
+							<li><a id="Odkaz7" href="../Rychlost/Rychlost.html" title="Převody jednotek rychlosti">Převody jednotek rychlosti</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

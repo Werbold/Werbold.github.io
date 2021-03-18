@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-GHF1D6VE6G');
+	</script>
+	
+	<title>Trojúhelník - Obvod a Obsah</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Výpočet obvodu a obsahu trojúhelníku." />
+	<meta name="author" content="Calcit" />
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Trojuhelnik.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/RovinneUtvary.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../Calculate/Matematika/RovinneUtvary/Trojuhelnik.js"></script>
+	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Obvod a obsah trojúhelníku</h1>
+					<div class="vedle">
+						<div id="topContent">
+							<div id="leftPartContent">
+								<h2>Vlastnosti trojúhelníku</h2>
+								<ul id="vlastnosti">
+									<li>
+										Máme čtyři základní druhy trojúhelníků:
+										<ol>
+											<li>
+												Rovnoramenný
+												<ul>
+													<li>Obě ramena má stejně dlouhá</li>
+													<li>Má dva shodné úhly</li>
+												</ul>
+											</li>
+											<li>
+												Rovnostranný
+												<ul>
+													<li>Všechny strany má stejně dlouhé</li>
+													<li>Všechny úhly mají stejnou velikost - 60°</li>
+												</ul>
+											</li>
+											<li>
+												Pravoúhlý
+												<ul>
+													<li>Svírá jeden pravý úhel - 90°</li>
+												</ul>
+											</li>
+											<li>
+												Obecný
+												<ul>
+													<li>Nemá žádný stejný úhel</li>
+													<li>Každá strana je jinak dlouhá</li>
+												</ul>
+											</li>
+										</ol>
+									</li>
+									<li> Součet velikostí vnitřních úhlů je 180°.</li>
+								</ul>
+							</div>
+							<div id="rightPartContent">
+								<p id="image"><img id="ilustracion" src="../../../../Images/RovinneUtvary/Trojuhelnik/Trojuhelnik.png" alt="Popis trojúhelníku"></p>
+							</div>
+						</div>
+					</div>
+
+					<div id="leftPart">
+						<h3>Vzorečky</h3>
+						<p>Obvod <i>o</i> = a + b + c</p>
+						<p>Obsah <i>S</i> = a * v<sub>a</sub> / 2 = b * v<sub>b</sub> / 2 = c * v<sub>c</sub> / 2</p>
+
+						<h3>Vysvětlivky</h3>
+						<p>
+							<i>a; b; c</i> = označení strany<br>
+							<i>v<sub>a</sub></i> = výška na stranu a<br>
+							Výška je kolmice vztyčená ke zvolené straně.
+						</p>
+
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/RovinneUtvary/Trojuhelnik.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
+				</div>
+
+				<div id="rightPart">
+					<div id="napovedaRight"></div>
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label>a = </label>
+									<input id="cislo1" type="number" placeholder="Délka strany a">
+								</div>
+								<div class="vedle">
+									<label>b = </label>
+									<input id="cislo2" type="number" placeholder="Délka strany b">
+								</div>
+								<div class="vedle">
+									<label>c = </label>
+									<input id="cislo3" type="number" placeholder="Délka strany c">
+								</div>
+								<div class="vedle">
+									<label>v<sub>a</sub> = </label>
+									<input id="cislo4" type="number" placeholder="Výška">
+								</div>
+							</div>
+							<div id="rideSide">
+								<select id="Jednotka" name="Jednotka">
+									<option value="m">m</option>
+									<option value="km">km</option>
+									<option value="dm">dm</option>
+									<option value="cm">cm</option>
+									<option value="mm">mm</option>
+								</select>
+							</div>
+						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
+						<div id="Vysledek"></div>
+					</div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Obvody a obsahy rovinných útvarů</h2>
+					<div id="line">
+						<ul>
+							<li><a id="Odkaz1" href="../Kosoctverec/Kosoctverec.html" title="Obvod a obsah kosočtverce">Obvod a obsah kosočtverce</a></li>
+							<li><a id="Odkaz2" href="../Kruh/Kruh.html" title="Obvod a obsah kruhu">Obvod a obsah kruhu</a></li>
+							<li><a id="Odkaz3" href="../Lichobeznik/Lichobeznik.html" title="Obvod a obsah lichoběžníku">Obvod a obsah lichoběžníku</a></li>
+							<li><a id="Odkaz4" href="../Obdelnik/Obdelnik.html" title="Obvod a obsah obdélníku">Obvod a obsah obdélníku</a></li>
+							<li><a id="Odkaz5" href="../Rovnobeznik/Rovnobeznik.html" title="Obvod a obsah rovnoběžníku">Obvod a obsah rovnoběžníku</a></li>
+							<li><a id="Odkaz7" href="../Ctverec/Ctverec.html" title="Obvod a obsah čtverce">Obvod a obsah čtverce</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

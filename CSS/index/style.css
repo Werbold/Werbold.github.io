@@ -1,0 +1,186 @@
+section{
+	margin-top: 305px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+/*Oblíbené*/
+ul{
+	list-style-type: none;
+}
+#favourite h2{
+	margin-bottom: 40px;
+}
+#favouriteFyzika li{
+	margin-left: -30px;
+	margin-bottom: 25px;
+}
+#favouriteFyzika li a{
+	margin: 0 auto;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: #1c5387;
+	color: white;
+}
+#favouriteFyzika li a:hover{
+	background-color: white;
+	color: #1c5387;
+	transition: 0.4s;
+	border: 2px solid #1c5387;
+}
+#favouriteMatematika li{
+	margin-left: -30px;
+	margin-bottom: 25px;
+}
+#favouriteMatematika li a{
+	margin: 0 auto;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+	background-color: #1c5387;
+	color: white;
+}
+#favouriteMatematika li a:hover{
+	background-color: white;
+	color: #1c5387;
+	transition: 0.4s;
+	border: 2px solid #1c5387;
+}
+.obvody{
+	padding: 10px 42px;
+}
+.kinematika{
+	padding: 10px 40px;
+}
+.trojuhelnik{
+	padding: 10px 20px;
+}
+.prace{
+	padding: 10px 75px;
+}
+/*sloupce*/
+#fyzika ul{
+	background-color: #f6f6f6;
+	padding-bottom: 15px;
+	margin-top: -14px;
+}
+ul li ul{
+	margin-left: -37px;
+}
+ul li li{
+	width: 100%;
+}
+#matematika ul{
+	background-color: #f6f6f6;
+	padding-bottom: 15px;
+	margin-top: -14px;
+}
+#About{
+
+}
+a{
+	text-decoration: none;
+	font-size: 26px;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 14px 0px;
+	padding: 0px; 
+}
+h2{
+	margin: 30px 0;
+}
+h3{
+	color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #00264d;
+	padding: 10px 0 10px 10px;
+	text-align: center;
+}
+h4{
+	color: white;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	background-color: #1c5387;
+	padding: 10px 0 10px 10px;
+	text-align: center;
+	margin-left: -40px;
+	margin-bottom: 25px;
+}
+.item a{
+	font-size: 26px;
+	color: black;
+	margin-bottom: 3px
+}
+.item a:hover{
+	color: #020054;
+	text-decoration: underline;
+}
+.item a:visited{
+	color: black;
+}
+h5 a, h6 a{
+	color: #020054;
+}
+h4 a{
+	color: white;
+}
+h4 a:hover{
+	color: white;
+	text-decoration: underline;
+}
+h5 a:hover, h6 a:hover{
+	color: #020054;
+	text-decoration: underline;
+}
+/*Zápatí*/
+footer{
+	margin-top: 50px;
+}
+#footerText{
+	position: absolute;
+	bottom: -35px;
+	right: 0;
+}
+
+@media (min-width: 600px){
+	section{
+		margin-top: 305px;
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	#favourite ul{
+		margin: -5px;
+	}
+	ul#favouriteMatematika{
+		margin-top: 2px;
+	}
+	#favouriteMatematika li{
+		margin: 0px;
+		margin-right: -3px;
+		margin-bottom: 25px;
+		display: inline-block;
+	}
+	#favouriteFyzika li{
+		margin: 0px;
+		margin-right: -3px;
+		margin-bottom: 25px;
+		display: inline-block;
+	}
+	#clear{
+		clear: both;
+	}
+}
+
+@media (min-width: 1060px){
+	.midBar{
+		display: flex;
+	}
+	#fyzika{
+		margin-right: 5%;
+		width: 50%;
+	}
+	#matematika{
+		width: 45%;
+	}
+}

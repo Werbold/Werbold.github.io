@@ -1,0 +1,149 @@
+/*--------------------------------------------------------------------------------------------------*/
+#spocitat{
+	margin-right: 22px;
+}
+#Jednotka{
+	height: 144px;
+	width: 82px;
+	font-size: 15px;
+}
+#footer{
+	margin-top: 0px;
+}
+
+@media (max-width: 340px){
+	#Jednotka{
+		width: 68px;
+	}
+	#spocitat{
+		margin-right: 9px;
+	}
+}
+
+@media (min-width: 600px){
+	#footerText{
+		bottom: 1000px;
+	}
+	#rightPartContent{
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 950px){
+	#footer{
+		padding-bottom: 80px;
+		/*margin-top: 350px;*/
+	}	
+}
+
+@media (min-width: 1130px){
+	.midBar{
+		display: flex;
+	}
+	#stBar{
+		margin-right: 45px;
+	}
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+section{
+	margin-top: 285px;
+}
+/*-----------------------------*/
+h1, h2, h3, h4, h5, h6{
+	margin: 0px ;
+	padding: 0px; 
+}
+h1{
+	font-size: 36px;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+h2{
+	background-color: #1c5387;
+	text-align: center;
+	margin-left: -40px;
+	margin-bottom: 25px;
+	padding: 10px 0px 10px 10px;
+	font-weight: bold;
+}
+h2 a{
+	color: white;
+	font-size: 30px;
+
+}
+h2 a:hover{
+	text-decoration: underline;
+}
+h3 a{
+	font-size: 30px;
+	color: #020054;
+}
+ul li ul {
+	margin-left: -37px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 25px;
+}
+.item a:hover{
+	color: #020054;
+	text-decoration: underline;
+}
+h3 a:hover{
+	text-decoration: underline;
+}
+#stBar ul, #ndBar ul{
+	background-color: #f6f6f6;
+	padding-bottom: 15px;
+}
+
+/*-------------------------------------------------------------*/
+
+/*h1, h2, h3, h4, h5, h6{
+	margin: 0px ;
+	padding: 0px; 
+}*/
+ h4, h5, h6{
+	font-weight: 500;
+}
+.item{
+	margin-bottom: 6px
+}
+/*.item a:hover{
+	color: #020054;
+}*/
+footer{
+	margin-top: 50px;
+}
+#footerText{
+	position: absolute;
+	right: 0;
+	bottom: -35px;
+}
+
+@media (min-width: 600px){
+	article{
+		max-width: 1080px;
+	}
+	#rightPartContent{
+		margin-top: -200px;
+	}
+	section{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
+
+@media (min-width: 1385px){
+	#clear{
+		clear: both;
+	}
+}

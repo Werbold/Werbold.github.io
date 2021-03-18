@@ -1,0 +1,10 @@
+#Jednotka{
+	height: 72px;
+}
+
+@media (max-width: 340px){
+	#line ul{
+		margin: 0px;
+		padding: 0px;
+	}
+}
