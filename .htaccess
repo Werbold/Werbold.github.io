@@ -1,5 +1,5 @@
 #404 Error
-ErrorDocument 404 /chybovka.html
+ErrorDocument 404 /index.html
 
 #GZip & Cache
 <ifmodule mod_deflate.c>
