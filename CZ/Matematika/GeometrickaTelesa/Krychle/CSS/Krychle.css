@@ -1,6 +1,9 @@
 #Jednotka{
 	height: 36px;
 }
-#footer{
-	margin-top: 550px;
+
+@media (min-width: 950px){
+	#footer{
+		margin-top: 570px;
+	}
 }

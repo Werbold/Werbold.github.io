@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
 	<title>Polohová energie</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -23,13 +13,13 @@
 	<!-- Css -->
 	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
 	<link rel="stylesheet" type="text/css" href="CSS/PolohovaEnergie.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/Energie.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
 	<script src="../../../../Calculate/Fyzika/Energie/PolohovaEnergie.js"></script>
-	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
@@ -50,7 +40,7 @@
 							<p>
 								<i>E<sub>p</sub></i> = Polohová energie<br>
 								<i>m</i> = hmotnost<br>
-								<i>g</i> = konstanta = 10 N/kg<br>
+								<i>g</i> = gravitační zrychlení = 10 m/s<sup>2</sup><br>
 								<i>h</i> = hloubka
 							</p>
 
@@ -60,22 +50,22 @@
 				</div>
 
 				<div id="rightPartContent">
-					<div id="napovedaRight"></div>
 					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 					<div id="kalkulace">
 						<h2 id="mezeraProNapoveda">Kalkulace</h2>
 						<div class="vedle">
 							<div id="leftSide">
 								<div class="vedle">
-									<label>m = </label>
+									<label for="cislo1">m = </label>
 									<input id="cislo1" type="number" placeholder="Hmotnost">
 								</div>
 								<div class="vedle">
-									<label>h = </label>
+									<label for="cislo2">h = </label>
 									<input id="cislo2" type="number" placeholder="Hloubka">
 								</div>
 							</div>
 							<div id="rideSide">
+								<label for="Jednotka">a</label>
 								<select id="Jednotka" name="Jednotka">
 									<option value="Základní">Základní</option>
 									<option value="kilo">kilo</option>
@@ -83,10 +73,19 @@
 								</select>
 							</div>
 						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
 					</div>
-					<div id="buttons">
-						<input id="spocitat" type="button" value="Spočítat">
-						<input id="smazat" type="button" value="Smazat historii počítání">
+					<div id="napovedaRight" class="hidden">
+						<h2>Návod pro použití online kalkulačky pro výpočet polohové energie:<span id="cross"></span></h2>
+						<ol>
+							<li>Zadejte hodnoty do políček.</li>
+							<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+							<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+							<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+						</ol>
 					</div>
 				</div>
 				
@@ -97,9 +96,7 @@
 				<div id="footer">
 					<h2>Další z kategorie Energie</h2>
 					<div id="line">
-						<ul>
-							<li><a id="Odkaz1" href="../KinetickaEnergie/KinetickaEnergie.html" title="Kinetická energie">Kinetická energie</a></li>
-						</ul>
+						<div class="footerButtons"><a href="../KinetickaEnergie/KinetickaEnergie.html" title="Kinetická energie">Kinetická energie</a></div>
 					</div>
 				</div>
 			</div>

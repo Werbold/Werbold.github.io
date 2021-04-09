@@ -1,7 +1,7 @@
 $(document).ready(function() {	
 	$("#spocitat").click(function() {
 		$.get("../../../../Calculate/Fyzika/vypocet.php?vzorec=polohovaEnergie&cislo1=" + $("#cislo1").val() + "&cislo2=" + $("#cislo2").val() + "&Jednotka=" + $("#Jednotka").val(), function(data, status) {	
-			$("#Vysledek").after(data);
+			$("#Vysledek").append(data);
 		});
 	});
 
@@ -15,5 +15,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p class='count'>Litujeme, ale položku nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').append("<p class='count'>Litujeme, ale položku nelze spočítat.<br>Pokud ji chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

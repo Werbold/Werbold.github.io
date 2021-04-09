@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
 	<title>Tlak na síle</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -23,13 +13,13 @@
 	<!-- Css -->
 	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
-	<!--<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/style.css">-->
 	<link rel="stylesheet" type="text/css" href="CSS/TlakNaSile.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/Tlak.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
 	<script src="../../../../Calculate/Fyzika/Tlak/TlakNaSile.js"></script>
-	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
@@ -45,9 +35,9 @@
 					<div id="topContent">
 						<div id="leftPartContent">
 							<h2>Vzorečky</h2>
-							<p>Tlak <i>P</i> = F / S</p>
-							<p>Síla <i>F</i> = P * S</p>
-							<p>Obsah plochy <i>S</i> = F / P</p>
+							<p>Tlak <i>P</i> = F / S<br>
+							Síla <i>F</i> = P * S<br>
+							Obsah plochy <i>S</i> = F / P</p>
 							
 							<h2>Vysvětlivky</h2>
 							<p>
@@ -62,26 +52,26 @@
 				</div>
 
 				<div id="rightPartContent">
-					<div id="napovedaRight"></div>
 					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 					<div id="kalkulace">
 						<h2 id="mezeraProNapoveda">Kalkulace</h2>
 						<div class="vedle">
 							<div id="leftSide">
 								<div class="vedle">
-									<label>P = </label>
+									<label for="cislo1">P = </label>
 									<input id="cislo1" type="number" placeholder="Tlak">
 								</div>
 								<div class="vedle">
-									<label>F = </label>
+									<label for="cislo2">F = </label>
 									<input id="cislo2" type="number" placeholder="Síla">
 								</div>
 								<div class="vedle">
-									<label>S = </label>
+									<label for="cislo3">S = </label>
 									<input id="cislo3" type="number" placeholder="Obsah plochy">
 								</div>
 							</div>
 							<div id="rideSide">
+								<label for="Jednotka">a</label>
 								<select id="Jednotka" name="Jednotka">
 									<option value="Kilo">Kilo</option>
 									<option value="Základní">Základní</option>
@@ -89,10 +79,19 @@
 								</select>
 							</div>
 						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
 					</div>
-					<div id="buttons">
-						<input id="spocitat" type="button" value="Spočítat">
-						<input id="smazat" type="button" value="Smazat historii počítání">
+					<div id="napovedaRight" class="hidden">
+						<h2>Návod pro použití online kalkulačky pro výpočet tlaku na síle: <span id="cross"></span></h2>
+						<ol>
+							<li>Zadejte hodnoty do políček.</li>
+							<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+							<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+							<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+						</ol>
 					</div>
 				</div>
 				
@@ -101,11 +100,9 @@
 				</div>
 
 				<div id="footer">
-					<h2>Další z kategorie Tlak</h2>
+					<h2>Další z kategorie Síla</h2>
 					<div id="line">
-						<ul>
-							<li><a id="Odkaz2" href="../HydrostatickyTlak/HydrostatickyTlak.html" title="Hydrostatický tlak a odvozené vzorečky">Hydrostatický tlak</a></li>
-						</ul>
+						<div class="footerButtons"><a href="../HydrostatickyTlak/HydrostatickyTlak.html" title="Hydrostatický tlak a odvozené vzorečky">Hydrostatický tlak</a></div>
 					</div>
 				</div>
 			</div>

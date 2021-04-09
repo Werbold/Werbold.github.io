@@ -3,6 +3,16 @@
 }
 #footer{
 	height: 0px;
+	margin-top: 350px;
+}
+#leftPartContent{
+	float: none;
+}
+
+@media (min-width: 950px){
+	#napovedaContainer {
+		top: 19px;
+	}
 }
 
 @media (min-width: 1020px){

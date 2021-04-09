@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
 	<title>Fyzika</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -26,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="../../CSS/fyzika/style.css">
 	<!-- JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../JS/GoogleAnalytics.js"></script>
 	<script src="../../JS/Footer.js"></script>
 	<script src="../../JS/Navigations/NavigationSubject.js"></script>
 </head>
@@ -40,8 +31,11 @@
 				<div id="stBar">
 					<ul>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoZakony/Zakony.html" title="Fyzikální zákony">Fyzikální zákony</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoZakony/Zakony.html" title="Fyzikální zákony">Fyzikální zákony</a>
+								<div id="btnFyZakony" class="off"></div>
+							</h2>
+							<ul id="FyZakony" class="hiden">
 								<li class="item"><a href="FyzikalniZakony/ArchimeduvZakon/ArchimeduvZakon.html" title="Archimédův zákon">Archimédův zákon</a></li>
 								<li>
 									<h3><a href="FyzikalniZakony/NewtonovyZakony/NewtonovyZakony.html" title="Newtonovy zákony">Newtonovy zákony</a></h3>
@@ -57,8 +51,11 @@
 							</ul>
 						</li>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoPrevodyJednotek/PrevodyJednotek.html" title="Převody jednotek">Převody jednotek</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoPrevodyJednotek/PrevodyJednotek.html" title="Převody jednotek">Převody jednotek</a>
+								<div id="btnPrevodyJednotek" class="off"></div>
+							</h2>
+							<ul id="PrevodyJednotek" class="hiden">
 								<li class="item"><a href="PrevodyJednotek/Cas/Cas.html" title="Převody jednotek času">Převody jednotek času</a></li>
 								<li class="item"><a href="PrevodyJednotek/DatovyObjem/DatovyObjem.html" title="Převody datových jednotek">Převody jednotek datového objemu</a></li>
 								<li class="item"><a href="PrevodyJednotek/Delka/Delka.html" title="Převody jednotek délky">Převody jednotek délky</a></li>
@@ -69,16 +66,22 @@
 							</ul>
 						</li>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoElektrina/Elektrina.html" title="Vzorečky pro elektřinu">Vzorečky pro elektřinu</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoElektrina/Elektrina.html" title="Vzorečky pro elektřinu">Vzorečky pro <br>elektřinu</a>
+								<div id="btnElektrina" class="off"></div>
+							</h2>
+							<ul id="Elektrina" class="hiden">
 								<li class="item"><a href="Elektrina/ElektrickaPrace/ElektrickaPrace.html" title="Elektrická práce a odvozené vzorečky">Elektrická práce a odvozené vzorečky</a></li>
 								<li class="item"><a href="Elektrina/ProudNaNaboji/ProudNaNaboji.html" title="Proud založený na náboji a odvozené vzorečky">Proud založený na elektrickém náboji a odvozené vzorečky</a></li>
 								<li class="item"><a href="Elektrina/ProudNaElektrickemNapeti/ProudNaElektrickemNapeti.html" title="Proud založený na elektrickém napětí">Proud založený na elektrickém napětí a odvozené vzorečky</a></li>
 							</ul>
 						</li>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoEnergie/Energie.html" title="Vzorečky pro energii">Vzorečky pro energii</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoEnergie/Energie.html" title="Vzorečky pro energii">Vzorečky pro energii</a>
+								<div id="btnEnergie" class="off"></div>
+							</h2>
+							<ul id="Energie" class="hiden">
 								<li class="item"><a href="Energie/KinetickaEnergie/KinetickaEnergie.html" title="Kinetická energie a odvozené vzorečky">Kinetická energie a odvozené vzorečky</a></li>
 								<li><a href="Energie/PolohovaEnergie/PolohovaEnergie.html" title="Polohová energie a odvozené vzorečky">Polohová energie a odvozené vzorečky</a></li>
 							</ul>
@@ -88,26 +91,34 @@
 				<div id="ndBar">
 					<ul>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoKinematika/Kinematika.html" title="Vzorečky pro kinematiku">Vzorečky pro kinematiku</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoKinematika/Kinematika.html" title="Vzorečky pro kinematiku">Vzorečky pro <br>kinematiku</a>
+								<div id="btnKinematika" class="off"></div>
+							</h2>
+							<ul id="Kinematika" class="hiden">
 								<li class="item"><a href="Kinematika/DrahaZalozenaNaZrychleni/DrahaZalozenaNaZrychleni.html" title="Dráha založené na zrychlení a odvozené vzorečky">Dráha založená na zrychlení a odvozené vzorečky</a></li>
 								<li class="item"><a href="Kinematika/Rychlost/Rychlost.html" title="Rychlost a odvozené vzorečky">Rychlost a odvozené vzorečky</a></li>
 								<li class="item"><a href="Kinematika/ZrychleniZalozeneNaRychlosti/ZrychleniZalozeneNaRychlosti.html" title="Zrychlení a odvozené vzorečky">Zrychlení založené na rychlosti a odvozené vzorečky</a></li>
 							</ul>
 						</li>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoPrace/Prace.html" title="Vzorečky pro práci">Vzorečky pro práci</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoPrace/Prace.html" title="Vzorečky pro práci">Vzorečky pro práci</a>
+								<div id="btnPrace" class="off"></div>
+							</h2>
+							<ul id="Prace" class="hiden">
 								<li class="item"><a href="Prace/SilaNaPraci/SilaNaPraci.html" title="Síla založená na práci">Síla založená na práci a odvozené vzorečky</a></li>
 								<li class="item"><a href="Prace/PrikonNaPraci/PrikonNaPraci.html" title="Příkon založený na elektrické práci">Příkon založený na elektrické práci a odvozené vzorečky</a></li>
 								<li class="item"><a href="Prace/VykonNaPraci/VykonNaPraci.html" title="Výkon založený na práci">Výkon založený na práci a odvozené vzorečky</a></li>
-								<!-- <li class="item"><a href="Prace/VypocetProtonu/VypocetProtonu.html" title="Výpočet protonů">Výpočet protonů</a></li> -->
 								<li class="item"><a href="Prace/VykonNaUcinnosti/VykonNaUcinnosti.html" title="Výkon založený na účinnosti a odvozené vzorečky">Výkon založený na účinnosti a odvozené vzorečky</a></li>
 							</ul>
 						</li>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoSila/Sila.html" title="Vzorečky pro sílu">Vzorečky pro sílu</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoSila/Sila.html" title="Vzorečky pro sílu">Vzorečky pro sílu</a>
+								<div id="btnSila" class="off"></div>
+							</h2>
+							<ul id="Sila" class="hiden">
 								<li class="item"><a href="Sila/GravitacniSila/GravitacniSila.html" title="Gravitační síla">Gravitační síla a odvozené vzorečky</a></li>
 								<li class="item"><a href="Sila/HydrostatickaTlakovaSila/HydrostatickaTlakovaSila.html" title="Hydrostatická tlaková síla">Hydrostatická tlaková síla</a></li>
 								<li class="item"><a href="Sila/HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla</a></li>
@@ -115,14 +126,20 @@
 							</ul>
 						</li>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoTeplota/Teplo.html" title="Vzorečky pro teplo">Vzorečky pro teplo</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoTeplota/Teplo.html" title="Vzorečky pro teplo">Vzorečky pro teplo</a>
+								<div id="btnTeplo" class="off"></div>
+							</h2>
+							<ul id="Teplo" class="hiden">
 								<li class="item"><a href="Teplo/Teplo.html" title="Teplo a odvozené vzorečky">Teplo a odvozené vzorečky</a></li>
 							</ul>
 						</li>
 						<li>
-							<h2><a href="Zaostreno/ZaostrenoTlak/Tlak.html" title="Vzorečky pro tlak">Vzorečky pro tlak</a></h2>
-							<ul>
+							<h2>
+								<a href="Zaostreno/ZaostrenoTlak/Tlak.html" title="Vzorečky pro tlak">Vzorečky pro tlak</a>
+								<div id="btnTlak" class="off"></div>
+							</h2>
+							<ul id="Tlak" class="hiden">
 								<li class="item"><a href="Tlak/HydrostatickyTlak/HydrostatickyTlak.html" title="Hydrostatický tlak a odvozené vzorečky">Hydrostatický tlak a odvozené vzorečky</a></li>
 								<li class="item"><a href="Tlak/TlakNaSile/TlakNaSile.html" title="Tlak založený na síle a odvozené vzorečky">Tlak založený na síle a odvozené vzorečky</a></li>
 							</ul>
@@ -137,5 +154,6 @@
 		<footer>
 		</footer>
 	</article>
+	<script src="../../JS/DropDown/DropDownFyzika.js"></script>
 </body>
 </html>

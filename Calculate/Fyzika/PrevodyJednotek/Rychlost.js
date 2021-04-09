@@ -1,7 +1,7 @@
 $(document).ready(function() {	
 	$("#spocitat").click(function() {
 		$.get("../../../../Calculate/Fyzika/vypocet.php?vzorec=RychlostPrevod&cislo1=" + $("#cislo1").val() + "&Jednotka1=" + $("#Jednotka1").val() + "&Jednotka2=" + $("#Jednotka2").val(), function(data, status) {	
-			$("#Vysledek").after(data);
+			$("#Vysledek").append(data);
 		});
 	});
 
@@ -15,5 +15,5 @@ function refresh() {
 }
 
 function error() {
-	$('#Vysledek').after("<p class='count'>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
+	$('#Vysledek').append("<p class='count'>Litujeme, ale nelze přesně spočítat jednu nebo více položek.<br>Pokud je chcete spočítat, zadejte prosím kladné nenulové hodnoty.</p>")
 }

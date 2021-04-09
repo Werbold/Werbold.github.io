@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
 	<title>Kvádr - Povrch a Objem</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -27,8 +17,9 @@
 	<link rel="stylesheet" type="text/css" href="CSS/Kvadr.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
 	<script src="../../../../Calculate/Matematika/GeometrickaTelesa/Kvadr.js"></script>
-	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
@@ -53,16 +44,16 @@
 						</div>
 
 						<div id="rightPartContent">
-							<p id="image"><!--<img id="ilustracion" src="Images/Ctverec.png" alt="Popis kvadru"--></p>
+							<p id="image"><img id="ilustracion" src="../../../../Images/GeometrickaTelesa/Kvadr.png" alt="Popis kvadru"></p>
 						</div>
 					</div>
 				
 					<div id="leftPart">
-						<h3>Vzorečky</h3>
+						<h2>Vzorečky</h2>
 						<p>Povrch <i>S</i> = 2 * (ab + ac + bc)</p>
 						<p>Objem <i>V</i> = abc</p>
 						
-						<h3>Vysvětlivky</h3>
+						<h2>Vysvětlivky</h2>
 						<p>
 							<i>a; b; c</i> = označení strany podstavy<br>
 							<i>V</i> = objem<br>
@@ -74,26 +65,26 @@
 					</div>
 
 					<div id="rightPart">
-						<div id="napovedaRight"></div>
 						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 						<div id="kalkulace">
 							<h3  id="mezeraProNapoveda">Kalkulace</h3>
 							<div class="vedle">
 								<div id="leftSide">
 									<div class="vedle">
-										<label>a = </label>
+										<label for="cislo1">a = </label>
 										<input id="cislo1" type="number" placeholder="Délka strany a">
 									</div>
 									<div class="vedle">
-										<label>b = </label>
+										<label for="cislo2">b = </label>
 										<input id="cislo2" type="number" placeholder="Délka strany b">
 									</div>
 									<div class="vedle">
-										<label>c = </label>
+										<label for="cislo3">c = </label>
 										<input id="cislo3" type="number" placeholder="Délka strany c">
 									</div>
 								</div>
 								<div id="rideSide">
+									<label for="Jednotka">a</label>
 									<select id="Jednotka" name="Jednotka">
 										<option value="m">m</option>
 										<option value="km">km</option>
@@ -107,20 +98,27 @@
 								<input id="spocitat" type="button" value="Spočítat">
 								<input id="smazat" type="button" value="Smazat historii počítání">
 							</div>
-							<div id="Vysledek"></div>
 						</div>
+						<div id="napovedaRight" class="hidden">
+							<h2>Návod pro použití online kalkulačky pro výpočet objemu, nebo povrchu kvádru: <span id="cross"></span></h2>
+							<ol>
+								<li>Zadejte hodnoty do políček.</li>
+								<li>V rozbalovacím menu zvolte jednotky, ve kterých chcete počítat.</li>
+								<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+								<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+							</ol>
+						</div>
+						<div id="Vysledek"></div>
 					</div>
 				</div>
 
 				<div id="footer">
 					<h2>Další z kategorie Povrchy a objemy geometrických těles</h2>
 					<div id="line">
-						<ul>
-							<li><a id="Odkaz1" href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></li>
-							<li><a id="Odkaz2" href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></li>
-							<li><a id="Odkaz4" href="../Valec/Valec.html" title="Povrch a objem válce">Povrch a objem válce</a></li>
-							<li><a id="Odkaz5" href="../Jehlan/Jehlan.html" title="Povrch a objem jehlanu">Povrch a objem jehlanu</a></li>
-						</ul>
+						<div class="footerButtons"><a href="../Jehlan/Jehlan.html" title="Povrch a objem jehlanu">Povrch a objem jehlanu</a></div>
+						<div class="footerButtons"><a href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></div>
+						<div class="footerButtons"><a href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></div>
+						<div class="footerButtons"><a href="../Valec/Valec.html" title="Povrch a objem válce">Povrch a objem válce</a></div>
 					</div>
 				</div>
 			</div>

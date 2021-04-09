@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
 	<title>Hydrostatická tlaková síla</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -23,13 +13,13 @@
 	<!-- Css -->
 	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
 	<link rel="stylesheet" type="text/css" href="CSS/HydrostatickaTlakovaSila.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/Sila.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
 	<script src="../../../../Calculate/Fyzika/Sila/HydrostatickaTlakovaSila.js"></script>
-	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
@@ -51,7 +41,7 @@
 							<p>
 								<i>F<sub>h</sub></i> = Hydrostatická tlaková síla<br>
 								<i>h</i> = Hloubka<br>
-								<i>g</i> = Konstanta = 10 N / kg<br>
+								<i>g</i> = Gravitační zrychlení = 10 m/s<sup>2</sup><br>
 								<i>ρ </i> = Hustota<br>
 								<i>S</i> = Plocha
 							</p>
@@ -62,35 +52,44 @@
 				</div>
 
 				<div id="rightPartContent">
-					<div id="napovedaRight"></div>
 					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 					<div id="kalkulace">
 						<h2 id="mezeraProNapoveda">Kalkulace</h2>
 						<div class="vedle">
 							<div class="leftside">
 								<div class="vedle">
-									<label>h = </label>
+									<label for="cislo1">h = </label>
 									<input id="cislo1" type="number" placeholder="Hloubka">
 								</div>
 								<div class="vedle">
-									<label>S = </label>
+									<label for="cislo2">S = </label>
 									<input id="cislo2" type="number" placeholder="Plocha">
 								</div>
 								<div class="vedle">
-									<label>ρ = </label>
+									<label for="cislo3">ρ = </label>
 									<input id="cislo3" type="number" placeholder="Hustota">
 								</div>
 							</div>
 							<div id="rideSide">
+								<label for="Jednotka">a</label>
 								<select id="Jednotka" name="Jednotka">
 									<option value="Základní">Základní</option>
 								</select>
 							</div>
 						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
 					</div>
-					<div id="buttons">
-						<input id="spocitat" type="button" value="Spočítat">
-						<input id="smazat" type="button" value="Smazat historii počítání">
+					<div id="napovedaRight" class="hidden">
+						<h2>Návod pro použití online kalkulačky pro výpočet hydrostatické tlakové síly: <span id="cross"></span></h2>
+						<ol>
+							<li>Zadejte hodnoty do políček.</li>
+							<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+							<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+							<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+						</ol>
 					</div>
 				</div>
 
@@ -101,11 +100,9 @@
 				<div id="footer">
 					<h2>Další z kategorie Síla</h2>
 					<div id="line">
-						<ul>
-							<li><a id="Odkaz1" href="../GravitacniSila/GravitacniSila.html" title="Gravitační síla">Gravitační síla</a></li>
-							<li><a id="Odkaz3" href="../HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla</a></li>
-							<li><a id="Odkaz4" href="../Paka/Paka.html" title="Páka">Páka</a></li>
-						</ul>
+						<div class="footerButtons"><a href="../HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla</a></div>
+						<div class="footerButtons"><a href="../GravitacniSila/GravitacniSila.html" title="Gravitační síla">Gravitační síla</a></div>
+						<div class="footerButtons"><a href="../Paka/Paka.html" title="Páka">Páka</a></div>
 					</div>
 				</div>
 			</div>

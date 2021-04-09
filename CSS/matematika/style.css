@@ -1,8 +1,7 @@
 section{
-	margin-top: 285px;
+	margin-top: 330px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 45%;
 }
 h1, h2, h3, h4, h5, h6{
 	margin: 0px 0px;
@@ -13,12 +12,12 @@ h4, h5, h6{
 }
 h1{
 	font-size: 36px;
-	text-align: center;
+	text-align: left;
 	padding: 10px;
 }
 h3{
 	background-color: #1c5387;
-	text-align: center;
+	text-align: left;
 	padding: 10px;
 	font-weight: bold;
 }
@@ -32,7 +31,6 @@ h3 a:hover{
 }
 section ul{
 	list-style-type: none;
-	background-color: #f6f6f6;	
 	margin: 0px;
 	padding: 15px 0px;
 	padding-left: 35px;
@@ -48,6 +46,11 @@ a{
 .item a:hover{
 	color: #020054;
 	text-decoration: underline;
+}
+
+#stBar ul, #ndBar ul{
+	background-color: #f6f6f6;
+	padding-bottom: 15px;
 }
 /*-------------------------------------------------------------*/
 /*section{
@@ -96,11 +99,35 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 		right: 0;
 		bottom: -35px;
 	}
+	article{
+		padding-bottom: 50px;
+	}
+	section{
+		width: 95%;
+	}
+	h1, h3{
+		text-align: center;
+	}
 }
 
 @media (min-width: 950px){
 	#leftPart{
 		height: 250px;
+	}
+}
+
+
+@media (min-width: 1130px){
+	.midBar{
+		display: flex;
+		margin-top: 40px;
+	}
+	#stBar{
+		margin-right: 45px;
+		width: 50%;
+	}
+	#ndBar{
+		width: 50%;
 	}
 }
 
@@ -110,40 +137,4 @@ h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
 		width: auto;
 		position: relative;
 	}
-/*	#multiBar a img{
-		position: absolute;
-		visibility: visible;
-		height: 150px;
-		width: auto;
-		border-radius: 5px;
-		box-shadow: 10px 3px 15px 2px #64648f;
-	}*/
-/*	#ctverec{
-		top: -30px;
-		right: 5%;
-	}
-	#kosoctverec{
-		top: -15px;
-		right: 22%;
-	}
-	#kruh{
-		top: 200px;
-		right: 1%;
-	}
-	#lichobeznik{
-		top: 240px;
-		right: 18%;
-	}
-	#obdelnik{
-		top: 330px;
-		right: 39%;
-	}
-	#rovnobeznik{
-		top: -70px;
-		right: 43%
-	}
-	#trojuhelnik{
-		top: 125px;
-		right: 50%;
-	}
-}*/
+}

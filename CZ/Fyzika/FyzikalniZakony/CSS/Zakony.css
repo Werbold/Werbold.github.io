@@ -1,8 +1,24 @@
+h2 {
+	margin-top: 0;
+	background-color: #1c5387;
+	color: white;
+}
 #content{
 	min-height: 544px;
 }
 #law{
 	max-width: 100%;
+	background-color: #f6f6f6;
+}
+#law p{
+	padding-left: 25px;
+	padding-top: 25px;
+	padding-bottom: 65px;
+	padding-right: 25px;
+	/*text-align: justify;*/
+}
+#footer{
+	margin-top: 100px;
 }
 #rightPartContent p img{
 	margin-top: 100px;
@@ -63,7 +79,7 @@
 	#rightPartContent{
 		margin-top: -50px;
 	}
-	#footer{
-		margin-top: 0;
+	#footer {
+    	width: 49%;
 	}
 }

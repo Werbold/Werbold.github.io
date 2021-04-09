@@ -12,10 +12,18 @@ body{
 	background: #1e1b85;
 }
 article{
-	width: 95%;
 	position: relative;
 	padding-top: 20px;
 	background-color: white;
+}
+#rideSide label{
+	opacity: 0;
+	position: absolute;
+}
+ol
+{	background: #f6f6f6;
+	margin: 0;
+	padding: 25px 50px;
 }
 h1{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -25,12 +33,19 @@ h1{
 	font-size: 27px;
 	font-weight: 900;
 	background-color: #00264d;
-	padding: 10px 0 10px 10px;
+	padding: 10px 0 10px 25px;
 	color: white;
 }
 h2{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	margin-bottom: 0px;
 	padding: 10px 0 10px 10px;
+	color: white;
+	background: #1c5387;
+}
+h2, h3, h4{
+	position: relative;
 }
 h2, h3, h4, h5, h6{
 	font-family: 'Roboto Condensed', sans-serif;
@@ -57,6 +72,44 @@ a.info{
 	color: black;
 	text-decoration: none;
 }
+/*Drop down*/
+.off{
+	background-image: url("../Images/Arrow/arrowDownWhite.png");
+	background-repeat: no-repeat;
+	background-size: 25px;
+	height: 24px;
+	width: 26px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.on{
+	background-image: url("../Images/Arrow/arrowUpWhite.png");
+	background-repeat: no-repeat;
+	background-size: 25px;
+	height: 24px;
+	width: 26px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.hidden{
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.visible{
+	visibility: visible;
+	height: auto;
+	width: auto;
+}
+#cross{
+	padding: 15px;
+	position: absolute;
+	top: -10px;
+	right: 0;
+	cursor: pointer;
+}
 /*Záhlaví a zápatí*/
 #hlavicka{
 	position: absolute;
@@ -66,8 +119,8 @@ a.info{
 	background: white;
 }
 #topHeader{
-	background: #00264d;
 	height: 50px;
+	background: #00264d;
 }
 #topHeader a{
 	color: white;
@@ -88,15 +141,22 @@ a.info{
 	float: right;
 }
 .cara{
+	visibility: hidden;
 	margin-left: 15px;
 	margin-right: 5px;
-	padding-right: 45px;
+}
+#headerEmail{
 	background: url("Images/Obalka.png");
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: left 8px;
+	padding-left: 35px;
+}
+#headerText{
+	visibility: hidden;
+	position: absolute;
 }
 #logoContain{
-	margin-left:60px;
+	margin-left: 60px;
 }
 #logoContain p{
 	position: relative;
@@ -156,22 +216,33 @@ nav a:hover{
 	float: left;
 	background: white;
 }
-#leftPartContent, #rightPartContent{
-	margin-top: 50px;
+#leftPart p{
+	background: #f6f6f6;
+	padding-left: 20px;
 }
-#rightPartContent{
-	margin-left: 40px;
+#leftPartContent p{
+	background: #f6f6f6;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+#leftPartContent ul{
+	margin: 0;
+	background: #f6f6f6;
+	list-style-type: none;
+	padding: 0px;
+	padding-left: 20px;
+	padding-top: 20px;
 }
 #image{
 	text-align: center;
 	width: 100%;
+	margin-top: 20px;
 }
 	/*Practice*/
 #practice{
-	margin-top: 20px;
-}
-p#practice{
-	margin: 15px 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 #practicePDF{
 	border-radius: 3px;
@@ -186,36 +257,45 @@ p#practice{
 	background-color: white;
 	transition: 0.4s;
 }
-	/*Obrázek*/
-#ilustracion{
-	box-shadow: 10px 3px 15px 2px #64648f;
-}
 	/*Kalkulačka*/
 label{
-	width: 40px;
+	width: 60px;
+}
+#kalkulace{
+	background: #f6f6f6;
+}
+#kalkulace .vedle, #buttons{
+	padding-left: 15px;
 }
 #mezeraProNapoveda{
-	margin-left: 50px;
-	margin-right: 40px;
+	margin-left: 51px;
 	margin-bottom: 10px;
 	color: white;
 	padding: 10px 0 10px 10px;
 	background-color: #00264d;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 #napovedaMove{
-	top: 7px;
 	position: relative;
-
+}
+#napovedaMove h3{
+	background: #00264D;
+	color: white;
+	margin-bottom: 0;
+	padding: 10px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 }
 #napoveda{
 	padding: 15px;
-	height: 15px;
-	width: 15px;
-	line-height: 15px;
-	border-radius: 6px;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	border-radius: 2px;
 	color: #fcfcfc;
 	text-align: center;
-	background: url("../Images/Napoveda/Napoveda.png");
+	background: #00264d;
 }
 #napovedaContainer{
 	width: 50px;
@@ -226,14 +306,14 @@ label{
 	cursor: pointer;
 }
 #cislo1, #cislo2, #cislo3, #cislo4, #cislo5, #cislo6{
-	margin-left: 14px;
+	margin-left: 20px;
 	width: 175px;
 	height: 30px;
 	border-radius: 12px;
 	border: 2px solid #1c5387;
 }
 input:focus {
-	border: 2px solid #1c5387;
+	outline: none;
 }
 #Jednotka{
 	height: 72px;
@@ -249,12 +329,13 @@ input:focus {
 }
 #buttons{
 	margin-top: 7px;
-	margin-left: 55px;
+	margin-left: 97px;
 }
 #spocitat{
+	font-size: 15px;
 	margin-bottom: 20px;
-	height: 30px;
-	padding: 5px 12px;
+	height: 40px;
+	padding: 10px 15px;
 	background-color: #1c5387;
 	margin-right: 12px;
 	border: 0px;
@@ -262,8 +343,9 @@ input:focus {
 	color: white;
 }
 #smazat{
-	height: 25px;
-	padding: 5px 12px;
+	font-size: 15px;
+	height: 40px;
+	padding: 10px 15px;
 	background-color: #1c5387;
 	border: 0px;
 	border-radius: 12px;
@@ -273,12 +355,12 @@ input:focus {
 	transition: 0.4s;
 	cursor: pointer;
 	background-color: white;
-	color: #1c5387;
+	color: black;
 	border: 2px solid #1c5387;
 }
 .count{
-	margin-bottom: 10px;
-	border-bottom: 1px solid #2f2f73;
+	margin: 0 40px 10px 40px;
+	border-bottom: 1px solid #00264d;
 }
 .warning{
 	color: #de1b1b;
@@ -288,41 +370,59 @@ input:focus {
 	margin-bottom: 4px;
 }
 #ilustracion {
-	max-width: 61%;
+	max-width: 300px;
 	height: auto;
-}
-#vlastnosti{
-	margin-left: 5px;
 }
 /*Footer*/
 #footer{
-	padding-bottom: 20px;
-	margin-left: 40px;
-	margin-right: 40px;
+	width: 100%;
+	background-color: #e8e8e8;
 	position: sticky;
 	top: 30%;
 }
 #footer h2{
+	color: white;
+	/*height: 86px;*/
 	background-color: #00264d;
-	color: white;
-	margin-bottom: 0;
-	text-align: center;
+	/*text-align: center;*/
+	font-size: 27px;
+	padding: 10px 0 10px 25px;
+	margin: 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
-#line ul{
-	list-style-type: none;
-	padding-left: 0px;
-	margin: 0px;
+#line{
+	padding: 0;
+	margin: 0;
+}
+.footerButtons {
 	background-color: #1c5387;
-}
-#line ul li a{
-	text-decoration: none;
+	font-size: 20px;
+	border: 1px solid #00264d;
+	border-top: none;
+	text-align: center;
 	color: white;
-	font-size: 25px;
+	padding: 10px;
+	font-family: 'Poppins', sans-serif;
 }
-#line ul li a:hover{
-	transition: 0.4s;
+.footerButtons a{
+	/*padding: 10px;*/
+	margin: 0;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+}
+.footerButtons a:hover{
 	text-decoration: underline;
 }
+/*.footerButtons:hover, .footerButtons a:hover {
+	background-color: white;
+	text-align: center;
+	color: black;
+	font-weight: 600;
+	cursor: pointer;
+	transition: .4s;
+}*/
 /*Zápatí*/
 #designers{
 	margin: 0 auto;
@@ -332,6 +432,8 @@ input:focus {
 	width: 100%;
 	color: white;
 	background: #00264d;
+	/*position: absolute;
+	bottom: 0;*/
 }
 
 @media (max-width: 340px){
@@ -346,8 +448,9 @@ input:focus {
 @media (min-width: 600px){
 	article{
 		height: 100%;
+		width: 95%;
 		margin: 0 auto;
-		max-width: 1080px;
+		max-width: 1300px;
 	}
 	#Jednotka{
 		width: 72px;
@@ -356,6 +459,34 @@ input:focus {
 		padding-bottom: 85px;
 		margin-top: 270px;
 	}
+
+}
+
+@media (min-width: 890px){
+	#topHeader{
+		visibility: visible;
+		background: #00264d;
+		height: 50px;
+	}
+	#headerText{
+		visibility: visible;
+		position: unset;
+	}
+	.off{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	.on{
+		visibility: hidden;
+		width: 0;
+		height: 0;
+	}
+	.hiden{
+		visibility: visible;
+		height: auto;
+		width: auto;
+	}
 }
 
 @media (min-width: 950px){
@@ -363,32 +494,44 @@ input:focus {
 		position: relative;
 	}
 	#footer{
-		margin-top: 480px;
-		width: 49%;
+		margin-top: 410px;
+		margin-left: 40px;
+		width: 45%;
 	}
 	#napovedaContainer{
-		top: 15px;
+		top: 14px;
 	}
 	#leftPart{
 		height: 330px;
 		width: 49%;
 	}
 	#rightPart{
-		width: 49%;
+		width: 45%;
 		float: right;
-		margin-top: 10px;
+		margin-right: 40px;
 	}
 	#leftPartContent{
 		width: 49%;
 		float: left;
-		margin-right: 20px;
+		/*margin-right: 22px;*/
 	}
 	#rightPartContent{
 		width: 45%;
-		float: left;
+		float: right;
+		margin-right: 40px;
 	}
 	#ilustracion{
 		margin-top: 0px;
 		padding: 0px;
+	}
+	#napovedaMove{
+		top: 7px;
+	}
+}
+
+@media (min-width: 1110px){
+	#footer h2{
+		/*height: 56px;*/
+
 	}
 }

@@ -1,17 +1,7 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
-	<title>Ctverec - Obvod a Obsah</title>
+	<title>Ctverec</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -27,8 +17,9 @@
 	<link rel="stylesheet" type="text/css" href="CSS/Ctverec.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
 	<script src="../../../../Calculate/Matematika/RovinneUtvary/Ctverec.js"></script>
-	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
@@ -51,14 +42,14 @@
 						</div>
 
 						<div id="rightPartContent">
-							<p id="image"><img id="ilustracion" src="../../../../Images/RovinneUtvary/Ctverec/Ctverec.png" alt="Popis čtverce"></p>
+							<p id="image"><img id="ilustracion" src="../../../../Images/RovinneUtvary/Ctverec.png" alt="Popis čtverce"></p>
 						</div>
 					</div>
 
 					<div id="leftPart">
 						<h2>Vzorečky</h2>
-						<p>Obvod <i>o</i> = 4 * a</p>
-						<p>Obsah <i>S</i> = a * a = a<sup>2</sup></p>
+						<p>Obvod <i>o</i> = 4 * a<br>
+						Obsah <i>S</i> = a * a = a<sup>2</sup></p>
 						
 						<h2>Vysvětlivky</h2>
 						<p>
@@ -71,18 +62,18 @@
 					</div>
 
 					<div id="rightPart">
-						<div id="napovedaRight"></div>
 						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 						<div id="kalkulace">
 							<h2 id="mezeraProNapoveda">Kalkulace</h2>
 							<div class="vedle">
 								<div id="leftSide">
 									<div class="vedle">
-										<label>a = </label>
+										<label for="cislo1">a = </label>
 										<input id="cislo1" type="number" placeholder="Délka strany">
 									</div>
 								</div>
 								<div id="rideSide">
+									<label for="Jednotka">a</label>
 									<select id="Jednotka" name="Jednotka">
 										<option value="km">km</option>
 										<option value="m">m</option>
@@ -96,22 +87,29 @@
 								<input id="spocitat" type="button" value="Spočítat">
 								<input id="smazat" type="button" value="Smazat historii počítání">
 							</div>
-							<div id="Vysledek"></div>
 						</div>
+						<div id="napovedaRight" class="hidden">
+							<h2>Návod pro použití online kalkulačky pro výpočet obvodu, nebo obsahu čtverce:<span id="cross"></span></h2>
+							<ol>
+								<li>Zadejte hodnotu do políčka.</li>
+								<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+								<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+								<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+							</ol>
+						</div>
+						<div id="Vysledek"></div>
 					</div>
 				</div>
 
 				<div id="footer">
 					<h2>Další z kategorie Obvody a obsahy rovinných útvarů</h2>
 					<div id="line">
-						<ul>
-							<li><a id="Odkaz1" href="../Kosoctverec/Kosoctverec.html" title="Obvod a obsah kosočtverce">Obvod a obsah kosočtverce</a></li>
-							<li><a id="Odkaz2" href="../Kruh/Kruh.html" title="Obvod a obsah kruhu">Obvod a obsah kruhu</a></li>
-							<li><a id="Odkaz3" href="../Lichobeznik/Lichobeznik.html" title="Obvod a obsah lichoběžníku">Obvod a obsah lichoběžníku</a></li>
-							<li><a id="Odkaz4" href="../Obdelnik/Obdelnik.html" title="Obvod a obsah obdélníku">Obvod a obsah obdélníku</a></li>
-							<li><a id="Odkaz5" href="../Rovnobeznik/Rovnobeznik.html" title="Obvod a obsah rovnoběžníku">Obvod a obsah rovnoběžníku</a></li>
-							<li><a id="Odkaz6" href="../Trojuhelnik/Trojuhelnik.html" title="Obvod a obsah trojúhelníku">Obvod a obsah trojúhelníku</a></li>
-						</ul>
+						<div class="footerButtons"><a href="../Rovnobeznik/Rovnobeznik.html" title="Obvod a obsah rovnoběžníku">Obvod a obsah rovnoběžníku</a></div>
+						<div class="footerButtons"><a href="../Lichobeznik/Lichobeznik.html" title="Obvod a obsah lichoběžníku">Obvod a obsah lichoběžníku</a></div>
+						<div class="footerButtons"><a href="../Kosoctverec/Kosoctverec.html" title="Obvod a obsah kosočtverce">Obvod a obsah kosočtverce</a></div>
+						<div class="footerButtons"><a href="../Trojuhelnik/Trojuhelnik.html" title="Obvod a obsah trojúhelníku">Obvod a obsah trojúhelníku</a></div>
+						<div class="footerButtons"><a href="../Obdelnik/Obdelnik.html" title="Obvod a obsah obdélníku">Obvod a obsah obdélníku</a></div>
+						<div class="footerButtons"><a href="../Kruh/Kruh.html" title="Obvod a obsah kruhu">Obvod a obsah kruhu</a></div>
 					</div>
 				</div>
 			</div>

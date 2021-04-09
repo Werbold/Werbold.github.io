@@ -1,11 +1,19 @@
 section{
 	margin-top: 305px;
-	margin-right: 50px;
-	margin-left: 50px;
+	margin-right: 0px;
+	margin-left: 0px;
 }
 /*Oblíbené*/
 ul{
 	list-style-type: none;
+}
+h2{
+	background: white;
+	color: black;
+}
+#favourite{
+	visibility: hidden;
+	height: 0;
 }
 #favourite h2{
 	margin-bottom: 40px;
@@ -103,7 +111,7 @@ h4{
 	border-top-right-radius: 2px;
 	background-color: #1c5387;
 	padding: 10px 0 10px 10px;
-	text-align: center;
+	text-align: left;
 	margin-left: -40px;
 	margin-bottom: 25px;
 }
@@ -169,6 +177,23 @@ footer{
 	}
 	#clear{
 		clear: both;
+	}
+}
+
+@media (min-width: 890px){
+	section{
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	#favourite{
+		visibility: visible;
+		height: auto;
+	}
+	h4{
+		padding: 10px 0 10px 10px;
+		text-align: center;
+		margin-left: -40px;
+		margin-bottom: 25px;
 	}
 }
 

@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs-cz">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
 	<title>Jehlan - Povrch a Objem</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -23,12 +13,13 @@
 	<!-- Css -->
 	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Jehlan.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/GeometrickaTelesa.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Jehlan.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
 	<script src="../../../../Calculate/Matematika/GeometrickaTelesa/Jehlan.js"></script>
-	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
@@ -53,7 +44,7 @@
 						</div>
 
 						<div id="rightPartContent">
-							<p id="image"><!--<img id="ilustracion" src="Images/Ctverec.png" alt="Popis jehlanu"--></p>
+							<p id="image"><img id="ilustracion" src="../../../../Images/GeometrickaTelesa/Jehlan.png" alt="Popis jehlanu"></p>
 						</div>
 					</div>
 					
@@ -79,33 +70,33 @@
 					</div>
 
 					<div id="rightPart">
-						<div id="napovedaRight"></div>
 						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 						<div id="kalkulace">
 							<h2 id="mezeraProNapoveda">Kalkulace</h2>
 							<div class="vedle">
 								<div id="leftSide">
 									<div class="vedle">
-										<label>a = </label>
+										<label for="cislo2">a = </label>
 										<input id="cislo2" type="number" placeholder="Délka strany">
 									</div>
 									<div class="vedle">
-										<label>S<sub>p</sub> = </label>
+										<label for="cislo3">S<sub>p</sub> = </label>
 										<input id="cislo3" type="number" placeholder="Obsah podstavy">
 									</div>
 									<div class="vedle">
-										<label>S<sub>pl</sub> = </label>
+										<label for="cislo4">S<sub>pl</sub> = </label>
 										<input id="cislo4" type="number" placeholder="Obsah pláště">
 									</div>
 									<div class="vedle">
-										<label>v = </label>
+										<label for="cislo5">v = </label>
 										<input id="cislo5" type="number" placeholder="Výška">
 									</div>
 								</div>
 								<div id="rideSide">
+									<label for="Jednotka">a</label>
 									<select id="Jednotka" name="Jednotka">
-										<option value="km">km</option>
 										<option value="m">m</option>
+										<option value="km">km</option>
 										<option value="dm">dm</option>
 										<option value="cm">cm</option>
 										<option value="mm">mm</option>
@@ -116,20 +107,27 @@
 								<input id="spocitat" type="button" value="Spočítat">
 								<input id="smazat" type="button" value="Smazat historii počítání">
 							</div>
-							<div id="Vysledek"></div>
 						</div>
+						<div id="napovedaRight" class="hidden">
+							<h2>Návod pro použití online kalkulačky pro výpočet objemu, nebo povrchu pravidelného jehlanu: <span id="cross"></span></h2>
+							<ol>
+								<li>Zadejte hodnoty do políček.</li>
+								<li>V rozbalovacím menu zvolte jednotky, ve kterých chcete počítat.</li>
+								<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+								<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+							</ol>
+						</div>
+						<div id="Vysledek"></div>
 					</div>
 				</div>
 
 				<div id="footer">
 					<h2>Další z kategorie Povrchy a objemy geometrických těles</h2>
 					<div id="line">
-						<ul>
-							<li><a id="Odkaz1" href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></li>
-							<li><a id="Odkaz2" href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></li>
-							<li><a id="Odkaz3" href="../Kvadr/Kvadr.html" title="Povrch a objem kvádru">Povrch a objem kvádru</a></li>
-							<li><a id="Odkaz4" href="../Valec/Valec.html" title="Povrch a objem válce">Povrch a objem válce</a></li>
-						</ul>
+						<div class="footerButtons"><a href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></div>
+						<div class="footerButtons"><a href="../Kvadr/Kvadr.html" title="Povrch a objem kvádru">Povrch a objem kvádru</a></div>
+						<div class="footerButtons"><a href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></div>
+						<div class="footerButtons"><a href="../Valec/Valec.html" title="Povrch a objem válce">Povrch a objem válce</a></div>
 					</div>
 				</div>
 			</div>

@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHF1D6VE6G"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-GHF1D6VE6G');
-	</script>
-	
 	<title>Páka</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -23,13 +13,13 @@
 	<!-- Css -->
 	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
 	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
-	<link rel="stylesheet" type="text/css" href="../../../../CSS/fyzika/mainFyzika.css">
 	<link rel="stylesheet" type="text/css" href="CSS/Paka.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/Sila.css">
 	<!--JavaScript-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
 	<script src="../../../../Calculate/Fyzika/Sila/Paka.js"></script>
-	<script src="JavaScript/UI.js"></script>
+	<script src="../../../../JS/UI.js"></script>
 	<script src="../../../../JS/Footer.js"></script>
 	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
 </head>
@@ -45,10 +35,10 @@
 					<div id="topContent">
 						<div id="leftPartContent">
 							<h2>Vzorečky</h2>
-							<p>Síla <i>F<sub>1</sub></i> = F<sub>2</sub> * a<sub>2</sub> / a<sub>1</sub></p>
-							<p>Síla <i>F<sub>2</sub></i> = F<sub>1</sub> * a<sub>1</sub> / a<sub>2</sub></p>
-							<p>Vzdálenost <i>a<sub>1</sub></i> = F<sub>2</sub> * a<sub>2</sub> / F<sub>1</sub></p>
-							<p>Vzdálenost <i>a<sub>2</sub></i> = F<sub>1</sub> * a<sub>1</sub> / F<sub>2</sub></p>
+							<p>Síla <i>F<sub>1</sub></i> = F<sub>2</sub> * a<sub>2</sub> / a<sub>1</sub><br>
+							Síla <i>F<sub>2</sub></i> = F<sub>1</sub> * a<sub>1</sub> / a<sub>2</sub><br>
+							Vzdálenost <i>a<sub>1</sub></i> = F<sub>2</sub> * a<sub>2</sub> / F<sub>1</sub><br>
+							Vzdálenost <i>a<sub>2</sub></i> = F<sub>1</sub> * a<sub>1</sub> / F<sub>2</sub></p>
 
 							<h2>Vysvětlivky</h2>
 							<p>
@@ -64,39 +54,48 @@
 				</div>
 
 				<div id="rightPartContent">
-					<div id="napovedaRight"></div>
 					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
 					<div id="kalkulace">
 						<h2 id="mezeraProNapoveda">Kalkulace</h2>
 						<div class="vedle">
 							<div id="leftSide">
 								<div class="vedle">
-									<label>F<sub>1</sub> = </label>
+									<label for="cislo1">F<sub>1</sub> = </label>
 									<input id="cislo1" type="number" placeholder="Síla 1">
 								</div>
 								<div class="vedle">
-									<label>F<sub>2</sub></label> 
+									<label for="cislo2">F<sub>2</sub> = </label> 
 									<input id="cislo2" type="number" placeholder="Síla 2">
 								</div>
 								<div class="vedle">
-									<label>a<sub>1</sub></label>
+									<label for="cislo3">a<sub>1</sub> = </label>
 									<input id="cislo3" type="number" placeholder="Vzdálenost 1">
 								</div>
 								<div class="vedle">
-									<label>a<sub>2</sub></label>
+									<label for="cislo4">a<sub>2</sub> = </label>
 									<input id="cislo4" type="number" placeholder="Vzdálenost 2">
 								</div>
 							</div>
 							<div id="rideSide">
+								<label for="Jednotka">a</label>
 								<select id="Jednotka" name="Jednotka">
 									<option value="Základní">Základní</option>
 								</select>
 							</div>
 						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
 					</div>
-					<div id="buttons">
-						<input id="spocitat" type="button" value="Spočítat">
-						<input id="smazat" type="button" value="Smazat historii počítání">
+					<div id="napovedaRight" class="hidden">
+						<h2>Návod pro použití online kalkulačky pro výpočet páky: <span id="cross"></span></h2>
+						<ol>
+							<li>Zadejte hodnoty do políček.</li>
+							<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+							<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+							<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+						</ol>
 					</div>
 				</div>
 
@@ -105,13 +104,11 @@
 				</div>
 
 				<div id="footer">
-					<h2>Další z kategorie Práce</h2>
+					<h2>Další z kategorie Síla</h2>
 					<div id="line">
-						<ul>
-							<li><a id="Odkaz1" href="../GravitacniSila/GravitacniSila.html" title="Gravitační síla">Gravitační síla</a></li>
-							<li><a id="Odkaz2" href="../HydrostatickaTlakovaSila/HydrostatickaTlakovaSila.html" title="Hydrostatická tlaková síla">Hydrostatická tlaková síla</a></li>
-							<li><a id="Odkaz3" href="../HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla</a></li>
-						</ul>
+						<div class="footerButtons"><a href="../HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla</a></div>
+						<div class="footerButtons"><a href="../HydrostatickaTlakovaSila/HydrostatickaTlakovaSila.html" title="Hydrostatická tlaková síla">Hydrostatická tlaková síla</a></div>
+						<div class="footerButtons"><a href="../GravitacniSila/GravitacniSila.html" title="Gravitační síla">Gravitační síla</a></div>
 					</div>
 				</div>
 			</div>
