@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<title>Koule - Povrch a Objem</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Výpočet objemu a povrchu koule." />
+	<meta name="author" content="Calcit" />
+	<meta name="keywords" content="koule, Calcit, matematika, geometrie, geometrická, tělesa, kalkulačka, online, online výuka, vzorce, Vzorečky" />
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/GeometrickaTelesa.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Koule.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
+	<script src="../../../../Calculate/Matematika/GeometrickaTelesa/Koule.js"></script>
+	<script src="../../../../JS/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Povrch a objem koule</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vlastnosti koule</h2>
+							<ol id="vlastnosti">
+								<li>Koule je dána středem a poloměrem, nebo průměrem.</li>
+							</ol>
+						</div>
+
+						<div id="rightPartContent">
+							<p id="image"><img id="ilustracion" src="../../../../Images/GeometrickaTelesa/Koule.png" alt="Popis Koule"></p>
+						</div>
+					</div>
+
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obsah <i>S</i> = 4 * πr<sup>2</sup></p>
+						<p>Objem <i>V</i> = 4 / 3 πr<sup>3</sup></p>
+						<p>průměr <i>d</i> = 2 * r</p>
+						
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>r</i> = poloměr<br>
+							<i>d</i> = průměr<br>
+							<i>S'</i> = střed koule<br>
+							<i>V</i> = objem<br>
+							<i>S</i> = povrch<br>
+						</p>
+
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/GeometrickaTelesa/Koule.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
+
+					<div id="rightPart">
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<div id="kalkulace">
+							<h2 id="mezeraProNapoveda">Kalkulace</h2>
+							<div id="napovedaRight" class="hidden">
+								<h2>Návod pro použití online kalkulačky pro výpočet objemu, nebo povrchu koule: <span id="cross"></span></h2>
+								<ol>
+									<li>Zadejte hodnotu do políčka.</li>
+									<li>V rozbalovacím menu zvolte jednotky, ve kterých chcete počítat.</li>
+									<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+									<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+								</ol>
+							</div>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label for="cislo1">r = </label>
+										<input id="cislo1" type="number" placeholder="Poloměr">
+									</div>
+								</div>
+								<div id="rideSide">
+									<label for="Jednotka">a</label>
+									<select id="Jednotka" name="Jednotka">
+										<option value="m">m</option>
+										<option value="km">km</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
+								</div>
+							</div>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
+							</div>
+						</div>
+						<div id="Vysledek"></div>
+					</div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Povrchy a objemy geometrických těles</h2>
+					<div id="line">
+						<div class="footerButtons"><a href="../Jehlan/Jehlan.html" title="Povrch a objem jehlanu">Povrch a objem jehlanu</a></div>
+						<div class="footerButtons"><a href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></div>
+						<div class="footerButtons"><a href="../Kvadr/Kvadr.html" title="Povrch a objem kvádru">Povrch a objem kvádru</a></div>
+						<div class="footerButtons"><a href="../Valec/Valec.html" title="Povrch a objem válce">Povrch a objem válce</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

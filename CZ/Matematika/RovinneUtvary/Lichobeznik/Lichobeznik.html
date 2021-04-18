@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Lichoběžník - Obvod a Obsah</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Výpočet obvodu a obsahu lichoběžníku." />
+	<meta name="author" content="Calcit" />
+	<meta name="keywords" content="lichoběžník, Calcit, matematika, 2D, geometrie, rovinné, útvary, kalkulačka, online, online výuka, vzorce, Vzorečky" />
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/RovinneUtvary.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Lichobeznik.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
+	<script src="../../../../Calculate/Matematika/RovinneUtvary/Lichobeznik.js"></script>
+	<script src="../../../../JS/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Obvod a obsah lichoběžníku</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vlastnosti lichoběžníku</h2>
+							<ol id="vlastnosti">
+								<li>Právě dvě strany jsou vůči sobě rovnoběžné.</li>
+								<li>Rovnoběžné strany se nazývají základny.</li>
+								<li>Různoběžné strany se nazývají ramena.</li>
+							</ol>
+						</div>
+
+						<div id="rightPartContent">
+							<p id="image"><img id="ilustracion" src="../../../../Images/RovinneUtvary/Lichobeznik.png" alt="Popis lichoběžníku"></p>
+						</div>
+					</div>
+
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obvod <i>o</i> = a + b + c + d</p>
+						<p>Obsah <i>S</i> = (a + c) * v<sub>a</sub> / 2</p>
+
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>a; b; c; d</i> = označení strany<br>
+							<i>v<sub>a</sub></i> = výška na stranu a<br>
+							Výška je kolmice vztyčená ke zvolené straně.
+						</p>
+
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/RovinneUtvary/Lichobeznik.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
+
+					<div id="rightPart">
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<div id="kalkulace">
+							<h2 id="mezeraProNapoveda">Kalkulace</h2>
+							<div id="napovedaRight" class="hidden">
+								<h2>Návod pro použití online kalkulačky pro výpočet obvodu, nebo obsahu lichoběžníku: <span id="cross"></span></h2>
+								<ol>
+									<li>Zadejte hodnoty do políček.</li>
+									<li>V rozbalovacím menu zvolte jednotky, ve kterých chcete počítat.</li>
+									<li>klikněte na tlačítko <i>Spočítat</i>.</li>
+									<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+								</ol>
+							</div>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label for="cislo1">a = </label>
+										<input id="cislo1" type="number" placeholder="Délka strany a">
+									</div>
+									<div class="vedle">
+										<label for="cislo2">b = </label>
+										<input id="cislo2" type="number" placeholder="Délka strany b">
+									</div>
+									<div class="vedle">
+										<label for="cislo3">c = </label>
+										<input id="cislo3" type="number" placeholder="Délka strany c">
+									</div>
+									<div class="vedle">
+										<label for="cislo4">d = </label>
+										<input id="cislo4" type="number" placeholder="Délka strany d">
+									</div>
+									<div class="vedle">
+										<label for="cislo5">v<sub>a</sub> = </label>
+										<input id="cislo5" type="number" placeholder="Výška">
+									</div>
+								</div>
+								<div id="rideSide">
+									<label for="Jednotka">a</label>
+									<select id="Jednotka" name="Jednotka">
+										<option value="m">m</option>
+										<option value="km">km</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
+								</div>
+							</div>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
+							</div>
+						</div>
+						<div id="Vysledek"></div>
+					</div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Obvody a obsahy rovinných útvarů</h2>
+					<div id="line">
+						<div class="footerButtons"><a href="../Rovnobeznik/Rovnobeznik.html" title="Obvod a obsah rovnoběžníku">Obvod a obsah rovnoběžníku</a></div>
+						<div class="footerButtons"><a href="../Kosoctverec/Kosoctverec.html" title="Obvod a obsah kosočtverce">Obvod a obsah kosočtverce</a></div>
+						<div class="footerButtons"><a href="../Trojuhelnik/Trojuhelnik.html" title="Obvod a obsah trojúhelníku">Obvod a obsah trojúhelníku</a></div>
+						<div class="footerButtons"><a href="../Obdelnik/Obdelnik.html" title="Obvod a obsah obdélníku">Obvod a obsah obdélníku</a></div>
+						<div class="footerButtons"><a href="../Ctverec/Ctverec.html" title="Obvod a obsah čtverce">Obvod a obsah čtverce</a></div>
+						<div class="footerButtons"><a href="../Kruh/Kruh.html" title="Obvod a obsah kruhu">Obvod a obsah kruhu</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>
