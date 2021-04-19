@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Trojúhelník - Pythagorova Věta</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Výpočet Pythagorovy věty." />
+	<meta name="author" content="Calcit" />
+	<meta name="keywords" content="pravoúhlý, 90, pythagoras, věta, znění, Calcit, matematika, 2D, geometrie, rovinné, útvary, kalkulačka, online, online výuka, vzorce, Vzorečky" />
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/PythagorovaVeta.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
+	<script src="../../../../Calculate/Matematika/Trojuhelnik/PythagorovaVeta.js"></script>
+	<script src="../../../../JS/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1><a class="info" href="../../RovinneUtvary/Trojuhelnik/Trojuhelnik.html" title="Obvod a obsah trojúhelníku">Trojúhelník</a> - Pythagorova věta</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Znění pythagorovy věty</h2>
+							<p>Součet obsahů čtverců nad odvěsnami, je roven obsahu čtverce nad přeponou.</p>
+						</div>
+						<!-- 
+						<div id="rightPartContent">
+							<p id="image"><img id="ilustracion" src="Images/Kruh.png" alt="Popis kruhu"></p>
+						</div>
+						-->
+					</div>
+
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>
+							a<sup>2</sup> = c<sup>2</sup> - b<sup>2</sup><br>
+							b<sup>2</sup> = c<sup>2</sup> - a<sup>2</sup><br>
+							c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>
+						</p>
+
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>a; b; c</i> = označení strany<br>
+							<i>Přepona</i> = strana ležící naproti pravému úhlu<br>
+							<i>Odvěsna</i> = strana tvořící pravý úhel
+						</p>
+
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/Trojuhelnik/PythagorovaVeta.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
+				</div>
+
+				<div id="rightPart">
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h3  id="mezeraProNapoveda">Kalkulace</h3>
+						<div id="napovedaRight" class="hidden">
+							<h2>Návod pro použití online kalkulačky pro výpočet pythagorovy věty: <span id="cross"></span></h2>
+							<ol>
+								<li>Zadejte hodnoty do políček.</li>
+								<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+								<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+								<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+							</ol>
+						</div>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label for="cislo1">a = </label>
+									<input id="cislo1" type="number" placeholder="Délka strany a">
+								</div>
+								<div class="vedle">
+									<label for="cislo2">b = </label>
+									<input id="cislo2" type="number" placeholder="Délka strany b">
+								</div>
+								<div class="vedle">
+									<label for="cislo3">c = </label>
+									<input id="cislo3" type="number" placeholder="Délka strany c">
+								</div>
+							</div>
+							<div id="rideSide">
+								<label for="Jednotka">a</label>
+								<select id="Jednotka" name="Jednotka">
+									<option value="m">m</option>
+									<option value="km">km</option>
+									<option value="dm">dm</option>
+									<option value="cm">cm</option>
+									<option value="mm">mm</option>
+								</select>
+							</div>
+						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
+					</div>
+					<div id="Vysledek"></div>
+				</div>
+
+				<div id="footer">
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

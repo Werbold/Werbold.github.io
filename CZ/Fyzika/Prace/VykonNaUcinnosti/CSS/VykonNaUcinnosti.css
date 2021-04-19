@@ -1,0 +1,16 @@
+#Jednotka{
+	height: 108px;
+}
+
+@media (max-width: 340px){
+	#line ul{
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+@media (min-width: 950px){
+	#footer{
+		margin-top: 630px;
+	}
+}

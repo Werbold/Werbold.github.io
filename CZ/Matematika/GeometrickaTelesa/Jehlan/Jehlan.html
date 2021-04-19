@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+	<title>Jehlan - Povrch a Objem</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Výpočet objemu a povrchu jehlanu." />
+	<meta name="author" content="Calcit" />
+	<meta name="keywords" content="Jehlan, trojúhelník, Calcit, matematika, geometrie, geometrická, tělesa, kalkulačka, online, online výuka, vzorce, Vzorečky" />
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/GeometrickaTelesa.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Jehlan.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
+	<script src="../../../../Calculate/Matematika/GeometrickaTelesa/Jehlan.js"></script>
+	<script src="../../../../JS/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Povrch a objem pravidelného jehlanu</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vlastnosti pravidelného jehlanu</h2>
+							<ol id="vlastnosti">
+								<li>Podstavou pravidelného jehlanu je mnohoúhelnk.</li>
+								<li>Plášť tvoří 3 a více <a class="info" href="../../RovinneUtvary/Trojuhelnik/Trojuhelnik.html" title="Trojúhelník">trojúhelníků.</a></li>
+								<li>Všechny vrcholy podstavy jsou propojeny s vrcholem.</li>
+								<li>Vrchol leží mimo rovinu základny.</li>
+							</ol>
+						</div>
+
+						<div id="rightPartContent">
+							<p id="image"><img id="ilustracion" src="../../../../Images/GeometrickaTelesa/Jehlan.png" alt="Popis jehlanu"></p>
+						</div>
+					</div>
+					
+					<div id="leftPart">
+						<h2>Vzorečky</h2>
+						<p>Obsah <i>S</i> = S<sub>p</sub> + S<sub>pl</sub></p>
+						<p>Objem <i>V</i> = 1 / 3 S<sub>p</sub>v</p>
+						<p>Obsah pláště <i>S<sub>pl</sub></i> = <i>Obsah jednoho <a class="info" href="../../RovinneUtvary/Trojuhelnik/Trojuhelnik.html" title="Trojúhelník">trojúhelníku</a></i> * <i>počet trojúhelníků</i></p>
+						<p>Obsah podstavy <i>S<sub>p</sub></i> = a * a</p>
+						
+						<h2>Vysvětlivky</h2>
+						<p>
+							<i>a</i> = označení strany podstavy<br>
+							<i>v</i> = výška<br>
+							<i>V</i> = objem<br>
+							<i>S</i> = povrch<br>
+							<i>S<sub>p</sub></i> = obsah podstavy<br>
+							<i>S<sub>pl</sub></i> = obsah pláště<br>
+							Výška je kolmice vztyčená ke zvolené straně.
+						</p>
+
+						<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Matematika/GeometrickaTelesa/Jehlan.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+					</div>
+
+					<div id="rightPart">
+						<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+						<div id="kalkulace">
+							<h2 id="mezeraProNapoveda">Kalkulace</h2>
+							<div id="napovedaRight" class="hidden">
+								<h2>Návod pro použití online kalkulačky pro výpočet objemu, nebo povrchu pravidelného jehlanu: <span id="cross"></span></h2>
+								<ol>
+									<li>Zadejte hodnoty do políček.</li>
+									<li>V rozbalovacím menu zvolte jednotky, ve kterých chcete počítat.</li>
+									<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+									<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+								</ol>
+							</div>
+							<div class="vedle">
+								<div id="leftSide">
+									<div class="vedle">
+										<label for="cislo3">S<sub>p</sub> = </label>
+										<input id="cislo3" type="number" placeholder="Obsah podstavy">
+									</div>
+									<div class="vedle">
+										<label for="cislo4">S<sub>pl</sub> = </label>
+										<input id="cislo4" type="number" placeholder="Obsah pláště">
+									</div>
+									<div class="vedle">
+										<label for="cislo5">v = </label>
+										<input id="cislo5" type="number" placeholder="Výška">
+									</div>
+								</div>
+								<div id="rideSide">
+									<label for="Jednotka">a</label>
+									<select id="Jednotka" name="Jednotka">
+										<option value="m">m</option>
+										<option value="km">km</option>
+										<option value="dm">dm</option>
+										<option value="cm">cm</option>
+										<option value="mm">mm</option>
+									</select>
+								</div>
+							</div>
+							<div id="buttons">
+								<input id="spocitat" type="button" value="Spočítat">
+								<input id="smazat" type="button" value="Smazat historii počítání">
+							</div>
+						</div>
+						<div id="Vysledek"></div>
+					</div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Povrchy a objemy geometrických těles</h2>
+					<div id="line">
+						<div class="footerButtons"><a href="../Krychle/Krychle.html" title="Povrch a objem krychle">Povrch a objem krychle</a></div>
+						<div class="footerButtons"><a href="../Kvadr/Kvadr.html" title="Povrch a objem kvádru">Povrch a objem kvádru</a></div>
+						<div class="footerButtons"><a href="../Koule/Koule.html" title="Povrch a objem koule">Povrch a objem koule</a></div>
+						<div class="footerButtons"><a href="../Valec/Valec.html" title="Povrch a objem válce">Povrch a objem válce</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>

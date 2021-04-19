@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Elektrický náboj</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Výpočty elektrického proudu." />
+	<meta name="author" content="Calcit" />
+	<meta name="keywords" content="Calcit, elektřina, proud, Fyzika, kalkulačka, online, online výuka, vzorce, Vzorečky" />
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="CSS/ProudNaNaboji.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Elektrina.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
+	<script src="../../../../Calculate/Fyzika/Elektrina/ProudNaNaboji.js"></script>
+	<script src="../../../../JS/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Elektrický proud založený na náboji</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vzorečky</h2>
+							<p>
+								Elektrický proud <i>I</i> = Q / t<br>
+								Elektrický náboj <i>Q</i> = I * t<br>
+								Čas <i>t</i> = Q / I
+							</p>
+							<h2>Vysvětlivky</h2>
+							<p>
+								<i>I</i> = Elektrický proud<br>
+								<i>Q</i> = Elektrický náboj<br>
+								<i>t</i> = Čas
+							</p>
+
+							<p id="practice"><a id="practicePDF" href="../../../../Practice/CZ/Fyzika/Elektrina/ProudNaNaboji.pdf" title="Řešené příklady k procvičení">Příklady k procvičení</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="rightPartContent">
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div id="napovedaRight" class="hidden">
+							<h2> Návod pro použití online kalkulačky pro výpočet <br>proudu na náboji: <span id="cross"></span></h2>
+							<ol>
+								<li>Zadejte hodnoty do políček.</li>
+								<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+								<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+								<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+							</ol>
+						</div>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label for="cislo1">I = </label>
+									<input id="cislo1" type="number" placeholder="Elektrický proud">
+								</div>
+								<div class="vedle">
+									<label for="cislo2">Q = </label>
+									<input id="cislo2" type="number" placeholder="Elektrický náboj">
+								</div>
+								<div class="vedle">
+									<label for="cislo3">t = </label>
+									<input id="cislo3" type="number" placeholder="Čas">
+								</div>
+							</div>
+							<div id="rideSide">
+								<label for="Jednotka">a</label>
+								<select id="Jednotka" name="Jednotka">
+									<option value="Základní">Základní</option>
+								</select>
+							</div>
+						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
+					</div>
+				</div>
+				
+				<div id="rightPart">
+					<div id="Vysledek"></div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie elektřina</h2>
+					<div id="line">
+						<div class="footerButtons"><a href="../ProudNaElektrickemNapeti/ProudNaElektrickemNapeti.html" title="Proud na elektrickém napětí">Proud na elektrickém napětí</a></div>
+						<div class="footerButtons"><a href="../ElektrickaPrace/ElektrickaPrace.html" title="Elektrická práce">Elektrická práce</a></div>
+					</div>
+				</div>
+			</div>
+		<footer>
+		</footer>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+	</article>
+</body>
+</html>

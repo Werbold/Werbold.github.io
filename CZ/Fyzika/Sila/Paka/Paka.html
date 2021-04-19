@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<title>Páka</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="Výpočet páky." />
+	<meta name="author" content="Calcit" />
+	<meta name="keywords" content="Calcit, páka, síla, délka, Fyzika, kalkulačka, online, online výuka, vzorce, Vzorečky" />
+	<!-- Css -->
+	<link rel="shortcut icon" href="../../../../Images/Kalcit/Kalcit.ico" />
+	<link rel="stylesheet" type="text/css" href="../../../../CSS/main.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Sila.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Paka.css">
+	<!--JavaScript-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../../../../JS/GoogleAnalytics.js"></script>
+	<script src="../../../../Calculate/Fyzika/Sila/Paka.js"></script>
+	<script src="../../../../JS/UI.js"></script>
+	<script src="../../../../JS/Footer.js"></script>
+	<script src="../../../../JS/Navigations/NavigationTheme.js"></script>
+</head>
+<body>
+	<article>
+		<header>
+		</header>
+	<!--Main Content-->
+		<section>
+			<div id="content">
+				<div id="main">
+					<h1>Páka</h1>
+					<div id="topContent">
+						<div id="leftPartContent">
+							<h2>Vzorečky</h2>
+							<p>Síla <i>F<sub>1</sub></i> = F<sub>2</sub> * a<sub>2</sub> / a<sub>1</sub><br>
+							Síla <i>F<sub>2</sub></i> = F<sub>1</sub> * a<sub>1</sub> / a<sub>2</sub><br>
+							Vzdálenost <i>a<sub>1</sub></i> = F<sub>2</sub> * a<sub>2</sub> / F<sub>1</sub><br>
+							Vzdálenost <i>a<sub>2</sub></i> = F<sub>1</sub> * a<sub>1</sub> / F<sub>2</sub></p>
+
+							<h2>Vysvětlivky</h2>
+							<p>
+								<i>F<sub>1</sub></i> = Síla 1<br>
+								<i>F<sub>2</sub></i> = Síla 2<br>
+								<i>a<sub>1</sub></i> = vzdálenost 1<br>
+								<i>a<sub>2</sub></i> = Vzdálenost 2
+							</p>
+
+							<p id="practice"><a id="practicePDF" target="_blank" download href="../../../../Practice/CZ/Fyzika/Sila/Paka.pdf" title="Řešené příklady k procvičení">Řešené příklady k procvičení</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="rightPartContent">
+					<div id="napovedaMove"><div id="napovedaContainer"><p id="napoveda">?</p></div></div>
+					<div id="kalkulace">
+						<h2 id="mezeraProNapoveda">Kalkulace</h2>
+						<div id="napovedaRight" class="hidden">
+						<h2>Návod pro použití online kalkulačky pro výpočet páky: <span id="cross"></span></h2>
+							<ol>
+								<li>Zadejte hodnoty do políček.</li>
+								<li>V rozbalovacím menu zvolte jednotku, ve které chcete počítat.</li>
+								<li>Klikněte na tlačítko <i>Spočítat</i>.</li>
+								<li>Pro smazání historie výsledků stiskněte tlačítko <i>Smazat historii počítání</i>.</li>
+							</ol>
+						</div>
+						<div class="vedle">
+							<div id="leftSide">
+								<div class="vedle">
+									<label for="cislo1">F<sub>1</sub> = </label>
+									<input id="cislo1" type="number" placeholder="Síla 1">
+								</div>
+								<div class="vedle">
+									<label for="cislo2">F<sub>2</sub> = </label> 
+									<input id="cislo2" type="number" placeholder="Síla 2">
+								</div>
+								<div class="vedle">
+									<label for="cislo3">a<sub>1</sub> = </label>
+									<input id="cislo3" type="number" placeholder="Vzdálenost 1">
+								</div>
+								<div class="vedle">
+									<label for="cislo4">a<sub>2</sub> = </label>
+									<input id="cislo4" type="number" placeholder="Vzdálenost 2">
+								</div>
+							</div>
+							<div id="rideSide">
+								<label for="Jednotka">a</label>
+								<select id="Jednotka" name="Jednotka">
+									<option value="Základní">Základní</option>
+								</select>
+							</div>
+						</div>
+						<div id="buttons">
+							<input id="spocitat" type="button" value="Spočítat">
+							<input id="smazat" type="button" value="Smazat historii počítání">
+						</div>
+					</div>
+				</div>
+
+				<div id="rightPart">
+					<div id="Vysledek"></div>
+				</div>
+
+				<div id="footer">
+					<h2>Další z kategorie Síla</h2>
+					<div id="line">
+						<div class="footerButtons"><a href="../HydrostatickaVztlakovaSila/HydrostatickaVztlakovaSila.html" title="Hydrostatická vztlaková síla">Hydrostatická vztlaková síla</a></div>
+						<div class="footerButtons"><a href="../HydrostatickaTlakovaSila/HydrostatickaTlakovaSila.html" title="Hydrostatická tlaková síla">Hydrostatická tlaková síla</a></div>
+						<div class="footerButtons"><a href="../GravitacniSila/GravitacniSila.html" title="Gravitační síla">Gravitační síla</a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div id="clear"></div>
+		<div id="navigation"></div>
+
+		<footer>
+		</footer>
+	</article>
+</body>
+</html>
