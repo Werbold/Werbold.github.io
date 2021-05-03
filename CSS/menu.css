@@ -1,0 +1,50 @@
+#menu{
+	position: absolute;
+	width: 100%;
+}
+.bottomHeader{
+	color: #cecece;
+	background: #282828;
+}
+.bottomHeader div{
+	padding: 0;
+}
+.bottomHeader p{
+	text-align: center;
+	margin: 0;
+}
+.bottomHeader a{
+	color: #cecece;
+	display: block;
+	background: #282828;
+	font-size: 28px;
+	text-decoration: none;
+	height: 100px;
+	line-height: 100px;
+	margin: 2px;
+}
+.bottomHeader a:hover{
+	transition: .4s;
+	background: #1d1a1a;
+	text-decoration: none;
+	cursor: pointer;
+}
+.flexMenu{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flexMenuItem{
+	flex: 100%;
+}
+
+@media (min-width: 700px){
+	.flexMenuItem{
+		flex: 30%;
+	}
+	#menu{
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+}
