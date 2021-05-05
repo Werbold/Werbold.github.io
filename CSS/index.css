@@ -8,3 +8,37 @@
 	line-height: 150px;
 	margin: 2px;
 }
+h1{
+	opacity: 0;
+}
+p{
+	color: white;
+}
+input{
+	display: block;
+	color: #282828;
+	background: #cecece;
+	height: 40px;
+	width: 300px;
+	border: none;
+	padding: 0;
+	padding-left: 15px;
+	margin-top: 5px;
+	font-size: 25px;
+	border-radius: 3px;
+}
+::placeholder{
+	/*padding-left: 15px;*/
+	font-size: 25px;
+}
+input:focus{
+	outline: none;
+}
+#loginForm{
+	margin: 0 auto;
+	width: 0;
+}
+#login{
+	padding: 0;
+	width: 315px;
+}
