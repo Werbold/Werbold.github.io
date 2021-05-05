@@ -28,7 +28,6 @@ input{
 	border-radius: 3px;
 }
 ::placeholder{
-	/*padding-left: 15px;*/
 	font-size: 25px;
 }
 input:focus{
@@ -36,7 +35,7 @@ input:focus{
 }
 #loginForm{
 	margin: 0 auto;
-	width: 0;
+	width: 315px;
 }
 #login{
 	padding: 0;
