@@ -43,6 +43,10 @@ p.center{
 	text-align: center;
 	margin-top: 180px;
 }
+#secrets{
+	margin-left: 0;
+	margin-right: 0;
+}
 
 @media (min-width: 700px){
 	article{
